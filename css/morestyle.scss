@@ -275,7 +275,6 @@ a{
   padding-top: 57px;  
 }
 .contacts__inner__left{
-  padding-bottom: 64px;
   width: 300px;
 
   .contacts__inner__left__img{
@@ -477,6 +476,9 @@ a{
   }
   .contacts__inner__info{
     flex-direction: column;
+  }
+  .contacts__inner__left{
+    padding-bottom: 64px;
   }
   .contacts__inner__right{
     width: 520px;
