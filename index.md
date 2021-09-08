@@ -11,12 +11,9 @@
 
 <body>
   <div class="main__menu">
-    <a class="main__menu__item" href="GB_first/main.html">
-      <img src="img/main-page.svg" alt="to-main-page">
-    </a>
-    <a class="main__menu__item" href="#">
-      <img src="img/contacts-page.svg" alt="to-contacts-page">
-    </a>
+    <a class="geeekbrains__first" href="GB_first/main.html">GB first lesson</a>
+    <a class="main__menu__item" href="cosmotourism/index.html">Cosmotourism</a>
+    <a class="resume" href="resume/index.html>Resume</a>    
   </div>
 </body>
 </html>
