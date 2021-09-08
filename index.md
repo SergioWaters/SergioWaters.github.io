@@ -13,7 +13,7 @@
   <div class="main__menu">
     <a class="geeekbrains__first" href="GB_first/main.html">GB first lesson</a>
     <a class="main__menu__item" href="cosmotourism/index.html">Cosmotourism</a>
-    <a class="resume" href="resume/index.html>Resume</a>    
+    <a class="resume" href="resume/index.html">Resume</a>    
   </div>
 </body>
 </html>
