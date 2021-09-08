@@ -5,143 +5,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/morestyle.css">
-  <title>mainpage</title>
+  <link rel="stylesheet" href="style.css">
+  <title>GitHubMainSerjMok</title>
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="toppart">
-      <div class="main__header container">
-        <div class="main__menu">
-          <a class="main__menu__item" href="main.html"><img src="img/main-page.svg" alt="to-main-page"></a>
-          <a class="main__menu__item" href="contacts.html"><img src="img/contacts-page.svg" alt="to-contacts-page"></a>
-        </div>
-        <div class="main__title">
-          <h1 class="head1 main__title__header">
-            New Automation <br> Tool for You
-          </h1>
-          <p class="par main__title__text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex modi recusandae, in at officia itaque nihil
-            numquam
-            voluptatibus maxime! Modi ab voluptatum laborum quasi consequuntur, reiciendis quia. Ipsam, nihil
-            tempora.
-          </p>
-          <a class="main__title__button" href="#">
-            See Our Project
-          </a>
-        </div>
-      </div>
-      <div class="inner container">
-        <div class="main__inner">
-          <h3 class="head3 main__inner__title">
-            What we do Lorem ipsum dolor
-          </h3>
-          <div class="main__inner__item__block">
-            <div class="main__inner__item">
-              <img class="main__inner__item__img" src="img/box1.svg" alt="box1">
-              <h4 class="head4">
-                Make Your business ipsum dolor sit amet
-              </h4>
-              <p class="par">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere recusandae est magnam.
-                Perspiciatis
-                velit
-              </p>
-              <a class="main__inner__item__link" href="#">lern more<img class="iconic" src="img/Vector.svg"
-                  alt="arrow" /></a>
-            </div>
-            <div class="main__inner__item">
-              <img class="main__inner__item__img" src="img/box2.svg" alt="box2">
-              <h4 class="head4">
-                Bring Technology ipsum dolor sit amet
-              </h4>
-              <p class="par">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere recusandae est magnam.
-                Perspiciatis
-                velit
-              </p>
-              <a class="main__inner__item__link" href="#">
-                <p>lern more</p><img class="iconic" src="img/Vector.svg" alt="arrow" />
-              </a>
-            </div>
-            <div class="main__inner__item">
-              <img class="main__inner__item__img" src="img/box3.svg" alt="box3">
-              <h4 class="head4">
-                Build Your ipsum dolor sit amet
-              </h4>
-              <p class="par">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt facere recusandae est magnam.
-                Perspiciatis
-                velit
-              </p>
-              <a class="main__inner__item__link" href="#">lern more<img class="iconic" src="img/Vector.svg"
-                  alt="arrow" /></a>
-            </div>
-          </div>
-        </div>
-        <div class="main__projects">
-          <h3 class="head3 main__projects__title">
-            Our Finished projects
-          </h3>
-          <p class="par main__projects__text">
-            Ipsum dolor sit amet consectetur adipisicing elit. Velit debitis ipsa, aliquam beatae
-            explicabo
-            nostrum.
-          </p>
-          <div class="main__projects__box">
-            <div class="projects__item item1">
-              <img class="projects__img" src="img/project1.jpg" alt="project1">
-              <p class="projects__item__text">Smart Home Installation</p>
-            </div>
-            <div class="projects__parent">
-              <div class="projects__item item2">
-                <img class="projects__img" src="img/project2.jpg" alt="project2">
-                <p class="projects__item__text__2">Sparklite App</p>
-              </div>
-              <div class="projects__item item3">
-                <img class="projects__img" src="img/project3.jpg" alt="project3">
-                <p class="projects__item__text__2">Car-Rapetition App</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer class="footer">
-      <div class="container">
-        <div class="main__footer__up">
-          <div class="footer__description">
-            <h3 class="head3 main__footer__title">
-              Interrested to ipsum sit
-            </h3>
-            <p class="par main__footer__text">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates labore Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Quo repellendus quas itaque magni ipsum dolore.
-            </p>
-          </div>
-          <button class="main__footer__button">Let's Talk</button>
-        </div>
-      </div>
-      <hr>
-      <div class="container">
-        <div class="main__footer__down">
-          <ol class="footer__list">
-            <li class="footer__list__item">Lorem ipsum dolor sit amet.</li>
-            <li class="footer__list__item">
-              <a href="tel:88000000000" class="phone item__link">8 800 000 00 00 </a>
-            </li>
-            <li class="footer__list__item">
-              <a href="mailto:mail@mail.ru" target="_blank" class="email item__link">mail@mail.ru </a>
-            </li>
-          </ol>
-          <p class="par footer__rights">
-            Все права защищены
-          </p>
-        </div>
-      </div>
-    </footer>
+  <div class="main__menu">
+    <a class="main__menu__item" href="GB_first/main.html">
+      <img src="img/main-page.svg" alt="to-main-page">
+    </a>
+    <a class="main__menu__item" href="#">
+      <img src="img/contacts-page.svg" alt="to-contacts-page">
+    </a>
   </div>
 </body>
-
 </html>
