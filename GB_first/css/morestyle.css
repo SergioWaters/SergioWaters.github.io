@@ -107,16 +107,27 @@ a {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  padding: 0 115px;
 }
 
 .main__header {
-  padding-top: 42px;
-  min-height: 768px;
+  height: 768px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(8.84%, #EBF3FB), color-stop(31.12%, rgba(152, 195, 232, 0)));
   background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
 }
 
-.main__menu {
+.main__header__bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.main__header__bg .main__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,17 +135,21 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 48px;
+  padding-top: 42px;
 }
 
-.main__title {
+.main__header__bg .main__title {
   padding-top: 107px;
   background-image: url(../img/header-illustration.png);
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 44%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
-.main__title__header {
+.main__header__bg .main__title__header {
   width: 504px;
   font-weight: 300;
   font-size: 64px;
@@ -144,7 +159,7 @@ a {
   margin-bottom: 32px;
 }
 
-.main__title__text {
+.main__header__bg .main__title__text {
   width: 425px;
   font-size: 16px;
   line-height: 26px;
@@ -154,7 +169,7 @@ a {
   margin-bottom: 71px;
 }
 
-.main__title__button {
+.main__header__bg .main__title__button {
   font-size: 16px;
   line-height: 26px;
   /* identical to box height, or 162% */
@@ -371,7 +386,6 @@ a {
 }
 
 .contacts__inner__left {
-  padding-bottom: 64px;
   width: 300px;
 }
 
@@ -574,8 +588,9 @@ a {
     padding-left: 32px;
     padding-right: 32px;
   }
-  .main__title {
-    background-position: right 160px;
+  .main__header__bg {
+    background-position: right 350px;
+    z-index: 5;
   }
   .main__inner__item__block {
     -webkit-box-orient: vertical;
@@ -623,6 +638,9 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .contacts__inner__left {
+    padding-bottom: 64px;
+  }
   .contacts__inner__right {
     width: 520px;
     height: 780px;
@@ -643,7 +661,6 @@ a {
   }
   .main__title {
     padding-top: 32px;
-    background-image: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -654,6 +671,9 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .main__header__bg {
+    background-image: none;
   }
   .main__title__header {
     font-size: 32px;

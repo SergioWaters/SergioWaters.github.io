@@ -1,0 +1,21 @@
+
+
+
+
+.main__menu {
+  background-color: #a4a4a4;
+  display: flex;
+  justify-content: space-evenly;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1600px;
+}
+.company__site {
+}
+.cosmotourism {
+}
+.online__shop {
+}
+.resume {
+}
