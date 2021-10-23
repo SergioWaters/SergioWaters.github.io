@@ -10,13 +10,13 @@
 
 <body>
   <div class="main__menu container">
-    <a class="company__site" href="GB_first/main.html">
+    <a class="company__site" href="company_site/main.html">
     Some company site
     </a>
     <a class="cosmotourism" href="cosmotourism/index.html">
     Cosmotourism
     </a>
-    <a class="online__shop" href="homeworkshop/index.html">
+    <a class="online__shop" href="online_store/index.html">
     Closes online shop
     </a>
     <a class="resume" href="resume/index.html">
