@@ -17,7 +17,7 @@
     Cosmotourism
     </a>
     <a class="online__shop" href="online_store/index.html">
-    Closes online shop
+    Online store
     </a>
     <a class="resume" href="resume/index.html">
     Resume
