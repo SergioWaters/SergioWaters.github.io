@@ -125,7 +125,7 @@ header, main, footer{
   visibility: visible;
   transition: .5s;
 }
-/*navbar_rightside<-------------------------- */
+/*navbar_rightside<------------ */
 .navbar__rightside {
   display: flex;
   justify-content: space-between;
@@ -355,7 +355,7 @@ header, main, footer{
   color: #F16D7F;
 }
 
-/* Categories <-------------------------*/
+/* Categories <--------------*/
 .categories {
   margin-bottom: 96px;
   text-transform: uppercase;
