@@ -304,13 +304,6 @@ header, main, footer{
   text-align: center;
   color: #e8e8e8;
 }
-@media (max-width: 375px) {
-  .navbar__rightside__account,
-  .navbar__rightside__cart{
-    display: none;
-  }
-}
-
 /* ---> inner <--- */
 .inner__bg{
   background-color: #F1E4E6;
@@ -432,27 +425,7 @@ header, main, footer{
   color: #f16d7f;
   font-weight: 700;
 }
-@media (max-width: 768px){
-  .categories__box__item {
-    min-height: 170px;
-  }
-  .categories__box__item__bottom {
-    min-height: 115px;
-}
-@media (max-width: 426px){
-  .categories__box {
-    flex-direction: column;
-    padding: 0 15px 0 15px;
-  }
-  .categories__box__item {
-    min-height: 260px;
-    width: 100%;
-    margin: 16px 0 16px 0;
-  }
-  .categories__box__item__bottom {
-    margin: 16px 0 16px 0;
-  }
-}
+
 /* catalogue_main <-------------------- */
 .fetured {
   text-align: center;
@@ -569,11 +542,6 @@ header, main, footer{
   align-items: center;
   fill: #f16d7f;
 }
-@media (max-width: 1140px) {
-  .advantages__box{
-  flex-direction: column;  
-  align-items: center;}
-}
 .advantages__item__image {
 }
 .advantages__item:hover{
@@ -685,11 +653,6 @@ header, main, footer{
   flex-wrap: wrap-reverse;
   justify-content: space-between;
   align-items: center;
-}
-@media (max-width: 425px) {
-  .footer__lower {
-  justify-content: space-evenly;
-  }
 }
 .footer__lower__rights {
   color: #fbfbfb;
@@ -1693,7 +1656,6 @@ header, main, footer{
   font-size: 16px;
   line-height: 19px;
   font-weight: 300;
-
 }
 .registration__radio__box{
   margin-bottom: 30px;
@@ -1838,4 +1800,48 @@ header, main, footer{
   background-color: #000;
   transform: rotate(45deg);
   transform-origin: -35px -37px;
+}
+
+
+
+
+
+/* --> media <-- */
+@media (max-width: 768px){
+  .categories__box__item {
+    min-height: 170px;
+  }
+  .categories__box__item__bottom {
+    min-height: 115px;
+  }
+}
+@media (max-width: 426px){
+  .categories__box {
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+  }
+  .categories__box__item {
+    min-height: 260px;
+    width: 100%;
+    margin: 16px 0 16px 0;
+  }
+  .categories__box__item__bottom {
+    margin: 16px 0 16px 0;
+  }
+}
+@media (max-width: 425px) {
+  .footer__lower {
+  justify-content: space-evenly;
+  }
+}
+@media (max-width: 1140px) {
+  .advantages__box{
+  flex-direction: column;  
+  align-items: center;}
+}
+@media (max-width: 375px) {
+  .navbar__rightside__account,
+  .navbar__rightside__cart{
+    display: none;
+  }
 }
