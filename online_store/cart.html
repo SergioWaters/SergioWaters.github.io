@@ -17,8 +17,8 @@
     <header class="navbar__bg">
       <div class="navbar container">
         <div class="navbar__leftside">
-          <a class="navbar__leftside__gohome"><img src="img/catalogue/navbar_logo.png" width="44" height="38"
-              alt="logo">
+          <a class="navbar__leftside__gohome" href="index.html"><img src="img/catalogue/navbar_logo.png" width="44"
+              height="38" alt="logo">
           </a>
           <input type="checkbox" id="search__input" class="navbar__leftside__search__chbox">
           <label for="search__input" class="navbar__leftside__search__label">
@@ -108,19 +108,28 @@
           <ul class="cart__left__list">
             <li class="cart__left__list__item">
               <article class="cart__product">
-                <img src="img/mainpage/fetured_item_img_1.jpg" alt="product_img" class="cart__product__img" width="260"
+                <img src="img/mainpage/fetured_item_img_3.jpg" alt="product_img" class="cart__product__img" width="260"
                   height="300">
-                <div class="cart__product__description">
-                  <h3 class="cart__product__title">mango people t&nbsp;-&nbsp;shirt</h3>
-                  <h4 class="cart__product__price">Price:<span>$300</span></h4>
-                  <h4 class="cart__product__size">Size:<span>Red</span></h4>
-                  <h4 class="cart__product__color">Color:<span>XL</span></h4>
-                  <form class="cart__product__form" action="#"><label for="prod_quantity">
-                      <span class="cart__product__quantity">Quantity:</span>
-                    </label>
-                    <input class="cart__product__form__input" type="text" name="name_quantity" id="prod_quantity"
-                      placeholder="2">
-                  </form>
+                <div class="cart__product__infobox">
+                  <ul class="cart__product__description">
+                    <li class="cart__product__title">mango people t&nbsp;-&nbsp;shirt</li>
+                    <li class="cart__product__description__item">
+                      <span class="cart__product__description__item__title ">Price:</span>
+                      <span class="cart__product__description__item__value cart__product__price">$300</span>
+                    </li>
+                    <li class="cart__product__description__item">
+                      <span class="cart__product__description__item__title">Size:</span>
+                      <span class="cart__product__description__item__value cart__product__size">Red</span>
+                    </li>
+                    <li class="cart__product__description__item">
+                      <span class="cart__product__description__item__title">Color:</span>
+                      <span class="cart__product__description__item__value cart__product__color">xl</span>
+                    </li>
+                    <li class="cart__product__description__item">
+                      <span class="cart__product__description__item__title cart__product__quantity">Quantity:</span>
+                      <input class="cart__product__description__item__input" placeholder="2" id="crt_prd_quant">
+                    </li>
+                  </ul>
                   <button class="cart__product__closer"></button>
                 </div>
               </article>
@@ -129,20 +138,30 @@
               <article class="cart__product">
                 <img src="img/catalogue/catalogue_img_2.jpg" alt="product_img" class="cart__product__img" width="260"
                   height="300">
-                <div class="cart__product__description">
-                  <h3 class="cart__product__title">mango people t&nbsp;-&nbsp;shirt</h3>
-                  <h4 class="cart__product__price">Price:<span>$300</span></h4>
-                  <h4 class="cart__product__size">Size:<span>Red</span></h4>
-                  <h4 class="cart__product__color">Color:<span>XL</span></h4>
-                  <form class="cart__product__form" action="#"><label for="prod_quantityy">
-                      <span class="cart__product__quantity">Quantity:</span>
-                    </label>
-                    <input class="cart__product__form__input" type="text" name="name_quantity" id="prod_quantityy"
-                      placeholder="2">
-                  </form>
+                <div class="cart__product__infobox">
+                  <ul class="cart__product__description">
+                    <li class="cart__product__title">mango people t&nbsp;-&nbsp;shirt</li>
+                    <li class="cart__product__description__item">
+                      <span class="cart__product__description__item__title ">Price:</span>
+                      <span class="cart__product__description__item__value cart__product__price">$300</span>
+                    </li>
+                    <li class="cart__product__description__item">
+                      <span class="cart__product__description__item__title">Size:</span>
+                      <span class="cart__product__description__item__value cart__product__size">Red</span>
+                    </li>
+                    <li class="cart__product__description__item">
+                      <span class="cart__product__description__item__title">Color:</span>
+                      <span class="cart__product__description__item__value cart__product__color">XL</span>
+                    </li>
+                    <li class="cart__product__description__item">
+                      <span class="cart__product__description__item__title cart__product__quantity">Quantity:</span>
+                      <input class="cart__product__description__item__input" placeholder="2" id="crt_prd_quantity">
+                    </li>
+                  </ul>
                   <button class="cart__product__closer"></button>
                 </div>
               </article>
+
             </li>
           </ul>
           <div class="cart__left__end">
