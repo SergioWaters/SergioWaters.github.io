@@ -45,8 +45,27 @@
             </label>
             <div class="popup__menu">
               <button class="popup__menu__closer"></button>
-              <h5 class="popup__menu__title">Menu</h5>
               <ul>
+                <li>
+                  <h5 class="popup__menu__title">Menu</h5>
+                  <ul>
+                    <li class="popup__menu__item">
+                      <a class="popup__menu__link" href="index.html">Home</a>
+                    </li>
+                    <li class="popup__menu__item">
+                      <a class="popup__menu__link" href="account.html">Account</a>
+                    </li>
+                    <li class="popup__menu__item">
+                      <a class="popup__menu__link" href="cart.html">Cart</a>
+                    </li>
+                    <li class="popup__menu__item">
+                      <a class="popup__menu__link" href="Product.html">Product</a>
+                    </li>
+                    <li class="popup__menu__item">
+                      <a class="popup__menu__link" href="Catalogue.html">Catalogue</a>
+                    </li>
+                  </ul>
+                </li>
                 <li>
                   <h5 class="popup__menu__subtitle">man</h5>
                   <ul class="popup__menu__list">
@@ -121,7 +140,7 @@
 
       <section class="sort container">
         <div class="sort__filter__box">
-          <input type="checkbox" name="#" id="filter" class="sort__filter__chck">
+          <input unchecked type="checkbox" name="#" id="filter" class="sort__filter__chck">
           <label class="sort__filter__label" for="filter">
             <span class="sort__filter__label__text">filter</span> <span class="sort__filter__label__mark"></span>
           </label>
@@ -190,9 +209,9 @@
             </li>
           </ul>
         </div>
-        <div class="sort__trending__box">
+        <div class="sort__trending__box ">
           <input type="checkbox" class="sort__trending__check" id="trending">
-          <label class="sort__trending__label" for="trending">trending now</label>
+          <label class="sort_hover sort__trending__label" for="trending">trending now</label>
           <ul class="sort__trending__list">
             <li class="sort__trending__list__item">
               <input type="checkbox" name="#" id="trending_xs">
@@ -212,9 +231,9 @@
             </li>
           </ul>
         </div>
-        <div class="sort__size__box">
+        <div class="sort__size__box ">
           <input type="checkbox" class="sort__size__check" id="size">
-          <label class="sort__size__label" for="size">size</label>
+          <label class="sort_hover sort__size__label" for="size">size</label>
           <ul class="sort__size__list">
             <li class="sort__size__list__item">
               <input type="checkbox" name="#" id="size_xs">
@@ -234,9 +253,9 @@
             </li>
           </ul>
         </div>
-        <div class="sort__price__box">
+        <div class="sort__price__box ">
           <input type="checkbox" class="sort__price__check" id="price">
-          <label class="sort__price__label" for="price">price</label>
+          <label class="sort_hover sort__price__label" for="price">price</label>
           <ul class="sort__price__list">
             <li class="sort__price__list__item">
               <input type="checkbox" name="#" id="price_xs">
@@ -411,7 +430,8 @@
 
       <section class="pagination container">
         <ul class="pagination__list">
-          <li class="pagination__list__item"><a href="#" class="pagination__list__item__prev"></a></li>
+          <li class="pagination__list__item"><a href="#" class="pagination__list__item__link"><span
+                class="pagination__list__item__prev"></span></a></li>
           <li class="pagination__list__item"><a href="#" class="pagination__list__item__link">1</a></li>
           <li class="pagination__list__item"><a href="#" class="pagination__list__item__link">2</a></li>
           <li class="pagination__list__item"><a href="#" class="pagination__list__item__link">3</a></li>
@@ -422,7 +442,8 @@
               <h6>.....</h6>
             </a></li>
           <li class="pagination__list__item"><a href="#" class="pagination__list__item__link">20</a></li>
-          <li class="pagination__list__item"><a href="#" class="pagination__list__item__next"></a></li>
+          <li class="pagination__list__item"><a href="#" class="pagination__list__item__link"><span
+                class="pagination__list__item__next"></span></a></li>
         </ul>
       </section>
 
