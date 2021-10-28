@@ -834,12 +834,12 @@ header, main, footer{
 }
 .sort__filter__chck:checked ~ 
 .sort__filter__list{
-  transform: scaleY(100%);
+  transform: scaleY(1);
   transition: .5s;
   background-color: #fff;  
 }
 .sort__filter__list{
-  transform: scaleY(0%);
+  transform: scaleY(0);
   transition: .5s;
   transform-origin: top;
   width: 360px;
