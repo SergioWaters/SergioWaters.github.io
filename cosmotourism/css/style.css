@@ -61,7 +61,7 @@ button{
     padding: 0 auto;
 }
 .title{
-    font-family: spaceagecyrillic;
+    font-family: 'spaceagecyrillic';
     padding: 100px 0;
     font-size: 48px;
     line-height: 48px;
@@ -554,10 +554,4 @@ foreignObject{
 .footer__links{
     list-style: none;
     width: 165px;
-}
-
-@media (max-width: 1000px){
-    body{
-        
-    }
 }
