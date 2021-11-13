@@ -91,7 +91,7 @@
           justify-content: space-evenly;
   list-style: none;
   padding: 10px;
-  background-color: #2cb9b0b3;
+  background-color: #ffffffb3;
   border-radius: 30px;
 }
 
@@ -150,7 +150,7 @@
 
 .navbar__gohome {
   display: block;
-  border: 3px solid #2cb9b0;
+  border: 2px solid #2cb9b0;
   position: relative;
   width: 30%;
   height: 30%;
@@ -163,18 +163,18 @@
   background-color: #2cb9b0;
   width: 150%;
   height: 2px;
-  top: -101%;
+  top: -60%;
 }
 
 .navbar__gohome::before {
-  left: 1px;
+  left: 0px;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
 .navbar__gohome::after {
-  right: 1px;
+  right: 0px;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
@@ -245,7 +245,7 @@
   border-radius: 70px 0px 0px 70px;
   background-color: #f4f4f4;
   position: relative;
-  padding: 0px 0px 0px 0px;
+  padding: 30px 0px 40px 0px;
 }
 
 .slider__box::before {
@@ -402,6 +402,8 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   list-style: none;
+  background-color: #2cb9b066;
+  border-radius: 30px;
 }
 
 .footer__list__item {
