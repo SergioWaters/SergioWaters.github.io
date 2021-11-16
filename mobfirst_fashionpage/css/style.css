@@ -150,6 +150,7 @@
 
 .nav__menu__list {
   display: none;
+  list-style: none;
 }
 
 .navbar__gohome {
@@ -184,6 +185,16 @@
   height: 30%;
 }
 
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .about {
   padding: 40px;
   background-color: #ffe4d9;
@@ -198,7 +209,7 @@
           align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
 }
 
 .about::after, .about::before {
@@ -218,8 +229,7 @@
 }
 
 .about .about__logo {
-  height: 90%;
-  width: auto;
+  height: 350px;
   fill: #fff;
   stroke: #fdfdfd;
 }
