@@ -1,0 +1,158 @@
+*{
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: #222;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+.about__wr{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__contacts__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+.contacts__list__item {
+  list-style: none;
+  cursor: pointer;
+  padding: 5px;
+}
+.contacts__link{
+  color: #fff;
+}
+.about__info {
+  color: #fff;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+}
+.about__info__title {
+
+}
+.about__info__subtitle {
+}
+.about__img {
+  width: 25%;
+  height: 100%;
+  border-radius: 10px;
+  margin: 10px;
+}
+.about__steck__list {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  min-height: 40px;
+  min-width: 375px;
+}
+.steck__list__item {
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+  color: #fff;
+}
+
+.navbar {
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.navbar__list {
+  display: flex;
+  align-items: center;
+  background-color: #222222ec;
+  max-width: 800px;
+  min-height: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 25px #000;
+  margin: 10px 0 -60px 0;
+  padding: 0px 20px;
+  text-align: center;
+}
+.navbar__list__item {
+  height: 40px;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.navbar__link{
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.workxp__link {
+  
+}
+.projects__link {
+
+}
+.home__link {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  background-color: #fff;
+}
+.home__img{
+  width: 100%;
+  height: 100%;
+  transform: scale(130%);
+}
+.edu__link {
+}
+.more__link {
+}
+.main {
+}
+.exp_and_proj{
+  display: flex;  
+}
+.proj {
+  width: 70%;
+}
+.xper {
+  width: 30%;
+}
+.xper__title {
+}
+.xper__list {
+}
+.xper__list__item {
+}
+.xper__item__title {
+}
+.xper__item__subtitle {
+}
+
+.edu_and_more{
+  display: flex;
+}
+.edu {
+  width: 50%;
+}
+.more {
+}
+.footer {
+}

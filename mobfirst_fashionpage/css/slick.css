@@ -48,22 +48,36 @@
   align-items: center;
 }
 .slider__pagination .slick-dots li button{
-  width: 6px;
-  height: 6px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background-color: rgba(44, 185, 175, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
   font-size: 0;
   border: none;
   transition: .5s;
 }
+.slider__pagination .slick-dots li:nth-child(1) button {
+  background-image: url(../img/wear_icon/hoodie.png);
+}
+.slider__pagination .slick-dots li:nth-child(2) button {
+  background-image: url(../img/wear_icon/sweatshort.png);
+}
+.slider__pagination .slick-dots li:nth-child(3) button {
+  background-image: url(../img/wear_icon/t-shirt.png);
+}
+.slider__pagination .slick-dots li:nth-child(4) button {
+  background-image: url(../img/wear_icon/trousers.png);
+}
 .slider__pagination .slick-dots li button:hover{
   transition: .5s;
-  border: 2px solid #2cb9b0;
-  transform: scale(150%);
+  box-shadow: 0px 2px 10px 3px #22222266;
+  transform: scale(115%);
 }
 .slider__pagination .slick-dots li.slick-active button{
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #2cb9b0;
+  transition: .5s;
+  box-shadow: 0px 2px 10px 3px #22222266;
+  transform: scale(115%);
 }
