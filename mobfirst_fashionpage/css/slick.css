@@ -46,6 +46,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 .slider__pagination .slick-dots li button{
   width: 40px;
