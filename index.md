@@ -9,30 +9,29 @@
 </head>
 
 <body>
+
+  <h1 class="temporary__header">You're welcome on my temporary page</h1>
+
   <ul class="main__menu container">
+    <h3 class="main__menu__header">Here are some work mockups</h3>
     <li class="main__menu__item">
-      <a class="company__site" href="company_site/main.html">
-        Some company site
+      <a class="company__site" href="company_site/index.html">
+        Some company site. 2 pages, fish text.
       </a>
     </li>
     <li class="main__menu__item">
       <a class="cosmotourism" href="cosmotourism/index.html">
-        Cosmotourism
+        Cosmotourism landing page.
       </a>
     </li>
     <li class="main__menu__item">
       <a class="online__shop" href="online_store/index.html">
-        Online store
+        Online fashion store. 4 pages, 50/50 fish text.
       </a>
     </li>
     <li class="main__menu__item">
-      <a class="resume" href="resume/index.html">
-        Resume
-      </a>
-    </li>
-    <li class="main__menu__item">
-      <a href="mobfirst_fashionpage" class="ego_site">
-        fashion page
+      <a class="ego_site" href="mobfirst_fashionpage/index.html">
+        Sewer's personal page. One page, big icons.
       </a>
     </li>
   </ul>

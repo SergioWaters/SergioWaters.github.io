@@ -113,6 +113,7 @@ a {
 .main__header {
   height: 768px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(8.84%, #EBF3FB), color-stop(31.12%, rgba(152, 195, 232, 0)));
+  background: -o-linear-gradient(bottom, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
   background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
 }
 
@@ -202,7 +203,6 @@ a {
 .main__inner__item {
   width: 359px;
   height: 480px;
-  /* shadow1 */
   -webkit-box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
           box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
   border-radius: 10px;
