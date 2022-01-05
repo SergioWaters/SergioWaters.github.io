@@ -1,3 +1,4 @@
+<meta http-equiv="Refresh" content="2; url=resume/index.html">
 <!-- <html lang="en">
 
 <head>
@@ -37,7 +38,7 @@
   </ul>
 </body>
 
-</html> -->
+</html> 
 
 <!DOCTYPE html>
 <html lang="en">
@@ -262,4 +263,4 @@
   </footer>
 </body>
 
-</html>
+</html> -->
