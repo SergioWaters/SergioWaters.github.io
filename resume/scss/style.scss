@@ -1,5 +1,6 @@
 *{
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 a {
   text-decoration: none;
@@ -38,14 +39,14 @@ a {
 }
 .about__info {
   color: #fff;
-  text-align: center;
-  align-self: center;
-  justify-self: center;
+  font-weight: 700;
+  line-height: 2.2em;
 }
 .about__info__title {
-
+  font-size: 1.8em;
 }
 .about__info__subtitle {
+  font-size: 1.5em;
 }
 .about__img {
   width: 25%;
@@ -132,18 +133,38 @@ a {
 .proj {
   width: 70%;
 }
+.proj__title{
+  padding: 0 0 10px 0;
+  font-size: 1.5em;
+  line-height: 1.7em;
+  font-weight: 700;
+}
 .xper {
   width: 30%;
 }
 .xper__title {
+  font-size: 1.5em;
+  line-height: 1.7em;
+  font-weight: 700;
 }
 .xper__list {
+  padding: 10px 0 10px 0;
+}
+.xper__list li:first-child{
+  list-style: none;
 }
 .xper__list__item {
+  list-style-position: inside;
+
 }
 .xper__item__title {
+  font-size: 1.3em;
+  line-height: 1.5em;
 }
 .xper__item__subtitle {
+  padding: 0 0 7px 0;
+  font-size: 1.2em;
+  line-height: 1.4em;
 }
 
 .edu_and_more{
