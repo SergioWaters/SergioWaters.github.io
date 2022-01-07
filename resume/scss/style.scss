@@ -127,17 +127,38 @@ a {
 }
 .main {
 }
-.exp_and_proj{
-  display: flex;  
-}
 .proj {
   width: 70%;
+  
 }
 .proj__title{
   padding: 0 0 10px 0;
   font-size: 1.5em;
   line-height: 1.7em;
   font-weight: 700;
+}
+.project{
+  display: flex;
+  padding: 20px;
+
+  .project__img{
+    display: block;
+    min-width: 350px;
+    box-shadow: 0px 0px 25px #222;
+  }
+  .project__description{
+    margin-left: 15px;
+  }
+  .project__description__title{
+    margin: 10px;
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .project___description__text{
+    margin: 10px;
+    font-style: 16px;
+    line-height: 18px;
+  }
 }
 .xper {
   width: 30%;

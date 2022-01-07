@@ -31,7 +31,8 @@
 body{
     font-family: 'sf-pro-display';
     font-size: 16px;
-    line-height: 19px;
+    line-height: 20px;
+    letter-spacing: normal;
     font-weight: normal;
     color: #fff;
 }
@@ -67,12 +68,20 @@ button{
     line-height: 48px;
     font-weight: 400;
 }
-.button{
+.button:hover{
+    border: 1px solid #cb0e0e;
+    background-color: #fff;
+    color: #cb0e0e;
+    transition: .5s;
+}
+.button,
+.button:active{
     text-transform: uppercase;
     border: 1px solid #fff;
     font-size: 18px;
     line-height: 21px;
     padding: 20px 45px;
+    transition: .5s;
 }
 .header{
     background-image: url(../images/Header__BG.jpg);
@@ -142,7 +151,14 @@ button{
     flex-wrap: wrap;
     margin-bottom: 50px;
 }
-.header__button{
+.header__button:hover{
+    border: 1px solid #cb0e0e;
+    background-color: #fff;
+    color: #cb0e0e;
+    transition: .5s;
+}
+.header__button,
+.header__button:active{
     font-size: 24px;
     line-height: 29px;
     text-transform: uppercase;
@@ -150,6 +166,7 @@ button{
     width: 100%;
     border: 1px solid #fff;
     padding: 15px 10px 16px;
+    transition: .5s;
 }
 .header__description{
     display: flex;
@@ -231,6 +248,8 @@ button{
     text-align: center;
 }
 .about__table__td{
+    text-align: center;
+    text-transform: uppercase;
     padding: 10px 30px 10px 0;
 }
 .about__table__td span{
@@ -263,7 +282,7 @@ foreignObject{
     fill: #036CCA;
 }
 .howto__box g:hover text{
-    font-size: 36px;
+    font-size: 30px;
     fill: #036CCA;
 }
 .howto__box g:hover foreignObject{

@@ -184,12 +184,6 @@ a {
           transform: scale(130%);
 }
 
-.exp_and_proj {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .proj {
   width: 70%;
 }
@@ -199,6 +193,36 @@ a {
   font-size: 1.5em;
   line-height: 1.7em;
   font-weight: 700;
+}
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+}
+
+.project .project__img {
+  display: block;
+  min-width: 350px;
+  -webkit-box-shadow: 0px 0px 25px #222;
+          box-shadow: 0px 0px 25px #222;
+}
+
+.project .project__description {
+  margin-left: 15px;
+}
+
+.project .project__description__title {
+  margin: 10px;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.project .project___description__text {
+  margin: 10px;
+  font-style: 16px;
+  line-height: 18px;
 }
 
 .xper {

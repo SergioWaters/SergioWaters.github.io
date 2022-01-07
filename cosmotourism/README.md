@@ -1,2 +1,0 @@
-# cosmotourism
-марафон
