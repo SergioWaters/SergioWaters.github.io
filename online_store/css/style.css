@@ -542,8 +542,8 @@ header, main, footer {
   content: '';
   display: block;
   position: absolute;
-  Width: 12px;
-  Height: 100%;
+  width: 12px;
+  height: 100%;
   background-color: #F16D7F;
   left: -20px;
   top: 5px;

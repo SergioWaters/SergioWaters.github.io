@@ -31,7 +31,7 @@
           </nav>
           <a href="tel: 8 800 00000000" class="phone">8 800 00000000</a>
           <button class="login">
-            <img src="images/Login.png" alt="login img" class="login__img">
+            <img src="images/Login.png" alt="login image" class="login__img">
           </button>
         </div>
         <div class='header__content'>
@@ -43,9 +43,7 @@
             <p>The Future is HERE!</p>
             <p>Make the dream come TRUE</p>
           </div>
-          <button class="header__button">
-            Wanna be the Astronaut!
-          </button>
+          <a class="header__button button" href="#contacts">Wanna be the Astronaut!</a>
         </div>
         <div class='header__description'>
           <p class="header__description__text">Year 2021. The new era in spacecraft has become true. The Space Tourism
@@ -63,7 +61,7 @@
           About
         </h2>
         <div class="about__item">
-          <img src="images/branson.jpg" alt="branson" class="about__img about__img__brenson">
+          <img src="images/branson.jpg" alt="branson" class="about__img">
           <div class="about__content">
             <h3 class="about__content__title">
               Virgin Galactic
@@ -234,7 +232,10 @@
             </g>
             <g>
               <circle cx="236" cy="414" r="10" fill="white" />
-              <text x="30px" ; y="440px" ; fill="white">Landing. If lucky</text>
+              <foreignObject class="howto__foreign" x="30" y="420" width="200" height='100'>Eating from tubes: 5 types
+                of menu to choose
+                from: vegan, sports, lactose-free, gluten-free, regular
+              </foreignObject>
             </g>
             <g>
               <circle cx="406" cy="535" r="10" fill="white" />
@@ -242,9 +243,8 @@
             </g>
             <g>
               <circle cx="545" cy="435" r="10" fill="white" />
-              <foreignObject x="570" y="410" width="400" height="100">Eating from tubes: 5 types of menu to choose
-                from: vegan, sports, lactose-free, gluten-free, regular
-              </foreignObject>
+              <text x="570px" ; y="440px" ; fill="white">Landing. If lucky...</text>
+
             </g>
           </svg>
         </div>
@@ -267,70 +267,67 @@
       </div>
     </section>
     <section class='info'>
-      <div class='offer' id="prices">
-        <div class="container">
-          <h2 class="title">
-            special <br> offer
-          </h2>
-          <div class="offer__inner">
-            <div class="offer__item">
-              <div class="offer__item__box">
-                <p class="offer__item__box__text">
-                  Book your flight
-                  <br><span>right now</span><br>
-                  and get 1000$ discount
-                </p>
-                <div class="offer__price">
-                  <span class='offer__priceold'>250 000 $</span>
-                  <span class='offer__pricenew'>249 000 $</span>
-                </div>
+      <div class='offer container' id="prices">
+        <h2 class="title">
+          special <br> offer
+        </h2>
+        <div class="offer__inner">
+          <div class="offer__item">
+            <div class="offer__item__box">
+              <p class="offer__item__box__text">
+                Book your flight
+                <br><span>right now</span><br>
+                and get 1000$ discount
+              </p>
+              <div class="offer__price">
+                <span class='offer__priceold'>250 000 $</span>
+                <span class='offer__pricenew'>249 000 $</span>
               </div>
-              <button class='button offer__button'>book flight</button>
             </div>
-            <div class="offer__item">
-              <div class="offer__item__box">
-                <p class="offer__item__box__text">
-                  Refer a friend and get
-                  <br><span> 10% discount </span><br>
-                  next flight if you come back
-                </p>
-                <div class="offer__price">
-                  <span class='offer__priceold'>250 000 $</span>
-                  <span class='offer__pricenew'>225 000 $</span>
-                </div>
+            <button class='button offer__button'>book flight</button>
+          </div>
+          <div class="offer__item">
+            <div class="offer__item__box">
+              <p class="offer__item__box__text">
+                Refer a friend and get
+                <br><span> 10% discount </span><br>
+                next flight if you come back
+              </p>
+              <div class="offer__price">
+                <span class='offer__priceold'>250 000 $</span>
+                <span class='offer__pricenew'>225 000 $</span>
               </div>
-              <button class='button offer__button'>book flight</button>
             </div>
+            <button class='button offer__button'>book flight</button>
           </div>
         </div>
       </div>
-      </div>
-      <div class="services" id="additional">
-        <div class="container">
-          <h2 class='title'>
-            Additional <br> services
-          </h2>
-          <div class="services__inner">
-            <div class="srvices__box__list">
-              <p class="services__list__title">
-                A professional photographer will fly with you
-              </p>
-              <ul class="services__list">
-                <li class="services__list__item"> 20 photos in professional processing </li>
-                <li class="services__list__item"> fridge magnet as a gift </li>
-                <li class="services__list__item"> photo album </li>
-              </ul>
-              <p class="services__description">
-                The cost of a photo session in zero gravity is $100,000. Pay $50,000 extra and get a disk with all the
-                photos in color correction.
-              </p>
-            </div>
-            <div class="services__buttonS">
-              <button class="button serv__button serv__btn__first">Book the photographer</button>
-              <button class="button serv__button">And I want the disc too!</button>
-            </div>
+
+      <div class="services container" id="additional">
+        <h2 class='services__title title'>Additional <br> services</h2>
+        <div class="services__inner">
+          <div class="services__info">
+            <h3 class="services__info__title">
+              A professional photographer will fly with you
+            </h3>
+            <ul class="services__info__list">
+              <li class="services__info__list__item"> 20 photos in professional processing </li>
+              <li class="services__info__list__item"> fridge magnet as a gift </li>
+              <li class="services__info__list__item"> photo album </li>
+            </ul>
+            <p class="services__info__description">
+              The cost of a photo session in zero gravity is $100,000.
+            </p>
+            <p class="services__info__description">Pay $50,000 extra and get a disk with all the
+              photos in color correction.
+            </p>
+          </div>
+          <div class="services__buttonS">
+            <button class="button serv__button serv__btn__first">Book the photographer</button>
+            <button class="button serv__button">And I want the disc too!</button>
           </div>
         </div>
+      </div>
       </div>
       <div class="slider">
         <div class="container">
@@ -353,29 +350,26 @@
         </div>
       </div>
     </section>
-    <section class="contacts_guaranties">
-      <div class="container">
-        <div class="contacts__guaranties">
-          <div class="contacts" id="contacts">
-            <h2 class="contacts__title title">Contacts</h2>
-            <p class="contacts__text">Leave your contacts and we will call you back in the next 100 years!</p>
-            <form action="" class="contacts__form">
-              <input class="contacts__form__input" placeholder="Full Name" type="text">
-              <input class="contacts__form__input" placeholder="Child's or grandchild's name (just in case)"
-                type="text">
-              <input class="contacts__form__input" placeholder="Phone" type="tel">
-            </form>
-            <button class="button contacts__btn" type="submit">Book flight</button>
-          </div>
-          <div class="guaranties" id="guaranties">
-            <h2 class="contacts__title title">Guaranties</h2>
-            <p class="guaranties__text">
-              Not a single rocket of mine has yet made a successful attempt, because you were not in it! <br>
-              Be first! Colonize Mars! <br>
-              Elon Musk
-            </p>
-            <img class="guaranties__img" src="images/guaranteeselon.jpg" alt="elon">
-          </div>
+    <section class="contacts__guaranties">
+      <div class="contacts__guaranties-inner container">
+        <div class="contacts" id="contacts">
+          <h2 class="contacts__title title">Contacts</h2>
+          <p class="contacts__text">Leave your contacts and we will call you back in the next 100 years!</p>
+          <form action="" class="contacts__form">
+            <input class="contacts__form__input" placeholder="Full Name" type="text">
+            <input class="contacts__form__input" placeholder="Child's or grandchild's name (just in case)" type="text">
+            <input class="contacts__form__input" placeholder="Phone" type="tel">
+          </form>
+          <button class="button contacts__btn" type="submit">Book flight</button>
+        </div>
+        <div class="guaranties" id="guaranties">
+          <h2 class="guaranties__title title">Guaranties</h2>
+          <p class="guaranties__text">
+            Not a single rocket of mine has yet made a successful attempt, because you were not in it! <br>
+            Be first! Colonize Mars! <br>
+            Elon Musk
+          </p>
+          <img class="guaranties__img" src="images/guaranteeselon.jpg" alt="elon">
         </div>
       </div>
     </section>
