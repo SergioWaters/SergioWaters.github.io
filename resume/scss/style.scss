@@ -2,6 +2,17 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+// SCSS Миксин:
+// calculates proper font-size and line-height due to viewport
+// many thnx to @youtube Freelancer for life
+$maxWidth: 1220;
+@mixin adaptiv-font($pcSize, $mobSize) {
+ $addSize: $pcSize - $mobSize;
+ $maxWidth: $maxWidth - 320;
+ font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+ line-height: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}) * 1.5);
+}
+// @include adaptiv-font(16, 12);
 a {
   text-decoration: none;
 }
@@ -27,45 +38,48 @@ a {
 }
 .about {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+}
+.about__img {
+  display: block;
+  width: 30%;
+  border-radius: 10px;
+  margin: 10px;
 }
 .about__wr{
-  flex-wrap: wrap;
+  width: 30%;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 .about__contacts__list {
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-end;
 }
 .contacts__list__item {
   list-style: none;
   cursor: pointer;
-  padding: 5px;
 }
 .contacts__link{
   color: #fff;
+  padding: 10px;
+  @include adaptiv-font(50, 40);
 }
 .about__info {
   color: #fff;
-  font-weight: 700;
-  line-height: 2.2em;
+  font-weight: 700;  
+  text-align: right;
 }
 .about__info__title {
-  font-size: 1.8em;
+  @include adaptiv-font(30, 20);
 }
 .about__info__subtitle {
-  font-size: 1.5em;
+  @include adaptiv-font(26, 16);
 }
-.about__img {
-  width: 30%;
-  border-radius: 10px;
-  margin: 10px;
-}
+
 .about__steck__list {
   display: none;
   justify-content: left;
@@ -82,66 +96,77 @@ a {
 }
 
 .navbar {
+  width: 30%;
   margin-bottom: 70px;
   display: flex;
   justify-content: center;
+  align-items: center;
   text-transform: uppercase;
-}
-.navbar__list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  background-color: #222222ec;
-  max-width: 800px;
-  min-height: 50px;
-  border-radius: 25px;
-  box-shadow: 0px 0px 25px #000;
-  margin: 10px 0 -60px 0;
-  padding: 0px 20px;
-  text-align: center;
-}
-.navbar__list__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-}
-.navbar__link{
-  cursor: pointer;
-  color: #fff;  
-  height: 40px;
-  width: 20%;
-  list-style: none;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  @media (max-width: 600px) {
+  position: relative;
+
+  &__checkbox{
     display: none;
   }
-}
-.workxp__link {
-  
-}
-.projects__link {
+  &__label{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    background-color: #fff;
+  }
+  &__label__img{
+    width: 100%;
+    height: 100%;
+    transform: scale(130%);
+  }
+  &__checkbox:checked ~ &__list{
+    visibility: visible;
+  }
+  &__list {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #222222ec;
+    border-radius: 25px;
+    box-shadow: 0px 0px 25px #000;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  &__list__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+  &__link{
+    cursor: pointer;
+    color: #fff;  
+    height: 40px;
+    width: 20%;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+  .workxp__link {
 
-}
-.home__link {
-  border-radius: 50%;
-  height: 70px;
-  width: 70px;
-  background-color: #fff;
-}
-.home__img{
-  width: 100%;
-  height: 100%;
-  transform: scale(130%);
-}
-.edu__link {
-}
-.more__link {
-}
-.main {
+  }
+  .projects__link {
+
+  }  
+  .edu__link {
+  }
+  .more__link {
+  }
 }
 .proj {
   width: 100%;
