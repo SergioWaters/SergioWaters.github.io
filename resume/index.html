@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <title>MokretsovSergeiCV</title>
 </head>
@@ -15,8 +15,8 @@
   <header class="header">
 
     <section class="about container">
-      <img class="about__img" width="100" height="70" src="img/photo.jpg" alt="MokretsovSA">
       <div class="about__wr">
+        <img class="about__img" width="100" src="img/photo.jpg" alt="MokretsovSA">
         <div class="about__info">
           <h1 class="about__info__title">Mokretsov Sergei</h1>
           <h3 class="about__info__subtitle">Junior frontend developer</h3>
@@ -45,8 +45,9 @@
           </li>
         </ul>
         <ul class="about__steck__list">
-          <li class="steck__list__item"><svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1"
-              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <li class="steck__list__item">
+            <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
               <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g id="Dribbble-Dark-Preview" transform="translate(-420.000000, -1319.000000)" fill="#FFFFFF">
                   <g id="icons" transform="translate(56.000000, 160.000000)">
@@ -56,7 +57,8 @@
                   </g>
                 </g>
               </g>
-            </svg></li>
+            </svg>
+          </li>
           <li class="steck__list__item">
             <svg width="18px" height="20px" viewBox="0 0 18 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -94,7 +96,7 @@
     <nav class="navbar">
       <ul class="navbar__list">
         <li class="navbar__list__item">
-          <a class="workxp__link navbar__link" href="#xper">
+          <a class="workxp__link navbar__link" href="#exp">
             Work expirience
           </a>
         </li>
@@ -104,7 +106,7 @@
           </a>
         </li>
         <li class="navbar__list__item">
-          <a class="home__link navbar__link" href="#">
+          <a class="home__link " href="#">
             <img class="home__img" src="img/52d71a9cd0314b3c80078fb51c91f8b1.png" width="40" height="40" alt="sw_logo">
           </a>
         </li>
@@ -124,104 +126,118 @@
 
   <main class="main">
 
-    <section class="proj container" id="portfolio">
-      <h3 class="proj__title">My projects</h3>
-      <article class="project">
-        <a href="https://sergiowaters.github.io/online_store/index.html" target="_blank" rel="noopener noreferrer">
-          <img src="./img/online_store.png" width="250" alt="Online fashion store image" class="project__img">
-        </a>
-        <div class="project__description">
-          <h4 class="project__description__title">Online fashion store</h4>
-          <p class="project___description__text">Многостраничный сайт.</p>
-          <ul class="project___description__list">
-            <li class="project___description__list__item"></li>
-            <li class="project___description__list__item"></li>
-            <li class="project___description__list__item"></li>
-            <li class="project___description__list__item"></li>
-          </ul>
-        </div>
-      </article>
-      <article class="project">
-        <a href="https://sergiowaters.github.io/cosmotourism/index.html" target="_blank" rel="noopener noreferrer">
-          <img src="./img/cosmotourism.png" width="250" alt="Cosmotourism landing page image" class="project__img">
-        </a>
-        <div class="project__description">
-          <h4 class="project__description__title">Space tourism landing</h4>
-          <p class="project___description__text"></p>
-        </div>
-      </article>
-      <article class="project">
-        <a href="https://sergiowaters.github.io/mobfirst_fashionpage/index.html" target="_blank"
-          rel="noopener noreferrer">
-          <img src="./img/mob_first.png" width="250" alt="Mobile-first sewers page image" class="project__img">
-        </a>
-        <div class="project__description">
-          <h4 class="project__description__title">Sewer's personal page</h4>
-          <p class="project___description__text"></p>
-        </div>
-      </article>
-      <article class="project">
-        <a href="https://sergiowaters.github.io/company_site/index.html" target="_blank" rel="noopener noreferrer">
-          <img src="./img/company_site.png" width="250" alt="Mockup some company site image" class="project__img">
-        </a>
-        <div class="project__description">
-          <h4 class="project__description__title">Basic mockup. Some company site</h4>
-          <p class="project___description__text"></p>
-        </div>
-      </article>
+    <section class="proj " id="portfolio">
+      <div class="container">
+        <h3 class="proj__title title">My projects</h3>
+        <article class="project">
+          <a class="project__link" href="https://sergiowaters.github.io/online_store/index.html" target="_blank"
+            rel="noopener noreferrer">
+            <img src="./img/online_store.png" width="250" alt="Online fashion store image" class="project__img">
+          </a>
+          <div class="project__description">
+            <h4 class="project__description__title subtitle">Online fashion store</h4>
+            <p class="project__description__text">No name fashion company site. Multiple pages. Includes Main, Catalog,
+              Cart, Product pages.
+              Registration, </p>
+            <ul class="project__description__list">
+              <li class="project__description__list__item">Adaptive 1440p to 375p</li>
+              <li class="project__description__list__item">HTML5, CSS3, BEM, SASS, NoJS</li>
+              <li class="project__description__list__item">English language. Fish text 50%</li>
+            </ul>
+          </div>
+        </article>
+        <article class="project">
+          <a class="project__link" href="https://sergiowaters.github.io/cosmotourism/index.html" target="_blank"
+            rel="noopener noreferrer">
+            <img src="./img/cosmotourism.png" width="250" alt="Cosmotourism landing page image" class="project__img">
+          </a>
+          <div class="project__description">
+            <h4 class="project__description__title subtitle">Space tourism landing</h4>
+            <p class="project__description__text">Sketch landing page about nearby times, when space tourism became
+              common</p>
+            <ul class="project__description__list">
+              <li class="project__description__list__item">Adaptive 1220p to 320p</li>
+              <li class="project__description__list__item">HTML5, CSS3, BEM, SASS, NoJS</li>
+              <li class="project__description__list__item">English language. No "fish" text. Adaptive fonts.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="project">
+          <a class="project__link" href="https://sergiowaters.github.io/mobfirst_fashionpage/index.html" target="_blank"
+            rel="noopener noreferrer">
+            <img src="./img/mob_first.png" width="250" alt="Mobile-first sewers page image" class="project__img">
+          </a>
+          <div class="project__description">
+            <h4 class="project__description__title subtitle">Sewer's personal page</h4>
+            <p class="project__description__text">One page. Siple and clean view. Mobile-first.</p>
+          </div>
+        </article>
+        <article class="project">
+          <a class="project__link" href="https://sergiowaters.github.io/company_site/index.html" target="_blank"
+            rel="noopener noreferrer">
+            <img src="./img/company_site.png" width="250" alt="Mockup some company site image" class="project__img">
+          </a>
+          <div class="project__description">
+            <h4 class="project__description__title subtitle">Basic mockup. Some company site</h4>
+            <p class="project__description__text">No name company mockup site</p>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section class="xper container" id="exp">
-      <h3 class="xper__title">Work Experience</h3>
-      <ul class="xper__list">
-        <li class="xper__list__item">
-          <h4 class="xper__item__title">Head Bartender | Fern</h4>
-          <h3 class="xper__item__subtitle">March 2019 - August 2021 | Saint-Petersburg</h3>
-        </li>
-        <li class="xper__list__item">Selfcost</li>
-        <li class="xper__list__item">Renew</li>
-        <li class="xper__list__item">Make</li>
-        <li class="xper__list__item">Coaching</li>
-      </ul>
-      <ul class="xper__list">
-        <li class="xper__list__item">
-          <h4 class="xper__item__title">Head Bartender | Korovabar</h4>
-          <h3 class="xper__item__subtitle">September 2012 - May 2018 | Saint-Petersburg</h3>
-        </li>
-        <li class="xper__list__item">Selfcost</li>
-        <li class="xper__list__item">Renew menu, according to trends.</li>
-        <li class="xper__list__item">Make</li>
-        <li class="xper__list__item">Coaching employees</li>
-      </ul>
-      <ul class="xper__list">
-        <li class="xper__list__item">
-          <h4 class="xper__item__title">Barista Coach | Coffie House</h4>
-          <h3 class="xper__item__subtitle">June 2009 - February 2011 | Saint-Petersburg</h3>
-        </li>
-        <li class="xper__list__item">Training new employees from scratch.</li>
-        <li class="xper__list__item">Organize a training plan for each of new and experienced employees.</li>
-        <li class="xper__list__item">Coach skills (hard and soft), that needed.</li>
-        <li class="xper__list__item">Guide throuh a work process. Feedback advantages, work with disadvantages.</li>
-        <li class="xper__list__item">Motivate and recognize each person.</li>
-      </ul>
+    <section class="xper " id="exp">
+      <div class="container">
+        <h3 class="xper__title title">Work Experience</h3>
+        <ul class="xper__list">
+          <li class="xper__list__item">
+            <h4 class="xper__item__title subtitle">Head Bartender | Fern</h4>
+            <h3 class="xper__item__subtitle">March 2019 - August 2021 | Saint-Petersburg</h3>
+          </li>
+          <li class="xper__list__item">Selfcost</li>
+          <li class="xper__list__item">Renew</li>
+          <li class="xper__list__item">Make</li>
+          <li class="xper__list__item">Coaching</li>
+        </ul>
+        <ul class="xper__list">
+          <li class="xper__list__item">
+            <h4 class="xper__item__title subtitle">Head Bartender | Korovabar</h4>
+            <h3 class="xper__item__subtitle">September 2012 - May 2018 | Saint-Petersburg</h3>
+          </li>
+          <li class="xper__list__item">Selfcost</li>
+          <li class="xper__list__item">Renew menu, according to trends.</li>
+          <li class="xper__list__item">Make</li>
+          <li class="xper__list__item">Coaching employees</li>
+        </ul>
+        <ul class="xper__list">
+          <li class="xper__list__item">
+            <h4 class="xper__item__title subtitle">Barista Coach | Coffie House</h4>
+            <h3 class="xper__item__subtitle">June 2009 - February 2011 | Saint-Petersburg</h3>
+          </li>
+          <li class="xper__list__item">Training new employees from scratch.</li>
+          <li class="xper__list__item">Organize a training plan for each of new and experienced employees.</li>
+          <li class="xper__list__item">Coach skills (hard and soft), that needed.</li>
+          <li class="xper__list__item">Guide throuh a work process. Feedback advantages, work with disadvantages.</li>
+          <li class="xper__list__item">Motivate and recognize each person.</li>
+        </ul>
+      </div>
     </section>
 
     <section class="education">
       <ul class="edu container" id="education">
-        <h3 class="rightside__title">Education</h3>
-        <li class="rightside__education__item">
-          <h4 class="rightside__subtitle">GeekBrains | Saint-Petersburg</h4>
-          <h4 class="rightside__subtitle">Frontend Developer</h4>
+        <h3 class="rightside__title title">Education</h3>
+        <li class="education__item">
+          <h4 class="rightside__subtitle subtitle">GeekBrains | Saint-Petersburg</h4>
+          <h4 class="rightside__subtitle subtitle">Frontend Developer</h4>
           <span>August 2021 - August 2022</span>
         </li>
         <li class="rightside__education__item">
-          <h4 class="rightside__subtitle">СПбГУ ЭФ (ФИНЭК) | Saint-Petersburg</h4>
-          <h4 class="rightside__subtitle">Marketing</h4>
+          <h4 class="rightside__subtitle subtitle">СПбГУ ЭФ (ФИНЭК) | Saint-Petersburg</h4>
+          <h4 class="rightside__subtitle subtitle">Marketing</h4>
           <span>Septermber 2007 - June 2009</span>
         </li>
         <li class="rightside__education__item">
-          <h4 class="rightside__subtitle">АЭЮК | Angarsk</h4>
-          <h4 class="rightside__subtitle">Economics</h4>
+          <h4 class="rightside__subtitle subtitle">АЭЮК | Angarsk</h4>
+          <h4 class="rightside__subtitle subtitle">Economics</h4>
           <span>September 2006 - June 2007</span>
         </li>
       </ul>

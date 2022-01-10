@@ -5,22 +5,35 @@
 a {
   text-decoration: none;
 }
-
+.title {
+  font-size: 1.5em;
+  line-height: 1.7em;
+  font-weight: 700;
+}
+.subtitle{
+  margin: 10px;
+  font-size: 22px;
+  line-height: 24px;
+}
 .header {
   background-color: #222;
 }
 .container {
   margin: 0 auto;
   max-width: 1000px;
+  @media (max-width: 1100px) {
+    max-width: 90%;
+  }
 }
 .about {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .about__wr{
   flex-wrap: wrap;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 .about__contacts__list {
@@ -49,17 +62,16 @@ a {
   font-size: 1.5em;
 }
 .about__img {
-  width: 25%;
-  height: 100%;
+  width: 30%;
   border-radius: 10px;
   margin: 10px;
 }
 .about__steck__list {
-  display: flex;
+  display: none;
   justify-content: left;
   align-items: center;
   min-height: 40px;
-  min-width: 375px;
+  max-width: 375px;
 }
 .steck__list__item {
   list-style: none;
@@ -77,6 +89,7 @@ a {
 }
 .navbar__list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   background-color: #222222ec;
   max-width: 800px;
@@ -88,21 +101,24 @@ a {
   text-align: center;
 }
 .navbar__list__item {
-  height: 40px;
-  width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5px;
 }
 .navbar__link{
-  color: #fff;
+  cursor: pointer;
+  color: #fff;  
+  height: 40px;
+  width: 20%;
   list-style: none;
   text-decoration: none;
-  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 600px) {
+    display: none;
+  }
 }
 .workxp__link {
   
@@ -128,8 +144,8 @@ a {
 .main {
 }
 .proj {
-  width: 70%;
-  
+  width: 100%;
+  margin: 150px 0;
 }
 .proj__title{
   padding: 0 0 10px 0;
@@ -139,30 +155,54 @@ a {
 }
 .project{
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   padding: 20px;
+  margin: 50px 0;
 
-  .project__img{
-    display: block;
-    min-width: 350px;
-    box-shadow: 0px 0px 25px #222;
+  &__link{
+  }
+  &__img{
+    width: 90%;
     border-radius: 10px;
+    transition: .5s;
+    box-shadow: 0px 0px 25px #22222266;
+    &:hover{
+      box-shadow: 0px 0px 25px #222222;
+      transition: .5s;
+    }
   }
-  .project__description{
+  &__description{
+    max-width: 500px;
     margin-left: 15px;
-  }
-  .project__description__title{
-    margin: 10px;
-    font-size: 22px;
-    line-height: 24px;
-  }
-  .project___description__text{
-    margin: 10px;
-    font-style: 16px;
-    line-height: 18px;
+    display: flex;
+    flex-direction: column;
+  
+    &__title{
+      margin: 10px;
+      font-size: 22px;
+      line-height: 24px;
+    }
+    &__text{
+      margin: 10px;
+      font-style: 16px;
+      line-height: 18px;
+    }
+    &__list{
+      padding: 10px;
+      list-style-position: inside;
+    }
+    &__list__item{
+      list-style-position: inside;
+    }
   }
 }
 .xper {
-  width: 30%;
+  width: 100%;
+  margin: 100px 0;
+  min-height: 100vh;
+  padding: 20px;
+
 }
 .xper__title {
   font-size: 1.5em;
@@ -172,7 +212,7 @@ a {
 .xper__list {
   padding: 10px 0 10px 0;
 }
-.xper__list li:first-child{
+.xper__list__item:first-child{
   list-style: none;
 }
 .xper__list__item {
@@ -188,12 +228,17 @@ a {
   font-size: 1.2em;
   line-height: 1.4em;
 }
-
-.edu_and_more{
-  display: flex;
+.education{
+  margin: 100px 0;
+  min-height: 100vh;
 }
 .edu {
-  width: 50%;
+  width: 100%;
+  padding: 20px;
+
+}
+.education__item{
+  padding: 20px;
 }
 .more {
 }

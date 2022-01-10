@@ -587,8 +587,13 @@ button{
 }
 .contacts__guaranties-inner{    
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+
+    @media (max-width: 1000px) { 
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
 .contacts{
     max-width: 500px;
