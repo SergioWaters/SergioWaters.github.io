@@ -1,6 +1,8 @@
 *{
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 // SCSS Миксин:
 // calculates proper font-size and line-height due to viewport
@@ -11,20 +13,24 @@ $maxWidth: 1220;
  $maxWidth: $maxWidth - 320;
  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
  line-height: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}) * 1.5);
+ // @include adaptiv-font(16, 12);
 }
-// @include adaptiv-font(16, 12);
 a {
   text-decoration: none;
 }
+body{
+//   background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjZmZmIj48L3JlY3Q+CjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNjY2MiPjwvcmVjdD4KPC9zdmc+");
+background: #f8f8f8;
+}
 .title {
-  font-size: 1.5em;
-  line-height: 1.7em;
+  @include adaptiv-font(30, 20);
   font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
 }
 .subtitle{
-  margin: 10px;
-  font-size: 22px;
-  line-height: 24px;
+  @include adaptiv-font(26, 16);
+  font-weight: 700px;
 }
 .header {
   background-color: #222;
@@ -79,7 +85,7 @@ a {
   // }
 .about__contacts__list {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-end;
   position: absolute;
   bottom: -35px;
@@ -211,15 +217,15 @@ a {
   .more__link {
   }
 }
-.proj {
+.main{
+  
+}
+.projects {
   width: 100%;
   margin: 150px 0;
 }
 .proj__title{
   padding: 0 0 10px 0;
-  font-size: 1.5em;
-  line-height: 1.7em;
-  font-weight: 700;
 }
 .project{
   display: flex;
@@ -227,6 +233,7 @@ a {
   width: 100%;
   padding: 20px;
   margin: 50px 0;
+  background-color: #f8f8f8;
 
   &__link{
   }
@@ -248,13 +255,10 @@ a {
   
     &__title{
       margin: 10px;
-      font-size: 22px;
-      line-height: 24px;
     }
     &__text{
       margin: 10px;
-      font-style: 16px;
-      line-height: 18px;
+      @include adaptiv-font(16, 12);
     }
     &__list{
       padding: 10px;
@@ -273,9 +277,6 @@ a {
 
 }
 .xper__title {
-  font-size: 1.5em;
-  line-height: 1.7em;
-  font-weight: 700;
 }
 .xper__list {
   padding: 10px 0 10px 0;
@@ -288,25 +289,53 @@ a {
 
 }
 .xper__item__title {
-  font-size: 1.3em;
-  line-height: 1.5em;
 }
 .xper__item__subtitle {
   padding: 0 0 7px 0;
-  font-size: 1.2em;
-  line-height: 1.4em;
 }
 .education{
   margin: 100px 0;
   min-height: 100vh;
 }
-.edu {
+.education {
   width: 100%;
   padding: 20px;
 
+  &__item{
+    padding: 20px;
+  }
+  &__inner{
+
+  }
+  &__certificates {
+    
+  }
+  &__certificates__title{
+    margin: 50px 10px 10px 10px ;
+  }
+  &__certificates__inner{
+    display: flex;
+    margin: 40px 0px;
+  }
+  
+  &__certificates__link {
+    padding: 10px;
+  }
+  &__certificates__img {
+    min-width: 100px;
+    position: relative;
+  }
+  
 }
-.education__item{
-  padding: 20px;
+.education__certificates__img::after{
+  content: ('123');
+  display: block;
+  position: absolute;
+  color: #222;
+  @include adaptiv-font(16, 12);
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 .more {
 }
