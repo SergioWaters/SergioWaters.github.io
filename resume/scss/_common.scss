@@ -1,0 +1,55 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+// SCSS Миксин:
+// calculates proper font-size and line-height due to viewport
+// many thnx to @youtube Freelancer for life
+$maxWidth: 1220;
+@mixin adaptiv-font($pcSize, $mobSize) {
+ $addSize: $pcSize - $mobSize;
+ $maxWidth: $maxWidth - 320;
+ font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+ line-height: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}) * 1.5);
+ // @include adaptiv-font(16, 12);
+}
+a {
+  text-decoration: none;
+}
+body{
+  background: #f8f8f8;
+}
+
+.title{
+  @include adaptiv-font(30, 22);
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222;
+}
+.subtitle{
+  @include adaptiv-font(26, 20);
+  font-weight: 700;
+  color: #222;
+}
+.text{
+  @include adaptiv-font(18, 14);
+  font-weight: 400;
+  color: #222;
+}
+.subtext{
+  @include adaptiv-font(14, 12);
+  font-weight: 400;
+  color: #222;
+}
+
+//
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  @media (max-width: 1100px) {
+    max-width: 90%;
+  }
+}

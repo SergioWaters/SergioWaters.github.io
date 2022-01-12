@@ -1,0 +1,31 @@
+.footer {
+  background: #222;
+
+  &__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 10px;
+  }
+  &__contacts__list{
+    
+  }
+  &__contacts__list__item{
+    margin: 5px;
+    list-style: none;
+  }
+  &__contacts__link{
+    display: inline-block;
+    color: rgb(118, 117, 117);
+    transition: .5s;
+
+    &:hover{
+      color: #f8f8f8;
+      transition: .5s;
+    }
+
+    & i{
+      padding: 0 10px 0 0 ;
+    }
+  }
+}

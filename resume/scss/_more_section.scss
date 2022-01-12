@@ -1,0 +1,19 @@
+.more {
+  width: 100%;
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+  }
+  &__item{
+    box-sizing: border-box;
+    border: 1px solid rgb(118, 117, 117);
+    border-radius: 10px;
+    color: rgb(118, 117, 117);
+    padding: 5px;
+    margin: 5px;
+  }
+}
