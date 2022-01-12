@@ -21,7 +21,7 @@
 
     <section class="about container">
       <img class="about__img" width="100" src="img/photo.jpg" alt="MokretsovSA">
-
+      <button class="theme-switch-btn">click</button>
       <div class="about__info">
         <h1 class="about__info__title">Mokretsov Sergei</h1>
         <h3 class="about__info__subtitle">Junior frontend developer</h3>
@@ -90,9 +90,11 @@
 
   </header>
 
+
+
   <main class="main">
 
-    <section class="projects " id="portfolio">
+    <section class="projects" id="portfolio">
       <div class="container">
         <h3 class="proj__title title">Мои проекты</h3>
         <article class="project">
@@ -104,42 +106,43 @@
             <h4 class="project__description__title subtitle">Онлайн магазин модной одежды</h4>
 
             <ul class="project__description__list">
-              <p class="project__description__text">Макет безымянного магазина. В макете пять статичных страниц:
+              <p class="project__description__text text">Макет безымянного магазина. В макете пять статичных страниц:
               </p>
-              <li class="project__description__list__item project__description__text">
+              <li class="project__description__list__item text">
 
                 Главная, со списком карточек товаров.
 
               </li>
-              <li class="project__description__list__item project__description__text">
+              <li class="project__description__list__item text">
 
                 Каталог с аналогичным списком, breadcrumbs и блоком сортировки товаров.
 
               </li>
-              <li class="project__description__list__item project__description__text">
+              <li class="project__description__list__item text">
 
                 Карточка выбранного товара с более полным описанием.
 
               </li>
-              <li class="project__description__list__item project__description__text">
+              <li class="project__description__list__item text">
 
                 Корзина с формой для доставки и блоком оплаты.
 
               </li>
-              <li class="project__description__list__item project__description__text">
+              <li class="project__description__list__item text">
 
                 Страничка с формой регистрации.
 
               </li>
-              <li class="project__description__list__item project__description__text">
+              <li class="project__description__list__item text">
 
                 Ссылки на все страницы есть в дроп-меню, вызываемом кнопкой "бургер".
               </li>
             </ul>
             <ul class="project__description__list">
-              <li class="project__description__list__item">HTML5, CSS3, BEM, SASS, Static, JavaScript</li>
-              <li class="project__description__list__item">Адаптивный макет 1440p to 375p, залит на pages.github.io</li>
-              <li class="project__description__list__item">Английский язык. "Рыбный" текст 50%</li>
+              <li class="project__description__list__item subtext">HTML5, CSS3, BEM, SASS, Static, JavaScript</li>
+              <li class="project__description__list__item subtext">Адаптивный макет 1440p to 375p, залит на
+                pages.github.io</li>
+              <li class="project__description__list__item subtext">Английский язык. "Рыбный" текст 50%</li>
             </ul>
           </div>
         </article>
@@ -150,12 +153,15 @@
           </a>
           <div class="project__description">
             <h4 class="project__description__title subtitle">Лендинг-страница "Космический туризм"</h4>
-            <p class="project__description__text">Сайт-прикол, про коммерческое использование космоса для туризма.</p>
+            <p class="project__description__text text">Сайт-прикол, про коммерческое использование космоса для туризма.
+            </p>
             <ul class="project__description__list">
-              <li class="project__description__list__item">HTML5, CSS3, SVG, BEM, SASS, Static, Slick-slider</li>
-              <li class="project__description__list__item">Адаптивный сайт 1220p to 320p + адаптивные шрифты, залит на
+              <li class="project__description__list__item subtext">HTML5, CSS3, SVG, BEM, SASS, Static, Slick-slider
+              </li>
+              <li class="project__description__list__item subtext">Адаптивный сайт 1220p to 320p + адаптивные шрифты,
+                залит на
                 pages.github.io</li>
-              <li class="project__description__list__item">Английский язык. Без "рыбного" текста.</li>
+              <li class="project__description__list__item subtext">Английский язык. Без "рыбного" текста.</li>
             </ul>
           </div>
         </article>
@@ -166,14 +172,15 @@
           </a>
           <div class="project__description">
             <h4 class="project__description__title subtitle">Личная страница мастера</h4>
-            <p class="project__description__text">Макет с приятным нестандартным дизайном. Страница ориентирована на
+            <p class="project__description__text text">Макет с приятным нестандартным дизайном. Страница ориентирована
+              на
               мобильные
               устройства.</p>
             <ul class="project__description__list">
-              <li class="project__description__list__item">HTML5, CSS3, BEM, SASS, Static, Slick-slider</li>
-              <li class="project__description__list__item">Адаптивная страница 375p+, залит на
+              <li class="project__description__list__item subtext">HTML5, CSS3, BEM, SASS, Static, Slick-slider</li>
+              <li class="project__description__list__item subtext">Адаптивная страница 375p+, залит на
                 pages.github.io</li>
-              <li class="project__description__list__item">Русский язык. Без "рыбного" текста.</li>
+              <li class="project__description__list__item subtext">Русский язык. Без "рыбного" текста.</li>
             </ul>
           </div>
         </article>
@@ -184,89 +191,103 @@
           </a>
           <div class="project__description">
             <h4 class="project__description__title subtitle">Базовый нейтральный макет для сайта компании</h4>
-            <p class="project__description__text">Сайт безымянной компании. Две страницы: главная и контакты</p>
+            <p class="project__description__text text">Сайт безымянной компании. Две страницы: главная и контакты</p>
             <ul class="project__description__list">
-              <li class="project__description__list__item">HTML5, CSS3, Yandex.maps, Static</li>
-              <li class="project__description__list__item">Залит на pages.github.io</li>
-              <li class="project__description__list__item">Латиница. "Рыбный" текст 100%.</li>
+              <li class="project__description__list__item subtext">HTML5, CSS3, Yandex.maps, Static</li>
+              <li class="project__description__list__item subtext">Залит на pages.github.io</li>
+              <li class="project__description__list__item subtext">Латиница. "Рыбный" текст 100%.</li>
             </ul>
           </div>
         </article>
       </div>
     </section>
+
     <section class="more" id="additional">
-      <h3 class="title">Просто облако тегов</h3>
-      <div class="more__inner container">
-        <span class="more__item">HTML</span>
-        <span class="more__item">HTML5</span>
-        <span class="more__item">BEM</span>
-        <span class="more__item">CSS</span>
-        <span class="more__item">CSS3</span>
-        <span class="more__item">SCSS</span>
-        <span class="more__item">SASS</span>
-        <span class="more__item">BootStrap</span>
-        <span class="more__item">JavaScript</span>
-        <span class="more__item">ES5</span>
-        <span class="more__item">ES6</span>
-        <span class="more__item">JQuery</span>
-        <span class="more__item">JSON</span>
-        <span class="more__item">AJAX</span>
-        <span class="more__item">CommandLine</span>
-        <span class="more__item">VSCode</span>
-        <span class="more__item">GIT</span>
-        <span class="more__item">GitHub</span>
-        <span class="more__item">GitBash</span>
-        <span class="more__item">English Upper Intermediate</span>
-        <span class="more__item">ECMAScript</span>
-        <span class="more__item">OOP</span>
-        <span class="more__item">Cross-Browser</span>
-        <span class="more__item">CrossPlatform</span>
-        <span class="more__item">Valid HTML</span>
-        <span class="more__item">Responsive</span>
-        <span class="more__item">Adaptive</span>
-        <span class="more__item">Figma</span>
-        <span class="more__item">Photoshop</span>
+      <div class="container">
+        <h3 class="title">Стек #теги</h3>
+        <div class="more__inner ">
+          <span class="more__item text">HTML</span>
+          <span class="more__item text">HTML5</span>
+          <span class="more__item text">BEM</span>
+          <span class="more__item text">CSS</span>
+          <span class="more__item text">CSS3</span>
+          <span class="more__item text">SCSS</span>
+          <span class="more__item text">SASS</span>
+          <span class="more__item text">BootStrap</span>
+          <span class="more__item text">JavaScript</span>
+          <span class="more__item text">ES5</span>
+          <span class="more__item text">ES6</span>
+          <span class="more__item text">JQuery</span>
+          <span class="more__item text">JSON</span>
+          <span class="more__item text">AJAX</span>
+          <span class="more__item text">CommandLine</span>
+          <span class="more__item text">VSCode</span>
+          <span class="more__item text">GIT</span>
+          <span class="more__item text">GitHub</span>
+          <span class="more__item text">GitBash</span>
+          <span class="more__item text">English Upper Intermediate</span>
+          <span class="more__item text">ECMAScript</span>
+          <span class="more__item text">OOP</span>
+          <span class="more__item text">Cross-Browser</span>
+          <span class="more__item text">CrossPlatform</span>
+          <span class="more__item text">Valid HTML</span>
+          <span class="more__item text">Responsive</span>
+          <span class="more__item text">Adaptive</span>
+          <span class="more__item text">Figma</span>
+          <span class="more__item text">Photoshop</span>
+        </div>
       </div>
     </section>
-    <section class="education">
-      <div class="edu__inner container" id="education">
-        <h3 class="rightside__title title">Образование</h3>
 
-        <!-- Here goes js content -->
+    <section class="education" id="education">
+      <h3 class="education__title title">Образование</h3>
+      <div class="container">
+        <div class="education__inner">
+
+          <!-- Here goes js content -->
+        </div>
       </div>
-      <div class="education__certificates container">
+    </section>
 
-        <h3 class="education__certificates__title title">Мои сертификаты</h3>
+    <section class="certificates" id="certificates">
+      <div class="container">
+        <h3 class="certificates__title title">Мои сертификаты</h3>
 
-        <div class="education__certificates__inner">
-          <a href="https://gb.ru/certificates/1597160" class="education__certificates__link" target="_blanc">
-            <img src="./img/certificates/javaScriptBasic.jpg" width="50" alt="JSBasic"
-              data-title="JavaScript ES5, ES6 Basic" class="education__certificates__img">
+        <div class="certificates__inner">
+          <a class="certificates__link" href="https://gb.ru/certificates/1597160" target="_blanc">
+            <img class="certificates__img" src="./img/certificates/javaScriptBasic.jpg" width="50" alt="JSBasic"
+              data-title="JavaScript ES5, ES6 Basic">
           </a>
-          <a href="https://gb.ru/certificates/1541773" class="education__certificates__link" target="_blanc">
-            <img src="./img/certificates/programmingBasic.jpg" width="50" alt="programmingBasic"
-              data-title="Programming Basic" class="education__certificates__img">
+          <a class="certificates__link" href="https://gb.ru/certificates/1541773" target="_blanc">
+            <img class="certificates__img" src="./img/certificates/programmingBasic.jpg" width="50"
+              alt="programmingBasic" data-title="Programming Basic">
           </a>
-          <a href="https://gb.ru/certificates/1477439" class="education__certificates__link" target="_blanc">
-            <img src="./img/certificates/HTMLCSSAdvanced.jpg" width="50" alt="HTMLCSSAdvanced"
-              data-title="HTML + CSS Advanced" class="education__certificates__img">
+          <a class="certificates__link" href="https://gb.ru/certificates/1477439" target="_blanc">
+            <img class="certificates__img" src="./img/certificates/HTMLCSSAdvanced.jpg" width="50" alt="HTMLCSSAdvanced"
+              data-title="HTML + CSS Advanced">
           </a>
-          <a href="https://gb.ru/certificates/1378817" class="education__certificates__link" target="_blanc">
-            <img src="./img/certificates/HTMLCSSBasic.jpg" width="50" alt="HTMLCSSBasic" data-title="HTML + CSS Basic"
-              class="education__certificates__img">
+          <a class="certificates__link" href="https://gb.ru/certificates/1378817" target="_blanc">
+            <img class="certificates__img" src="./img/certificates/HTMLCSSBasic.jpg" width="50" alt="HTMLCSSBasic"
+              data-title="HTML + CSS Basic">
           </a>
         </div>
-
       </div>
     </section>
-    <section class="xper " id="exp">
-      <div class="xper__inner container">
+
+    <section class="xper" id="expirience">
+      <div class="container">
         <h3 class="xper__title title">Опыт работы</h3>
+        <div class="xper__inner">
 
-        <!-- Here goes js content -->
+          <!-- Here goes js content -->
+        </div>
       </div>
     </section>
+
   </main>
+
+
+
   <footer class="footer">
     <div class="footer__inner container">
       <ul class="footer__contacts__list">
