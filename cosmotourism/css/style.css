@@ -526,14 +526,13 @@ button {
 }
 
 .howto__box g:hover text {
-  font-size: calc(20px + 4 * ((100vw - 320px) / 900));
-  line-height: calc(20px + 4 * ((100vw - 320px) / 900) * 1.5);
+  font-size: calc(20px + 2 * ((100vw - 320px) / 900));
+  line-height: calc(20px + 2 * ((100vw - 320px) / 900) * 1.5);
   fill: #036CCA;
 }
 
 .howto__box g:hover .howto__foreign-tubes {
-  font-size: calc(20px + 4 * ((100vw - 320px) / 900));
-  line-height: calc(20px + 4 * ((100vw - 320px) / 900) * 1.5);
+  font-size: 20px;
   x: 0;
   color: #036CCA;
   width: 200px;
@@ -541,8 +540,7 @@ button {
 }
 
 .howto__box g:hover .howto__foreign-landing {
-  font-size: calc(20px + 4 * ((100vw - 320px) / 900));
-  line-height: calc(20px + 4 * ((100vw - 320px) / 900) * 1.5);
+  font-size: 20px;
   color: #036CCA;
   width: 100px;
   height: 90px;
@@ -558,6 +556,11 @@ button {
   cursor: pointer;
   font-size: calc(14px + 4 * ((100vw - 320px) / 900));
   line-height: calc(14px + 4 * ((100vw - 320px) / 900) * 1.5);
+}
+
+.howto__foreign-landing,
+.howto__foreign-tubes {
+  font-size: 18px;
 }
 
 .tobook {

@@ -347,18 +347,18 @@ button{
     fill: #036CCA;
 }
 .howto__box g:hover text{
-    @include adaptiv-font(24, 20);
+    @include adaptiv-font(22, 20);
     fill: #036CCA;
 }
 .howto__box g:hover .howto__foreign-tubes{
-    @include adaptiv-font(24, 20);
+    font-size: 20px;
     x: 0;
     color: #036CCA;
     width: 200px;
     height: 125px;
 }
 .howto__box g:hover .howto__foreign-landing{
-    @include adaptiv-font(24, 20);
+    font-size: 20px;
     color: #036CCA;    
     width: 100px;
     height: 90px;
@@ -370,6 +370,10 @@ button{
     transition: all .5s;
     cursor: pointer;
     @include adaptiv-font(18, 14);
+}
+.howto__foreign-landing,
+.howto__foreign-tubes{
+    font-size: 18px;
 }
 .tobook{
     background-image: url(../images/tobook__BG.jpg);
