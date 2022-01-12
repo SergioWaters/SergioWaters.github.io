@@ -59,27 +59,28 @@
           </nav>
         </li>
         <li class="contacts__list__item">
-          <a class="contacts__link" href="mailto:mokretsovsa@gmail.com" target="_blank">
+          <a class="contacts__link" href="mailto:mokretsovsa@gmail.com" data-contact="mokretsovsa@gmail.com">
             <i class="fas fa-envelope"></i>
           </a>
         </li>
         <li class="contacts__list__item">
-          <a class="contacts__link" href="tel:+7-921-560-57-37" target="_blank">
+          <a class="contacts__link" href="tel:+7-921-560-57-37" target="_blank" data-contact="+7-921-560-57-37">
             <i class="fas fa-phone-square"></i>
           </a>
         </li>
         <li class="contacts__list__item">
-          <a class="contacts__link" href="https://wa.me/79215605737" target="_blank">
+          <a class="contacts__link" href="https://wa.me/79215605737" target="_blank" data-contact="+7-921-560-57-37">
             <i class="fab fa-whatsapp-square"></i>
           </a>
         </li>
         <li class="contacts__list__item">
-          <a class="contacts__link" href="https://join.skype.com/invite/EBa9zeSrAips" target="_blank">
+          <a class="contacts__link" href="https://join.skype.com/invite/EBa9zeSrAips" target="_blank"
+            data-contact="live:.cid.a6e1971095d9067d">
             <i class="fab fa-skype"></i>
           </a>
         </li>
         <li class="contacts__list__item">
-          <a class="contacts__link" href="https://t.me/sergiowaters" target="_blank">
+          <a class="contacts__link" href="https://t.me/sergiowaters" target="_blank" data-contact="@SergioWaters">
             <i class="fab fa-telegram"></i>
           </a>
         </li>
@@ -93,21 +94,52 @@
 
     <section class="projects " id="portfolio">
       <div class="container">
-        <h3 class="proj__title title">My projects</h3>
+        <h3 class="proj__title title">Мои проекты</h3>
         <article class="project">
           <a class="project__link" href="https://sergiowaters.github.io/online_store/index.html" target="_blank"
             rel="noopener noreferrer">
             <img src="./img/online_store.png" width="250" alt="Online fashion store image" class="project__img">
           </a>
           <div class="project__description">
-            <h4 class="project__description__title subtitle">Online fashion store</h4>
-            <p class="project__description__text">No name fashion company site. Multiple pages. Includes Main, Catalog,
-              Cart, Product pages.
-              Registration, </p>
+            <h4 class="project__description__title subtitle">Онлайн магазин модной одежды</h4>
+
             <ul class="project__description__list">
-              <li class="project__description__list__item">Adaptive 1440p to 375p</li>
-              <li class="project__description__list__item">HTML5, CSS3, BEM, SASS, NoJS</li>
-              <li class="project__description__list__item">English language. Fish text 50%</li>
+              <p class="project__description__text">Макет безымянного магазина. В макете пять статичных страниц:
+              </p>
+              <li class="project__description__list__item project__description__text">
+
+                Главная, со списком карточек товаров.
+
+              </li>
+              <li class="project__description__list__item project__description__text">
+
+                Каталог с аналогичным списком, breadcrumbs и блоком сортировки товаров.
+
+              </li>
+              <li class="project__description__list__item project__description__text">
+
+                Карточка выбранного товара с более полным описанием.
+
+              </li>
+              <li class="project__description__list__item project__description__text">
+
+                Корзина с формой для доставки и блоком оплаты.
+
+              </li>
+              <li class="project__description__list__item project__description__text">
+
+                Страничка с формой регистрации.
+
+              </li>
+              <li class="project__description__list__item project__description__text">
+
+                Ссылки на все страницы есть в дроп-меню, вызываемом кнопкой "бургер".
+              </li>
+            </ul>
+            <ul class="project__description__list">
+              <li class="project__description__list__item">HTML5, CSS3, BEM, SASS, Static, JavaScript</li>
+              <li class="project__description__list__item">Адаптивный макет 1440p to 375p, залит на pages.github.io</li>
+              <li class="project__description__list__item">Английский язык. "Рыбный" текст 50%</li>
             </ul>
           </div>
         </article>
@@ -117,13 +149,13 @@
             <img src="./img/cosmotourism.png" width="250" alt="Cosmotourism landing page image" class="project__img">
           </a>
           <div class="project__description">
-            <h4 class="project__description__title subtitle">Space tourism landing</h4>
-            <p class="project__description__text">Sketch landing page about nearby times, when space tourism became
-              common</p>
+            <h4 class="project__description__title subtitle">Лендинг-страница "Космический туризм"</h4>
+            <p class="project__description__text">Сайт-прикол, про коммерческое использование космоса для туризма.</p>
             <ul class="project__description__list">
-              <li class="project__description__list__item">Adaptive 1220p to 320p</li>
-              <li class="project__description__list__item">HTML5, CSS3, BEM, SASS, NoJS</li>
-              <li class="project__description__list__item">English language. No "fish" text. Adaptive fonts.</li>
+              <li class="project__description__list__item">HTML5, CSS3, SVG, BEM, SASS, Static, Slick-slider</li>
+              <li class="project__description__list__item">Адаптивный сайт 1220p to 320p + адаптивные шрифты, залит на
+                pages.github.io</li>
+              <li class="project__description__list__item">Английский язык. Без "рыбного" текста.</li>
             </ul>
           </div>
         </article>
@@ -133,8 +165,16 @@
             <img src="./img/mob_first.png" width="250" alt="Mobile-first sewers page image" class="project__img">
           </a>
           <div class="project__description">
-            <h4 class="project__description__title subtitle">Sewer's personal page</h4>
-            <p class="project__description__text">One page. Siple and clean view. Mobile-first.</p>
+            <h4 class="project__description__title subtitle">Личная страница мастера</h4>
+            <p class="project__description__text">Макет с приятным нестандартным дизайном. Страница ориентирована на
+              мобильные
+              устройства.</p>
+            <ul class="project__description__list">
+              <li class="project__description__list__item">HTML5, CSS3, BEM, SASS, Static, Slick-slider</li>
+              <li class="project__description__list__item">Адаптивная страница 375p+, залит на
+                pages.github.io</li>
+              <li class="project__description__list__item">Русский язык. Без "рыбного" текста.</li>
+            </ul>
           </div>
         </article>
         <article class="project">
@@ -143,30 +183,60 @@
             <img src="./img/company_site.png" width="250" alt="Mockup some company site image" class="project__img">
           </a>
           <div class="project__description">
-            <h4 class="project__description__title subtitle">Basic mockup. Some company site</h4>
-            <p class="project__description__text">No name company mockup site</p>
+            <h4 class="project__description__title subtitle">Базовый нейтральный макет для сайта компании</h4>
+            <p class="project__description__text">Сайт безымянной компании. Две страницы: главная и контакты</p>
+            <ul class="project__description__list">
+              <li class="project__description__list__item">HTML5, CSS3, Yandex.maps, Static</li>
+              <li class="project__description__list__item">Залит на pages.github.io</li>
+              <li class="project__description__list__item">Латиница. "Рыбный" текст 100%.</li>
+            </ul>
           </div>
         </article>
       </div>
     </section>
-
-    <section class="xper " id="exp">
-      <div class="xper__inner container">
-        <h3 class="xper__title title">Work Experience</h3>
-
-        <!-- Here goes js content -->
+    <section class="more" id="additional">
+      <h3 class="title">Просто облако тегов</h3>
+      <div class="more__inner container">
+        <span class="more__item">HTML</span>
+        <span class="more__item">HTML5</span>
+        <span class="more__item">BEM</span>
+        <span class="more__item">CSS</span>
+        <span class="more__item">CSS3</span>
+        <span class="more__item">SCSS</span>
+        <span class="more__item">SASS</span>
+        <span class="more__item">BootStrap</span>
+        <span class="more__item">JavaScript</span>
+        <span class="more__item">ES5</span>
+        <span class="more__item">ES6</span>
+        <span class="more__item">JQuery</span>
+        <span class="more__item">JSON</span>
+        <span class="more__item">AJAX</span>
+        <span class="more__item">CommandLine</span>
+        <span class="more__item">VSCode</span>
+        <span class="more__item">GIT</span>
+        <span class="more__item">GitHub</span>
+        <span class="more__item">GitBash</span>
+        <span class="more__item">English Upper Intermediate</span>
+        <span class="more__item">ECMAScript</span>
+        <span class="more__item">OOP</span>
+        <span class="more__item">Cross-Browser</span>
+        <span class="more__item">CrossPlatform</span>
+        <span class="more__item">Valid HTML</span>
+        <span class="more__item">Responsive</span>
+        <span class="more__item">Adaptive</span>
+        <span class="more__item">Figma</span>
+        <span class="more__item">Photoshop</span>
       </div>
     </section>
-
     <section class="education">
       <div class="edu__inner container" id="education">
-        <h3 class="rightside__title title">Education</h3>
+        <h3 class="rightside__title title">Образование</h3>
 
         <!-- Here goes js content -->
       </div>
       <div class="education__certificates container">
 
-        <h3 class="education__certificates__title title">My Certificates</h3>
+        <h3 class="education__certificates__title title">Мои сертификаты</h3>
 
         <div class="education__certificates__inner">
           <a href="https://gb.ru/certificates/1597160" class="education__certificates__link" target="_blanc">
@@ -189,15 +259,47 @@
 
       </div>
     </section>
-    <section class="more container" id="additional">
+    <section class="xper " id="exp">
+      <div class="xper__inner container">
+        <h3 class="xper__title title">Опыт работы</h3>
 
-
-
+        <!-- Here goes js content -->
+      </div>
     </section>
   </main>
-
   <footer class="footer">
-
+    <div class="footer__inner container">
+      <ul class="footer__contacts__list">
+        <li class="footer__contacts__list__item">
+          <a class="footer__contacts__link" href="mailto:mokretsovsa@gmail.com" data-contact="mokretsovsa@gmail.com">
+            <i class="fas fa-envelope"></i> mokretsovsa@gmail.com
+          </a>
+        </li>
+        <li class="footer__contacts__list__item">
+          <a class="footer__contacts__link" href="tel:+7-921-560-57-37" target="_blank" data-contact="+7-921-560-57-37">
+            <i class="fas fa-phone-square"></i> +7-921-560-57-37
+          </a>
+        </li>
+        <li class="footer__contacts__list__item">
+          <a class="footer__contacts__link" href="https://join.skype.com/invite/EBa9zeSrAips" target="_blank"
+            data-contact="live:.cid.a6e1971095d9067d">
+            <i class="fab fa-skype"></i> live:.cid.a6e1971095d9067d
+          </a>
+        </li>
+        <li class="footer__contacts__list__item">
+          <a class="footer__contacts__link" href="https://wa.me/79215605737" target="_blank"
+            data-contact="+7-921-560-57-37">
+            <i class="fab fa-whatsapp-square"></i> @79215605737
+          </a>
+        </li>
+        <li class="footer__contacts__list__item">
+          <a class="footer__contacts__link" href="https://t.me/sergiowaters" target="_blank"
+            data-contact="@SergioWaters">
+            <i class="fab fa-telegram"></i> @SergioWaters
+          </a>
+        </li>
+      </ul>
+    </div>
   </footer>
 
   <script src="./js/jobList.js"></script>
