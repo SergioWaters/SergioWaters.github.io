@@ -2,13 +2,16 @@
 
 const creatorHTML = {
 
-  getXperHTML(xperienceArr) {
+  renderExperience(experienceArr) {
 
     //get element to put in
     let xperEl = document.querySelector('.xper__inner');
 
+    //clear innerHTML
+    xperEl.innerHTML = '';
+
     //HTML markup for Working expirience item
-    xperienceArr.forEach(job => {
+    experienceArr.forEach(job => {
       xperEl.insertAdjacentHTML('beforeend', `<!-- Above content has been generated from JavaScript -->
       <ul class="xper__list">
       <li class="xper__list__item">
@@ -21,9 +24,12 @@ const creatorHTML = {
     })
   },
 
-  getEduHTML(educationArr) {
+  renderEducation(educationArr) {
     //get element to put in
     let eduEl = document.querySelector('.education__inner');
+
+    //clear innerHTML
+    eduEl.innerHTML = '';
 
     //HTML markup for Working expirience item
     educationArr.forEach(edu => {
@@ -38,13 +44,17 @@ const creatorHTML = {
     })
   },
 
-  getProjectsHTML(projectsArr) {
+  renderProjects(projectsArr) {
+
     //get element to put in
-    let eduEl = document.querySelector('.projects__inner');
+    let projectsEl = document.querySelector('.projects__inner');
+
+    //clear innerHTML
+    projectsEl.innerHTML = '';
 
     //HTML markup for Working expirience item
     projectsArr.forEach(project => {
-      eduEl.insertAdjacentHTML('beforeend', `<!-- Above content has been generated from JavaScript -->
+      projectsEl.insertAdjacentHTML('beforeend', `<!-- Above content has been generated from JavaScript -->
       <article class="project">
             <a class="project__link" href=${project.link} target="_blank"
               rel="noopener noreferrer">
@@ -53,9 +63,9 @@ const creatorHTML = {
             <div class="project__description">
               <h4 class="project__description__title subtitle">${project.title}</h4>
               <div class="project__description__list">                
+                <div class="project__description__list__item text">${project.description}</div>
                 <div class="project__description__list__item text">${project.techInfo}</div>
                 <div class="project__description__list__item text">${project.steck}</div>       
-                <div class="project__description__list__item text">${project.description}</div>
               </div>
             </div>
           </article>`);
@@ -64,9 +74,9 @@ const creatorHTML = {
 
 }
 
-creatorHTML.getEduHTML(educationList);
-creatorHTML.getXperHTML(jobList);
-creatorHTML.getProjectsHTML(projectsEnglish);
+creatorHTML.renderEducation(educationArr);
+creatorHTML.renderExperience(experienceArr);
+creatorHTML.renderProjects(projectsArr);
 
 
 

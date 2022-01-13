@@ -12,8 +12,18 @@ class XperienceCompany {
     this.city = city;
   }
 };
+class Project {
+  constructor(title, description, steck, imgUrl, link, techInfo) {
+    this.title = title;
+    this.description = description;
+    this.steck = steck;
+    this.imgUrl = imgUrl;
+    this.link = link;
+    this.techInfo = techInfo;
+  }
+};
 
-const jobList = [
+const experienceArr = [
 
   new XperienceCompany(
     // company.title = title;
@@ -168,7 +178,7 @@ const jobList = [
   ),
 
 ];
-const jobListEnglish = [
+const experienceArrEnglish = [
 
   new XperienceCompany(
     // company.title = title;
@@ -324,7 +334,7 @@ const jobListEnglish = [
 
 ];
 
-const educationList = [
+const educationArr = [
   new XperienceCompany(
     // company.title = title;
     `Гик Брейнс (gb.ru)`,
@@ -378,7 +388,7 @@ const educationList = [
     `Ангарск`,
   ),
 ];
-const educationListEnglish = [
+const educationArrEnglish = [
   new XperienceCompany(
     // company.title = title;
     `Geek Brains (gb.ru)`,
@@ -433,18 +443,8 @@ const educationListEnglish = [
   ),
 ];
 
-class Project {
-  constructor(title, description, steck, imgUrl, link, techInfo) {
-    this.title = title;
-    this.description = description;
-    this.steck = steck;
-    this.imgUrl = imgUrl;
-    this.link = link;
-    this.techInfo = techInfo;
-  }
-};
 
-const projects = [
+const projectsArr = [
 
   new Project(
     //title
@@ -509,14 +509,14 @@ const projects = [
     //steck
     'HTML5, CSS3, SVG, BEM, SASS, JavaScript',
     //imgUrl
-    null,
+    './img/resume.jpg',
     //link
     'https://sergiowaters.github.io/resume/index.html',
     //techinfo
     'Адаптивная страница 375p+, залит на pages.github.io. Русский и Английский языки. Без "рыбного" текста.'
   ),
 ]
-const projectsEnglish = [
+const projectsArrEnglish = [
   new Project(
     //title
     'Online fashion store',
