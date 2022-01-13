@@ -21,7 +21,9 @@ a {
 body{
   background: #f8f8f8;
 }
-
+.hidden{
+  display: none;
+}
 .title{
   @include adaptiv-font(30, 22);
   font-weight: 700;

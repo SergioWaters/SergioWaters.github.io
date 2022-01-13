@@ -14,6 +14,10 @@ body {
   background: #f8f8f8;
 }
 
+.hidden {
+  display: none;
+}
+
 .title {
   font-size: calc(22px + 8 * ((100vw - 320px) / 900));
   line-height: calc(22px + 8 * ((100vw - 320px) / 900) * 1.5);
@@ -414,6 +418,7 @@ main.dark_theme .certificates__img:hover {
 
 .projects .project__description__title {
   margin: 10px;
+  text-align: center;
 }
 
 .projects .project__description__text {
@@ -427,6 +432,11 @@ main.dark_theme .certificates__img:hover {
 
 .projects .project__description__list__item {
   list-style-position: inside;
+  padding: 5px;
+}
+
+.projects .project__description__list__item p {
+  padding: 5px 0px 5px 20px;
 }
 
 .more {

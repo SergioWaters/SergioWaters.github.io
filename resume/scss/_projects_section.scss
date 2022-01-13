@@ -32,6 +32,7 @@
     
       &__title{
         margin: 10px;
+        text-align: center;
       }
       &__text{
       margin: 10px;      
@@ -42,6 +43,10 @@
         }
         &__list__item{
           list-style-position: inside;
+          padding: 5px;
+          & p{
+            padding: 5px 0px 5px 20px;
+          }
       }
     }
   }
