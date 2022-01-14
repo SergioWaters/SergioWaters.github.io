@@ -24,15 +24,15 @@
 }
 .about__img {
   display: block;
+  min-width: 250px;
   border-radius: 10px;
   margin: 10px;
-  min-width: 250px;
 }
 .about__info {
   color: #f8f8f8;
   font-weight: 700;  
   text-align: left;
-  min-width: 300px;
+  padding: 10px
 }
 .about__info__title {
   @include adaptiv-font(30, 20);
@@ -44,87 +44,3 @@
   @include adaptiv-font(20, 14);
   font-weight: 400;
 }
-
-//
-// .contacts__block{
-//   background-color: #f8f8f899;
-//   padding: 0px 20px 10px 20px;
-//   border-radius: 10px;
-//   margin-top: 30px;
-
-// }
-// .contacts__list {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: flex-end;
-// }
-// .contacts__list__item {
-//   cursor: pointer;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   box-sizing: border-box;  
-//   list-style: none;
-//   border-radius: 50%;
-//   padding: 5px;
-//   position: relative;
-//   width: 50px;
-//   height: 50px;
-//   outline: 1px solid green;
-// }
-// .contacts__list__item:hover
-// .contacts__link{
-//   transform: scale(120%) rotate(15deg);
-//   color: #ffffff;
-//   transition: .5s;
-// }
-// .contacts__list__item::after{
-//   content: '';
-//   width: 10px;
-//   height: 10px;
-//   display: block;
-//   position: absolute;
-//   box-shadow: -5px -5px 0px #222;
-//   border-top-left-radius: 50%;
-//   top: 50%;
-//   right: -15px;
-// }
-// .contacts__list__item::before{
-//   content: '';
-//   width: 10px;
-//   height: 10px;
-//   display: block;
-//   position: absolute;
-//   box-shadow: 5px -5px 0px #222;
-//   border-top-right-radius: 50%;
-//   top: 50%;
-//   left: -15px;
-// }
-// .contacts__link{
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   color: #f8f8f8;  
-//   font-size: 25px;
-//   transition: .5s;
-//   outline: 1px solid red;
-//   width: 40px;
-//   height: 40px;
-//   background-color: #222;
-//   border-radius: 50%;
-// }
-// .link__img{
-//   text-align: center;
-// }
-
-//   .workxp__link {
-
-//   }
-//   .projects__link {
-
-//   }  
-//   .edu__link {
-//   }
-//   .more__link {
-//   }
-// 

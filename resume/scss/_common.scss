@@ -18,6 +18,9 @@ $maxWidth: 1220;
 a {
   text-decoration: none;
 }
+li {
+  list-style: none;
+}
 body{
   background: #f8f8f8;
 }
@@ -25,9 +28,6 @@ body{
 .container {
   margin: 0 auto;
   max-width: 1000px;
-  @media (max-width: 1100px) {
-    max-width: 90%;
-  }
 }
 
 .main section{
@@ -125,6 +125,7 @@ main.dark_theme {
   flex-direction: column;
   align-items: flex-end;
   min-width: 250px;
+  padding: 10px;
 }
 .contacts__list__item{
   margin: 5px;

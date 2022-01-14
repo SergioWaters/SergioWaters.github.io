@@ -31,15 +31,16 @@ const creatorHTML = {
     //clear innerHTML
     eduEl.innerHTML = '';
 
-    //HTML markup for Working expirience item
+    //HTML markup for Education item
     educationArr.forEach(edu => {
       eduEl.insertAdjacentHTML('beforeend', `<!-- Above content has been generated from JavaScript -->
-      <ul class="xper__list">
-      <li class="xper__list__item">
-      <h4 class="xper__item__title subtitle">${edu.title}</h4>
-      <h3 class="xper__item__subtitle text">${edu.city}</h3>
-      <h3 class="xper__item__subtitle text">${edu.startDate} - ${edu.endDate}</h3>
-      <li class="xper__list__item text">${edu.position}</li>  
+      <ul class="education__list">
+        <li class="education__list__item">
+          <h4 class="education__item__title subtitle">${edu.title}</h4>
+          <h3 class="education__item__subtitle text">${edu.city}</h3>
+          <h3 class="education__item__subtitle text">${edu.startDate} - ${edu.endDate}</h3>
+        </li>
+        <li class="education__list__item text">${edu.position}</li>  
       </ul>`);
     })
   },

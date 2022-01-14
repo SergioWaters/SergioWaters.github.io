@@ -19,9 +19,9 @@ swBtnRus.addEventListener('click', function () {
 
 swBtnEng.addEventListener('click', function () {
 
-  creatorHTML.renderEducation(educationArr);
-  creatorHTML.renderExperience(experienceArr);
-  creatorHTML.renderProjects(projectsArr);;
+  creatorHTML.renderEducation(educationArrEnglish);
+  creatorHTML.renderExperience(experienceArrEnglish);
+  creatorHTML.renderProjects(projectsArrEnglish);;
 
   titleArr.forEach(function (title) {
 
