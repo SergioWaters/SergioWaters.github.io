@@ -17,19 +17,90 @@
 
 <body>
   <header class="header">
+    <div class="container">
+      <div class="header__inner">
 
-    <section class="about container">
-      <img class="about__img" width="100" src="img/photo.jpg" alt="MokretsovSA">
+        <section class="about">
 
-      <button class="theme-switch-btn button"><i class="fas fa-sun"></i><i class="fas fa-moon"></i>
-      </button>
+          <img class="about__img" width="100" src="img/photo.jpg" alt="MokretsovSA">
 
-      <button class="switch-lang-eng button">eng</button>
-      <button class="switch-lang-rus button">rus</button>
+          <div class="about__info">
+            <h1 class="about__info__title">Mokretsov Sergei</h1>
+            <h3 class="about__info__subtitle">Junior frontend developer</h3>
+            <h4 class="about__info__location">Saint-Petersburg, Russia</h4>
+          </div>
 
-      <div class="contacts__block">
+          <ul class="contacts__list">
+            <li class="contacts__list__item">
+              <a class="contacts__link" href="mailto:mokretsovsa@gmail.com" data-contact="mokretsovsa@gmail.com">
+                mokretsovsa@gmail.com <i class="fas fa-envelope"></i>
+              </a>
+            </li>
+            <li class="contacts__list__item">
+              <a class="contacts__link" href="tel:+7-921-560-57-37" target="_blank" data-contact="+7-921-560-57-37">
+                +7-921-560-57-37 <i class="fas fa-phone-square"></i>
+              </a>
+            </li>
+            <li class="contacts__list__item">
+              <a class="contacts__link" href="https://join.skype.com/invite/EBa9zeSrAips" target="_blank"
+                data-contact="live:.cid.a6e1971095d9067d">
+                live:.cid.a6e1971095d9067d <i class="fab fa-skype"></i>
+              </a>
+            </li>
+            <li class="contacts__list__item">
+              <a class="contacts__link" href="https://wa.me/79215605737" target="_blank"
+                data-contact="+7-921-560-57-37">
+                @79215605737 <i class="fab fa-whatsapp-square"></i>
+              </a>
+            </li>
+            <li class="contacts__list__item">
+              <a class="contacts__link" href="https://t.me/sergiowaters" target="_blank" data-contact="@SergioWaters">
+                @SergioWaters <i class="fab fa-telegram"></i>
+              </a>
+            </li>
+          </ul>
+
+
+          <!-- <div class="contacts__block">
         <ul class="contacts__list">
+
           <li class="contacts__list__item">
+            <a class="contacts__link" href="mailto:mokretsovsa@gmail.com" data-contact="mokretsovsa@gmail.com">
+              <i class="fas fa-envelope contacts__link__img"></i>
+            </a>
+          </li>
+          <li class="contacts__list__item">
+            <a class="contacts__link" href="tel:+7-921-560-57-37" target="_blank" data-contact="+7-921-560-57-37">
+              <i class="fas fa-phone-square contacts__link__img"></i>
+            </a>
+          </li>
+          <li class="contacts__list__item">
+            <a class="contacts__link" href="https://wa.me/79215605737" target="_blank" data-contact="+7-921-560-57-37">
+              <i class="fab fa-whatsapp-square contacts__link__img"></i>
+            </a>
+          </li>
+          <li class="contacts__list__item">
+            <a class="contacts__link" href="https://join.skype.com/invite/EBa9zeSrAips" target="_blank"
+              data-contact="live:.cid.a6e1971095d9067d">
+              <i class="fab fa-skype contacts__link__img"></i>
+            </a>
+          </li>
+          <li class="contacts__list__item">
+            <a class="contacts__link" href="https://t.me/sergiowaters" target="_blank" data-contact="@SergioWaters">
+              <i class="fab fa-telegram contacts__link__img"></i>
+            </a>
+          </li>
+
+        </ul>
+        
+      </div> -->
+
+        </section>
+        <div class="header__buttons">
+          <div class="buttons__block">
+            <button class="theme-switch-btn button">
+              <i class="fas fa-sun"></i><i class="fas fa-moon"></i>
+            </button>
             <nav class="navbar">
               <input class="navbar__checkbox" id="nav_check" type="checkbox">
               <label class="navbar__label" for="nav_check">
@@ -59,43 +130,12 @@
                 </li>
               </ul>
             </nav>
-          </li>
-          <li class="contacts__list__item">
-            <a class="contacts__link" href="mailto:mokretsovsa@gmail.com" data-contact="mokretsovsa@gmail.com">
-              <i class="fas fa-envelope"></i>
-            </a>
-          </li>
-          <li class="contacts__list__item">
-            <a class="contacts__link" href="tel:+7-921-560-57-37" target="_blank" data-contact="+7-921-560-57-37">
-              <i class="fas fa-phone-square"></i>
-            </a>
-          </li>
-          <li class="contacts__list__item">
-            <a class="contacts__link" href="https://wa.me/79215605737" target="_blank" data-contact="+7-921-560-57-37">
-              <i class="fab fa-whatsapp-square"></i>
-            </a>
-          </li>
-          <li class="contacts__list__item">
-            <a class="contacts__link" href="https://join.skype.com/invite/EBa9zeSrAips" target="_blank"
-              data-contact="live:.cid.a6e1971095d9067d">
-              <i class="fab fa-skype"></i>
-            </a>
-          </li>
-          <li class="contacts__list__item">
-            <a class="contacts__link" href="https://t.me/sergiowaters" target="_blank" data-contact="@SergioWaters">
-              <i class="fab fa-telegram"></i>
-            </a>
-          </li>
-        </ul>
-        <div class="about__info">
-          <h1 class="about__info__title">Mokretsov Sergei</h1>
-          <h3 class="about__info__subtitle">Junior frontend developer</h3>
-          <h4 class="about__info__location">Saint-Petersburg, Russia</h4>
+            <button class="switch-lang-eng button">eng</button>
+            <button class="switch-lang-rus button">rus</button>
+          </div>
         </div>
       </div>
-
-    </section>
-
+    </div>
   </header>
 
 
@@ -302,37 +342,79 @@
 
 
   <footer class="footer">
-    <div class="footer__inner container">
-      <ul class="footer__contacts__list">
-        <li class="footer__contacts__list__item">
-          <a class="footer__contacts__link" href="mailto:mokretsovsa@gmail.com" data-contact="mokretsovsa@gmail.com">
-            <i class="fas fa-envelope"></i> mokretsovsa@gmail.com
-          </a>
-        </li>
-        <li class="footer__contacts__list__item">
-          <a class="footer__contacts__link" href="tel:+7-921-560-57-37" target="_blank" data-contact="+7-921-560-57-37">
-            <i class="fas fa-phone-square"></i> +7-921-560-57-37
-          </a>
-        </li>
-        <li class="footer__contacts__list__item">
-          <a class="footer__contacts__link" href="https://join.skype.com/invite/EBa9zeSrAips" target="_blank"
-            data-contact="live:.cid.a6e1971095d9067d">
-            <i class="fab fa-skype"></i> live:.cid.a6e1971095d9067d
-          </a>
-        </li>
-        <li class="footer__contacts__list__item">
-          <a class="footer__contacts__link" href="https://wa.me/79215605737" target="_blank"
-            data-contact="+7-921-560-57-37">
-            <i class="fab fa-whatsapp-square"></i> @79215605737
-          </a>
-        </li>
-        <li class="footer__contacts__list__item">
-          <a class="footer__contacts__link" href="https://t.me/sergiowaters" target="_blank"
-            data-contact="@SergioWaters">
-            <i class="fab fa-telegram"></i> @SergioWaters
-          </a>
-        </li>
-      </ul>
+    <div class="container">
+
+      <div class="footer__inner">
+
+        <div class="buttons__block">
+          <button class="theme-switch-btn button">
+            <i class="fas fa-sun"></i><i class="fas fa-moon"></i>
+          </button>
+          <nav class="navbar">
+            <input class="navbar__checkbox" id="nav_check" type="checkbox">
+            <label class="navbar__label" for="nav_check">
+              <img class="navbar__label__img" src="./img/sergio_black_on_transparent.png" width="40" height="40"
+                alt="sw_logo">
+            </label>
+            <ul class="navbar__list">
+              <li class="navbar__list__item">
+                <a class="workxp__link navbar__link" href="#exp">
+                  Work expirience
+                </a>
+              </li>
+              <li class="navbar__list__item">
+                <a class="projects__link navbar__link" href="#portfolio">
+                  projects
+                </a>
+              </li>
+              <li class="navbar__list__item">
+                <a class="edu__link navbar__link" href="#education">
+                  education
+                </a>
+              </li>
+              <li class="navbar__list__item">
+                <a class="more__link navbar__link" href="#add">
+                  Additional info
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <button class="switch-lang-eng button">eng</button>
+          <button class="switch-lang-rus button">rus</button>
+        </div>
+
+
+
+        <ul class="contacts__list">
+          <li class="contacts__list__item">
+            <a class="contacts__link" href="mailto:mokretsovsa@gmail.com" data-contact="mokretsovsa@gmail.com">
+              mokretsovsa@gmail.com <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+          <li class="contacts__list__item">
+            <a class="contacts__link" href="tel:+7-921-560-57-37" target="_blank" data-contact="+7-921-560-57-37">
+              +7-921-560-57-37 <i class="fas fa-phone-square"></i>
+            </a>
+          </li>
+          <li class="contacts__list__item">
+            <a class="contacts__link" href="https://join.skype.com/invite/EBa9zeSrAips" target="_blank"
+              data-contact="live:.cid.a6e1971095d9067d">
+              live:.cid.a6e1971095d9067d <i class="fab fa-skype"></i>
+            </a>
+          </li>
+          <li class="contacts__list__item">
+            <a class="contacts__link" href="https://wa.me/79215605737" target="_blank" data-contact="+7-921-560-57-37">
+              @79215605737 <i class="fab fa-whatsapp-square"></i>
+            </a>
+          </li>
+          <li class="contacts__list__item">
+            <a class="contacts__link" href="https://t.me/sergiowaters" target="_blank" data-contact="@SergioWaters">
+              @SergioWaters <i class="fab fa-telegram"></i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
     </div>
   </footer>
 
