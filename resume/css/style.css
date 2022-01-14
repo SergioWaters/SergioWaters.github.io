@@ -177,6 +177,11 @@ main.dark_theme .certificates__img:hover {
   line-height: calc(16px + 10 * ((100vw - 320px) / 900) * 1.5);
 }
 
+.about__info__location {
+  font-size: calc(14px + 8 * ((100vw - 320px) / 900));
+  line-height: calc(14px + 8 * ((100vw - 320px) / 900) * 1.5);
+}
+
 .contacts__block {
   min-width: 300px;
 }

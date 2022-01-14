@@ -51,6 +51,9 @@
 .about__info__subtitle {
   @include adaptiv-font(26, 16);
 }
+.about__info__location{
+  @include adaptiv-font(22, 14);
+}
 
 //
 .contacts__block{
