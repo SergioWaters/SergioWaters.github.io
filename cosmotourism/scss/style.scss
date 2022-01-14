@@ -166,17 +166,23 @@ button{
     padding: 10px;
 }
 .header__title{
-    @include adaptiv-font(60, 30);
+    @include adaptiv-font(50, 30);
     font-family: 'spaceagecyrillic';
     font-weight: 400;
     text-align: center;
+    @media (min-width: 1600px) {
+        @include adaptiv-font(74, 50);  
+    }
 }
 .header__subtitle{
-    @include adaptiv-font(110, 50);    
+    @include adaptiv-font(90, 50);    
     font-family: 'spaceagecyrillic';
     font-weight: 400;
     text-align: center;
     margin-bottom: 20px;
+    @media (min-width: 1600px) {
+        @include adaptiv-font(74, 50);  
+    }
 }
 .header__text{
     @include adaptiv-font(24, 16);
