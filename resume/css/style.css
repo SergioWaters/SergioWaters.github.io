@@ -126,7 +126,7 @@ main.dark_theme .certificates__img:hover {
   cursor: pointer;
   text-align: center;
   color: #f8f8f8;
-  border: 1px solid #f8f8f866;
+  border: 1px solid #222;
   background: transparent;
   padding: 10px;
   -webkit-box-sizing: border-box;
@@ -187,6 +187,8 @@ main.dark_theme .certificates__img:hover {
           align-items: center;
   text-transform: uppercase;
   position: relative;
+  width: 40px;
+  height: 40px;
 }
 
 .navbar__checkbox {
@@ -291,10 +293,74 @@ main.dark_theme .certificates__img:hover {
   position: relative;
 }
 
-.header__buttons {
+.header__buttons_wrap {
   position: absolute;
-  right: 0;
-  bottom: -20px;
+  right: 30px;
+  bottom: -40px;
+}
+
+.header__buttons {
+  position: relative;
+  min-width: 250px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #222;
+  border-radius: 0 0 30px 30px;
+}
+
+.header__buttons::after {
+  content: '';
+  background-color: transparent;
+  position: absolute;
+  border-radius: 30px 0 0 0;
+  top: 20px;
+  right: -18px;
+  width: 19px;
+  height: 19px;
+  -webkit-box-shadow: -5px -5px 0px 0px #222;
+          box-shadow: -5px -5px 0px 0px #222;
+}
+
+.header__buttons::before {
+  content: '';
+  background-color: transparent;
+  position: absolute;
+  border-radius: 0 30px 0 0;
+  top: 20px;
+  left: -18px;
+  width: 19px;
+  height: 19px;
+  -webkit-box-shadow: 5px -5px 0px 0px #222;
+          box-shadow: 5px -5px 0px 0px #222;
+}
+
+.header__buttons .theme-switch-btn {
+  background-color: #222;
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, #38acff9c), color-stop(60%, #090d899c));
+  background: -o-linear-gradient(left, #38acff9c 40%, #090d899c 60%);
+  background: linear-gradient(90deg, #38acff9c 40%, #090d899c 60%);
+}
+
+.header__buttons .switch-lang-eng {
+  background-image: url(../img/flag.webp);
+  background-position: top 0% left 30%;
+  background-size: cover;
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+}
+
+.header__buttons .switch-lang-rus {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, #c800009c), color-stop(30%, #02029e9c), color-stop(70%, #02029e9c), color-stop(70%, #ffffff9c));
+  background: -o-linear-gradient(bottom, #c800009c 30%, #02029e9c 30%, #02029e9c 70%, #ffffff9c 70%);
+  background: linear-gradient(0deg, #c800009c 30%, #02029e9c 30%, #02029e9c 70%, #ffffff9c 70%);
 }
 
 .about {
@@ -307,13 +373,18 @@ main.dark_theme .certificates__img:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
-@media (max-width: 633px) {
+@media (max-width: 760px) {
   .about {
     padding-bottom: 35px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -327,13 +398,13 @@ main.dark_theme .certificates__img:hover {
 .about__info {
   color: #f8f8f8;
   font-weight: 700;
-  text-align: left;
+  text-align: center;
   padding: 10px;
 }
 
 .about__info__title {
-  font-size: calc(20px + 10 * ((100vw - 320px) / 900));
-  line-height: calc(20px + 10 * ((100vw - 320px) / 900) * 1.5);
+  font-size: calc(30px + 5 * ((100vw - 320px) / 900));
+  line-height: calc(30px + 5 * ((100vw - 320px) / 900) * 1.5);
 }
 
 .about__info__subtitle {
@@ -349,6 +420,7 @@ main.dark_theme .certificates__img:hover {
 
 .projects {
   width: 100%;
+  padding-top: 100px;
 }
 
 .projects__title {
@@ -495,9 +567,24 @@ main.dark_theme .certificates__img:hover {
   padding: 40px 0px;
 }
 
+@media (max-width: 500px) {
+  .certificates__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .certificates__link {
   padding: 10px;
   width: 25%;
+}
+
+@media (max-width: 500px) {
+  .certificates__link {
+    width: 80%;
+  }
 }
 
 .certificates__img {

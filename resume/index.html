@@ -62,12 +62,10 @@
 
         </section>
 
-        <div class="header__buttons">
-          <div class="buttons__block">
-            <button class="theme-switch-btn button">
-              <i class="fas fa-sun"></i><i class="fas fa-moon"></i>
-            </button>
-            <nav class="navbar">
+        <div class="header__buttons_wrap">
+          <div class="header__buttons">
+
+            <nav class="navbar header__buttons__btn">
               <input class="navbar__checkbox" id="nav_check" type="checkbox">
               <label class="navbar__label" for="nav_check">
                 <img class="navbar__label__img" src="./img/sergio_black_on_transparent.png" width="40" height="40"
@@ -96,10 +94,15 @@
                 </li>
               </ul>
             </nav>
-            <button class="switch-lang-eng button">eng</button>
-            <button class="switch-lang-rus button">rus</button>
+            <button class="theme-switch-btn button header__buttons__btn">
+              <i class="fas fa-sun"></i><i class="fas fa-moon"></i>
+            </button>
+            <button class="switch-lang-eng button header__buttons__btn"></button>
+            <button class="switch-lang-rus button header__buttons__btn"></button>
+
           </div>
         </div>
+
       </div>
     </div>
   </header>
@@ -131,24 +134,24 @@
           <span class="more__item text">SASS</span>
           <span class="more__item text">BootStrap</span>
           <span class="more__item text">JavaScript</span>
+          <span class="more__item text">ECMAScript</span>
           <span class="more__item text">ES5</span>
           <span class="more__item text">ES6</span>
           <span class="more__item text">JQuery</span>
-          <span class="more__item text">JSON</span>
-          <span class="more__item text">AJAX</span>
-          <span class="more__item text">CommandLine</span>
-          <span class="more__item text">VSCode</span>
           <span class="more__item text">GIT</span>
           <span class="more__item text">GitHub</span>
           <span class="more__item text">GitBash</span>
-          <span class="more__item text">English Upper Intermediate</span>
-          <span class="more__item text">ECMAScript</span>
+          <span class="more__item text">AJAX</span>
           <span class="more__item text">OOP</span>
-          <span class="more__item text">Cross-Browser</span>
+          <span class="more__item text">JSON</span>
+          <span class="more__item text">English Upper Intermediate</span>
+          <span class="more__item text">CommandLine</span>
+          <span class="more__item text">CrossBrowser</span>
           <span class="more__item text">CrossPlatform</span>
           <span class="more__item text">Valid HTML</span>
           <span class="more__item text">Responsive</span>
           <span class="more__item text">Adaptive</span>
+          <span class="more__item text">VSCode</span>
           <span class="more__item text">Figma</span>
           <span class="more__item text">Photoshop</span>
         </div>
@@ -167,9 +170,11 @@
 
     <section class="certificates" id="certificates">
       <div class="container">
+
         <h3 class="certificates__title title" data-eng="My certificates" data-rus="Мои сертификаты">Мои сертификаты</h3>
 
         <div class="certificates__inner">
+
           <a class="certificates__link" href="https://gb.ru/certificates/1597160" target="_blanc">
             <img class="certificates__img" src="./img/certificates/javaScriptBasic.jpg" width="50" alt="JSBasic"
               data-title="JavaScript ES5, ES6 Basic">
@@ -186,6 +191,7 @@
             <img class="certificates__img" src="./img/certificates/HTMLCSSBasic.jpg" width="50" alt="HTMLCSSBasic"
               data-title="HTML + CSS Basic">
           </a>
+
         </div>
       </div>
     </section>

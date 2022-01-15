@@ -110,7 +110,7 @@ main.dark_theme {
   cursor: pointer;
   text-align: center;
   color: #f8f8f8;
-  border: 1px solid #f8f8f866;
+  border: 1px solid #222;
   background: transparent;
   padding: 10px;
   box-sizing: border-box;
@@ -151,6 +151,8 @@ main.dark_theme {
   align-items: center;
   text-transform: uppercase;
   position: relative;
+  width: 40px;
+  height: 40px;
 
   &__checkbox{
     display: none;
