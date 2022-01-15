@@ -24,6 +24,7 @@ const creatorHTML = {
     })
   },
 
+
   renderEducation(educationArr) {
     //get element to put in
     let eduEl = document.querySelector('.education__inner');
@@ -44,6 +45,7 @@ const creatorHTML = {
       </ul>`);
     })
   },
+
 
   renderProjects(projectsArr) {
 
@@ -75,10 +77,9 @@ const creatorHTML = {
 
 }
 
-creatorHTML.renderEducation(educationArr);
-creatorHTML.renderExperience(experienceArr);
-creatorHTML.renderProjects(projectsArr);
-
+creatorHTML.renderExperience(experienceArrEnglish);
+creatorHTML.renderEducation(educationArrEnglish);
+creatorHTML.renderProjects(projectsArrEnglish);
 
 
 

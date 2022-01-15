@@ -11,9 +11,9 @@ swBtnRus.addEventListener('click', function () {
   creatorHTML.renderProjects(projectsArr);
 
   titleArr.forEach(function (title) {
+
     title.innerText = title.dataset.rus;
-    console.log(title);
-    console.log(title.dataset.rus);
+
   })
 });
 
@@ -26,7 +26,6 @@ swBtnEng.addEventListener('click', function () {
   titleArr.forEach(function (title) {
 
     title.innerHTML = title.dataset.eng;
-    console.log(title.dataset.eng);
 
   })
 });

@@ -563,7 +563,7 @@ const projectsArrEnglish = [
     //title
     'Basic, neutral mockup for some company',
     //description
-    'There are two pages: <p>Main page with description</p> <p>Contacts page has feedback form and yandex.maps api</p>. ',
+    'There are two pages: <p>Main page with description</p> <p>Contacts page has feedback form and yandex.maps api.</p> ',
     //steck
     'HTML5, CSS3, Yandex.maps, Static',
     //imgUrl
