@@ -1,0 +1,58 @@
+.projects {
+  width: 100%;
+  padding-top: 100px;
+
+  &__title{
+    padding: 0px 0 10px 0;
+    margin-top: 100px;
+  }
+  &__inner{
+    display: flex;
+    flex-direction: column;
+  }
+}
+.project{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 50px 0;
+
+  &__link{
+    margin: 0 auto;
+  }
+  &__img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: .5s;
+    box-shadow: 0px 0px 25px #22222266;
+    
+    &:hover{
+      box-shadow: 0px 0px 25px #222222;
+      transition: .5s;
+    }
+  }
+  &__description{
+    margin-left: 15px;
+  
+    &__title{
+      margin: 10px;
+      text-align: center;
+    }
+    &__text{
+    margin: 10px;      
+    }
+    &__list{      
+        padding: 10px;
+        list-style-position: inside;
+      }
+      &__list__item{
+        list-style-position: inside;
+        padding: 5px;
+        & p{
+          padding: 5px 0px 5px 20px;
+        }
+    }
+  }
+}

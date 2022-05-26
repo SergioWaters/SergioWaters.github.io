@@ -1,0 +1,27 @@
+
+.xper {
+  width: 100%;
+
+  &__title {
+
+  }
+  &__inner{
+    padding: 40px 0px;
+  }
+  &__list {
+    margin: 30px;
+  }
+  &__list__item:first-child{
+    list-style: none;
+  }
+  &__list__item {
+    list-style-position: inside;
+  }
+  &__item__title {
+    padding: 10px;
+  }
+  &__item__subtitle {
+    padding: 0 0 7px 0;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,14 @@
+.footer {
+  background: #222;
+
+  &__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 10px;
+
+  @media (max-width: 500px) {
+    flex-direction: column-reverse;
+    }
+  }
+}
