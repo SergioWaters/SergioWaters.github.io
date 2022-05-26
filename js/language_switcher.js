@@ -1,29 +1,22 @@
 'use strict'
 
+import { experience, education, projects } from './array.js'
+
 const swBtnEng = document.querySelector('.switch-lang-eng');
 const swBtnRus = document.querySelector('.switch-lang-rus');
 const titleArr = document.querySelectorAll('h3.title');
 
-swBtnRus.addEventListener('click', function () {
 
-  creatorHTML.renderEducation(educationArr);
-  creatorHTML.renderExperience(experienceArr);
-  creatorHTML.renderProjects(projectsArr);
 
-  titleArr.forEach(function (title) {
+swBtnRus.addEventListener('click', clickHandler(titleArr, 'rus'));
 
-    title.innerText = title.dataset.rus;
-
-  })
-});
-
-swBtnEng.addEventListener('click', function () {
+swBtnEng.addEventListener('click', () => {
 
   creatorHTML.renderEducation(educationArrEnglish);
   creatorHTML.renderExperience(experienceArrEnglish);
   creatorHTML.renderProjects(projectsArrEnglish);;
 
-  titleArr.forEach(function (title) {
+  titleArr.forEach((title) => {
 
     title.innerHTML = title.dataset.eng;
 

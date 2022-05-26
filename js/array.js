@@ -1,6 +1,4 @@
 'use strict'
-
-
 class XperienceCompany {
   constructor(title, position, startDate, endDate, totalDate, responsibilities, city) {
     this.title = title;
@@ -23,7 +21,7 @@ class Project {
   }
 };
 
-const experienceArr = [
+const experienceArrRussian = [
 
   new XperienceCompany(
     // company.title = title;
@@ -334,7 +332,7 @@ const experienceArrEnglish = [
 
 ];
 
-const educationArr = [
+const educationArrRussian = [
   new XperienceCompany(
     // company.title = title;
     `Гик Брейнс (gb.ru)`,
@@ -444,7 +442,7 @@ const educationArrEnglish = [
 ];
 
 
-const projectsArr = [
+const projectsArrRussian = [
 
   new Project(
     //title
@@ -483,7 +481,7 @@ const projectsArr = [
     //imgUrl
     './img/mob_first.png',
     //link
-    'https://sergiowaters.github.io/mobfirst_fashionpage/index.html',
+    'https://sergiowaters.github.io/masters_page/index.html',
     //techinfo
     'Адаптивная страница 375p+, залит на pages.github.io. Русский язык. Без "рыбного" текста.'
   ),
@@ -497,7 +495,7 @@ const projectsArr = [
     //imgUrl
     './img/company_site.png',
     //link
-    'https://sergiowaters.github.io/company_site/index.html',
+    'https://sergiowaters.github.io/company_site_mockup/index.html',
     //techinfo
     'Залит на pages.github.io. Латиница. "Рыбный" текст 100%.'
   ),
@@ -515,7 +513,7 @@ const projectsArr = [
     //techinfo
     'Адаптивная страница 375p+, залит на pages.github.io. Русский и Английский языки. Без "рыбного" текста.'
   ),
-]
+];
 const projectsArrEnglish = [
   new Project(
     //title
@@ -555,7 +553,7 @@ const projectsArrEnglish = [
     //imgUrl
     './img/mob_first.png',
     //link
-    'https://sergiowaters.github.io/mobfirst_fashionpage/index.html',
+    'https://sergiowaters.github.io/masters_page/index.html',
     //techinfo
     'Adaptive page 375p+. Russian language. No fish-text. Uploaded to pages.github.io. '
   ),
@@ -569,7 +567,7 @@ const projectsArrEnglish = [
     //imgUrl
     './img/company_site.png',
     //link
-    'https://sergiowaters.github.io/company_site/index.html',
+    'https://sergiowaters.github.io/company_site_mockup/index.html',
     //techinfo
     'Lorem:) language. Fish-text 100%. Uploaded to pages.github.io.'
   ),
@@ -587,4 +585,71 @@ const projectsArrEnglish = [
     //techinfo
     'Adaptive page 375p+, Russian and English languages. Uploaded to pages.github.io.'
   ),
+];
+export const stackArr = [
+  'HTML',
+  'HTML5',
+  'BEM',
+  'CSS',
+  'CSS3',
+  'SCSS',
+  'SASS',
+  'BootStrap',
+  'JavaScript',
+  'ECMAScript',
+  'ES5',
+  'ES6',
+  'JQuery',
+  'GIT',
+  'GitHub',
+  'GitBash',
+  'AJAX',
+  'OOP',
+  'JSON',
+  'CommandLine',
+  'CrossBrowser',
+  'CrossPlatform',
+  'Responsive',
+  'Adaptive',
+  'VSCode',
+  'Figma',
+  'Photoshop',
+  'English Upper Intermediate',
+  'Valid HTML'
+];
+
+export const certificateArr = [
+  {
+    title: 'JavaScript ES5, ES6 Basic',
+    link: 'https://gb.ru/certificates/1597160',
+    img: './img/certificates/javaScriptBasic.jpg',
+  },
+  {
+    title: 'Programming Basic',
+    link: 'https://gb.ru/certificates/1541773',
+    img: './img/certificates/programmingBasic.jpg',
+  },
+  {
+    title: 'HTML + CSS Advanced',
+    link: 'https://gb.ru/certificates/1477439',
+    img: './img/certificates/HTMLCSSAdvanced.jpg',
+  },
+  {
+    title: 'HTML + CSS Basic',
+    link: 'https://gb.ru/certificates/1378817',
+    img: './img/certificates/HTMLCSSBasic.jpg',
+  }
 ]
+
+export const experience = {
+  eng: experienceArrEnglish,
+  rus: experienceArrRussian
+};
+export const education = {
+  eng: educationArrEnglish,
+  rus: educationArrRussian
+};
+export const projects = {
+  eng: projectsArrEnglish,
+  rus: projectsArrRussian
+};

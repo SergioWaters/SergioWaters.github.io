@@ -577,6 +577,12 @@ main.dark_theme .certificates__img:hover {
   }
 }
 
+.certificates__title {
+  margin: 10px;
+  text-align: center;
+  min-height: 40px;
+}
+
 .certificates__link {
   padding: 10px;
   width: 25%;
