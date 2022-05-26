@@ -509,7 +509,7 @@ const projectsArrRussian = [
     //imgUrl
     './img/resume.jpg',
     //link
-    'https://sergiowaters.github.io/resume/index.html',
+    'https://sergiowaters.github.io/index.html',
     //techinfo
     'Адаптивная страница 375p+, залит на pages.github.io. Русский и Английский языки. Без "рыбного" текста.'
   ),
@@ -581,7 +581,7 @@ const projectsArrEnglish = [
     //imgUrl
     './img/resume.jpg',
     //link
-    'https://sergiowaters.github.io/resume/index.html',
+    'https://sergiowaters.github.io/index.html',
     //techinfo
     'Adaptive page 375p+, Russian and English languages. Uploaded to pages.github.io.'
   ),
