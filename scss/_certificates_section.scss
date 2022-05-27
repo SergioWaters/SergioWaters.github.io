@@ -3,6 +3,10 @@
 
   &__title {
     margin: 50px 10px 10px 10px;
+
+    @media print {
+      margin: 10px;
+    }
   }
 
   &__inner {

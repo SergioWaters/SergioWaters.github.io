@@ -22,12 +22,14 @@
 
         <section class="about">
 
-          <img class="about__img" width="100" src="img/photo.jpg" alt="MokretsovSA">
+          <div class="about__info__wrapper">
+            <img class="about__img" width="100" src="img/photo.jpg" alt="MokretsovSA">
 
-          <div class="about__info">
-            <h1 class="about__info__title">Mokretsov Sergei</h1>
-            <h3 class="about__info__subtitle">Junior frontend developer</h3>
-            <h4 class="about__info__location">Saint-Petersburg, Russia</h4>
+            <div class="about__info">
+              <h1 class="about__info__title">Mokretsov Sergei</h1>
+              <h3 class="about__info__subtitle">Junior frontend developer</h3>
+              <h4 class="about__info__location">Saint-Petersburg, Russia</h4>
+            </div>
           </div>
 
           <ul class="contacts__list">
@@ -90,7 +92,7 @@
                 </li>
                 <li class="navbar__list__item">
                   <a class="edu__link navbar__link" href="#education">
-                    education
+                    Education
                   </a>
                 </li>
                 <li class="navbar__list__item">
@@ -136,6 +138,7 @@
       <div class="container">
         <h3 class="title" data-eng="Stack #tags" data-rus="Стек #теги">Stack #tags</h3>
         <div class="more__inner ">
+
           <!-- Here goes js content -->
         </div>
       </div>
@@ -158,7 +161,7 @@
 
         <div class="certificates__inner">
 
-
+          <!-- Here goes js content -->
         </div>
       </div>
     </section>
@@ -182,52 +185,33 @@
 
       <div class="footer__inner">
 
-        <div class="buttons__block">
-          <button class="theme-switch-btn button">
-            <i class="fas fa-sun"></i><i class="fas fa-moon"></i>
-          </button>
-
-          <nav class="navbar">
-            <input class="navbar__checkbox" id="nav_check" type="checkbox">
-            <label class="navbar__label" for="nav_check">
-              <img class="navbar__label__img" src="./img/sergio_black_on_transparent.png" width="40" height="40"
-                alt="sw_logo">
-            </label>
-
-            <ul class="navbar__list">
-              <li class="navbar__list__item">
-                <a class="projects__link navbar__link" href="#portfolio">
-                  projects
-                </a>
-              </li>
-              <li class="navbar__list__item">
-                <a class="stack__link navbar__link" href="#stack">
-                  stack
-                </a>
-              </li>
-              <li class="navbar__list__item">
-                <a class="edu__link navbar__link" href="#education">
-                  education
-                </a>
-              </li>
-              <li class="navbar__list__item">
-                <a class="certificates__link navbar__link" href="#certificates">
-                  Additional info
-                </a>
-              </li>
-              <li class="navbar__list__item">
-                <a class="workxp__link navbar__link" href="#expirience">
-                  Work expirience
-                </a>
-              </li>
-            </ul>
-          </nav>
-
-          <button class="switch-lang-eng button">eng</button>
-          <button class="switch-lang-rus button">rus</button>
-        </div>
-
-
+        <ul class="footer__navbar__list">
+          <li class="footer__navbar__list__item">
+            <a class="footer__navbar__link" href="#portfolio">
+              Projects
+            </a>
+          </li>
+          <li class="footer__navbar__list__item">
+            <a class="footer__navbar__link" href="#stack">
+              Stack #tags
+            </a>
+          </li>
+          <li class="footer__navbar__list__item">
+            <a class="footer__navbar__link" href="#education">
+              Education
+            </a>
+          </li>
+          <li class="footer__navbar__list__item">
+            <a class="footer__navbar__link" href="#certificates">
+              Certificates
+            </a>
+          </li>
+          <li class="footer__navbar__list__item">
+            <a class="footer__navbar__link" href="#expirience">
+              Work expirience
+            </a>
+          </li>
+        </ul>
 
         <ul class="contacts__list">
           <li class="contacts__list__item">

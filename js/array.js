@@ -587,6 +587,12 @@ const projectsArrEnglish = [
   ),
 ];
 export const stackArr = [
+  'React.js',
+  'Material.UI',
+  'Vue.js',
+  'Vuetify',
+  'Vuex',
+  'WebPack',
   'HTML',
   'HTML5',
   'BEM',
