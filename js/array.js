@@ -453,7 +453,7 @@ const projectsArrRussian = [
     //imgUrl
     './img/expences_vue.png',
     //link
-    'https://sergiowaters.github.io/expences_vue/index.html',
+    'https://sergiowaters.github.io/expences_vue/',
     //techinfo
     'Залит на pages.github.io. Английский язык. ',
   ),
@@ -470,6 +470,20 @@ const projectsArrRussian = [
     'https://sergiowaters.github.io/letscolor/index.html',
     //techinfo
     'Адаптивный макет 1440p to 375p, залит на pages.github.io. Английский язык. "Рыбный" текст 50%',
+  ),
+  new Project(
+    //title
+    'Персональная страница',
+    //description
+    'Личная страница, резюме, портфолио',
+    //steck
+    'HTML5, CSS3, SVG, BEM, SASS, JavaScript',
+    //imgUrl
+    './img/resume.jpg',
+    //link
+    'https://sergiowaters.github.io/index.html',
+    //techinfo
+    'Адаптивная страница 375p+, залит на pages.github.io. Русский и Английский языки. Без "рыбного" текста.'
   ),
   new Project(
     //title
@@ -526,20 +540,7 @@ const projectsArrRussian = [
     //techinfo
     'Залит на pages.github.io. Латиница. "Рыбный" текст 100%.'
   ),
-  new Project(
-    //title
-    'Персональная страница',
-    //description
-    'Личная страница, резюме, портфолио',
-    //steck
-    'HTML5, CSS3, SVG, BEM, SASS, JavaScript',
-    //imgUrl
-    './img/resume.jpg',
-    //link
-    'https://sergiowaters.github.io/index.html',
-    //techinfo
-    'Адаптивная страница 375p+, залит на pages.github.io. Русский и Английский языки. Без "рыбного" текста.'
-  ),
+
 ];
 const projectsArrEnglish = [
   new Project(
@@ -552,7 +553,7 @@ const projectsArrEnglish = [
     //imgUrl
     './img/expences_vue.png',
     //link
-    'https://sergiowaters.github.io/expences_vue/index.html',
+    'https://sergiowaters.github.io/expences_vue/',
     //techinfo
     'Hosted by GitHub Pages. English language. ',
   ),
@@ -569,6 +570,20 @@ const projectsArrEnglish = [
     'https://sergiowaters.github.io/letscolor/index.html',
     //techinfo
     'Adaptive mockup 1440p to 375p, located on pages.github.io. English "Fish" text 50%',
+  ),
+  new Project(
+    //title
+    'Personal Page',
+    //description
+    'My personal page. One page + dynamic content. It has dark and normal themes. Two languages to choose from - Russian and English',
+    //steck
+    'HTML5, CSS3, SVG, BEM, SASS, JavaScript',
+    //imgUrl
+    './img/resume.jpg',
+    //link
+    'https://sergiowaters.github.io/index.html',
+    //techinfo
+    'Adaptive page 375p+, Russian and English languages. Uploaded to pages.github.io.'
   ),
   new Project(
     //title
@@ -626,20 +641,7 @@ const projectsArrEnglish = [
     //techinfo
     'Lorem:) language. Fish-text 100%. Uploaded to pages.github.io.'
   ),
-  new Project(
-    //title
-    'Personal Page',
-    //description
-    'My personal page. One page + dynamic content. It has dark and normal themes. Two languages to choose from - Russian and English',
-    //steck
-    'HTML5, CSS3, SVG, BEM, SASS, JavaScript',
-    //imgUrl
-    './img/resume.jpg',
-    //link
-    'https://sergiowaters.github.io/index.html',
-    //techinfo
-    'Adaptive page 375p+, Russian and English languages. Uploaded to pages.github.io.'
-  ),
+
 ];
 export const stackArr = [
   'React.js',
