@@ -443,7 +443,34 @@ const educationArrEnglish = [
 
 
 const projectsArrRussian = [
-
+  new Project(
+    //title
+    "Приложение учета расходов",
+    //description
+    'Vue.js SPA проект. Разбит на компоненты, Views и модули. Переход между компонентами осуществляется с помощью VueRouter. Используется Chart.js библиотека для отображения графика. Стили по большей части из библиотеки Vuetify. Компонент калькулятора покрыт unit-тестами.',
+    //steck
+    'Vue.js, VueX, VueRouter, JavaScript, Vuetify, Chart.js',
+    //imgUrl
+    './img/expences_vue.png',
+    //link
+    'https://sergiowaters.github.io/expences_vue/index.html',
+    //techinfo
+    'Залит на pages.github.io. Английский язык. ',
+  ),
+  new Project(
+    //title
+    "Сайт Ателье Let's Color!",
+    //description
+    'Макет будущего сайта. ',
+    //steck
+    'HTML5, CSS3, BEM, SASS, Static, JavaScript',
+    //imgUrl
+    './img/letscolor.png',
+    //link
+    'https://sergiowaters.github.io/letscolor/index.html',
+    //techinfo
+    'Адаптивный макет 1440p to 375p, залит на pages.github.io. Английский язык. "Рыбный" текст 50%',
+  ),
   new Project(
     //title
     'Онлайн магазин модной одежды',
@@ -515,6 +542,34 @@ const projectsArrRussian = [
   ),
 ];
 const projectsArrEnglish = [
+  new Project(
+    //title
+    "App to store expences",
+    //description
+    'Vue.js SPA project. Separated by Components, Views and Modules. It uses VueRouter for routing between views. Uses Chart.js for doughnut chart. Uses Vuetify for styles. Calculator component covered by unit-tests.',
+    //steck
+    'Vue.js, VueX, VueRouter, JavaScript, Vuetify, Chart.js',
+    //imgUrl
+    './img/expences_vue.png',
+    //link
+    'https://sergiowaters.github.io/expences_vue/index.html',
+    //techinfo
+    'Hosted by GitHub Pages. English language. ',
+  ),
+  new Project(
+    //title
+    "Let's Color! atelier site",
+    //description
+    'Mockup for new site.',
+    //steck
+    'HTML5, CSS3, BEM, SASS, Static, JavaScript',
+    //imgUrl
+    './img/letscolor.png',
+    //link
+    'https://sergiowaters.github.io/letscolor/index.html',
+    //techinfo
+    'Adaptive mockup 1440p to 375p, located on pages.github.io. English "Fish" text 50%',
+  ),
   new Project(
     //title
     'Online fashion store',
@@ -626,7 +681,22 @@ export const stackArr = [
 
 export const certificateArr = [
   {
-    title: 'JavaScript ES5, ES6 Basic',
+    title: 'Vue.js',
+    link: 'https://gb.ru/certificates/1814151',
+    img: './img/certificates/certificate_vuejs.jpg'
+  },
+  {
+    title: 'Web Tools',
+    link: 'https://gb.ru/certificates/1747345',
+    img: './img/certificates/webpack.jpg'
+  },
+  {
+    title: 'Advanced JavaScript',
+    link: 'https://gb.ru/certificates/1747327',
+    img: './img/certificates/certificate_vuejs.jpg'
+  },
+  {
+    title: 'JavaScript Basic',
     link: 'https://gb.ru/certificates/1597160',
     img: './img/certificates/javaScriptBasic.jpg',
   },
@@ -644,6 +714,11 @@ export const certificateArr = [
     title: 'HTML + CSS Basic',
     link: 'https://gb.ru/certificates/1378817',
     img: './img/certificates/HTMLCSSBasic.jpg',
+  },
+  {
+    title: 'Git and GitHub Basic',
+    link: 'https://gb.ru/certificates/1468451',
+    img: './img/certificates/git.jpg',
   }
 ]
 

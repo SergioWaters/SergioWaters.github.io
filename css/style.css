@@ -671,45 +671,38 @@ main.dark_theme .certificates__img:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 40px 0px;
 }
 
-@media (max-width: 500px) {
-  .certificates__inner {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+.certificates__link {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .certificates__title {
   margin: 10px;
   text-align: center;
-  min-height: 40px;
-}
-
-.certificates__link {
-  padding: 10px;
-  width: 25%;
-}
-
-@media (max-width: 500px) {
-  .certificates__link {
-    width: 80%;
-  }
 }
 
 .certificates__img {
-  min-width: 100px;
-  width: 100%;
-  position: relative;
+  min-width: 200px;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
@@ -723,16 +716,6 @@ main.dark_theme .certificates__img:hover {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
-}
-
-.certificates__img::after {
-  content: "123";
-  display: block;
-  position: absolute;
-  color: #222;
-  bottom: 0;
-  left: 0;
-  width: 100%;
 }
 
 .xper {
