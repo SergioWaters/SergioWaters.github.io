@@ -1,4 +1,4 @@
-import { Project } from './classes.js';
+import { Project } from '../../classes.js';
 
 const projectsArrRussian = [
   new Project(

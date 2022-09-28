@@ -1,4 +1,4 @@
-import { XperienceCompany } from './classes.js'
+import { XperienceCompany } from '../../classes.js'
 
 export const experienceArrRussian = [
 
@@ -311,7 +311,7 @@ export const experienceArrEnglish = [
 
 ];
 
-export const experience = {
+export const experienceArr = {
   eng: experienceArrEnglish,
   rus: experienceArrRussian
 };
