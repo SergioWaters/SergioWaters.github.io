@@ -1,6 +1,9 @@
-* {
+a,
+*,
+*::after,
+*::before {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -13,8 +16,12 @@ $maxWidth: 1220;
 @mixin adaptiv-font($pcSize, $mobSize) {
   $addSize: $pcSize - $mobSize;
   $maxWidth: $maxWidth - 320;
-  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
-  line-height: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}) * 1.5);
+  font-size: calc(
+    #{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})
+  );
+  line-height: calc(
+    #{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}) * 1.5
+  );
   // @include adaptiv-font(16, 12);
 }
 
@@ -54,7 +61,7 @@ main.dark_theme {
   .subtitle,
   .text,
   .subtext {
-    color: #f8f8f899
+    color: #f8f8f899;
   }
 }
 
@@ -97,7 +104,7 @@ main.dark_theme {
 }
 
 .text {
-  @include adaptiv-font(18, 14);
+  @include adaptiv-font(20, 18);
   font-weight: 400;
   color: #222;
 }
@@ -107,8 +114,6 @@ main.dark_theme {
   font-weight: 400;
   color: #222;
 }
-
-
 
 .buttons__block {
   display: flex;
@@ -142,35 +147,67 @@ main.dark_theme {
   height: 40px;
 }
 
-
 .contacts__list {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   min-width: 250px;
-  padding: 10px;
-}
+  padding: 20px;
 
-.contacts__list__item {
-  margin: 5px;
-  list-style: none;
+  &__item {
+    margin: 5px;
+    list-style: none;
+
+    &:hover .contacts__link {
+      color: #f8f8f8;
+      transition: 0.5s;
+    }
+    &:hover .icon {
+      background-color: #f8f8f8;
+      transition: 0.5s;
+    }
+  }
 }
 
 .contacts__link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   color: #767575;
-  transition: .5s;
+  transition: 0.5s;
 
-  &:hover {
-    color: #f8f8f8;
-    transition: .5s;
-  }
+  & .icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid #767575;
+    background-color: #767575;
+    margin: 0px 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    transition: 0.5s;
 
-  & i {
-    padding: 0px 5px;
+    &.email {
+      background-image: url("../icons/email.png");
+    }
+    &.phone {
+      background-image: url("../icons/phone.png");
+    }
+    &.skype {
+      background-image: url("../icons/skype.png");
+    }
+    &.whatsapp {
+      background-image: url("../icons/whatsapp.png");
+    }
+    &.github {
+      background-image: url("../icons/github.png");
+    }
+    &.telegram {
+      background-image: url("../icons/telegram.png");
+      background-position: -1px;
+    }
   }
 }
-
 
 .navbar {
   display: flex;
@@ -215,7 +252,7 @@ main.dark_theme {
     transition: 0.5s;
   }
 
-  &__checkbox:checked~&__list {
+  &__checkbox:checked ~ &__list {
     transform: scale(1);
     transition: 0.5s;
   }

@@ -1,5 +1,13 @@
 export class XperienceCompany {
-  constructor(title, position, startDate, endDate, totalDate, responsibilities, city) {
+  constructor(
+    title,
+    position,
+    startDate,
+    endDate,
+    totalDate,
+    responsibilities,
+    city
+  ) {
     this.title = title;
     this.position = position;
     this.startDate = startDate;
@@ -8,7 +16,7 @@ export class XperienceCompany {
     this.responsibilities = responsibilities;
     this.city = city;
   }
-};
+}
 export class Project {
   constructor(title, description, steck, imgUrl, link, techInfo) {
     this.title = title;
@@ -18,4 +26,4 @@ export class Project {
     this.link = link;
     this.techInfo = techInfo;
   }
-};
+}

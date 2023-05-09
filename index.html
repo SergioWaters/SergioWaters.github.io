@@ -1,259 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/fav/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/fav/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/fav/favicon-16x16.png" />
+    <link rel="manifest" href="./img/fav/site.webmanifest" />
+    <title>Mokretsov Sergei Frontend Developer</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="apple-touch-icon" sizes="180x180" href="./img/fav/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/fav/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./img/fav/favicon-16x16.png">
-  <link rel="manifest" href="./img/fav/site.webmanifest">
-  <title>MokretsovSergeiCV</title>
-</head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <section class="about">
+            <div class="about__info__wrapper">
+              <img
+                class="about__img"
+                width="100"
+                src="img/photo.jpg"
+                alt="MokretsovSA" />
 
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="header__inner">
+              <div class="about__info"></div>
+            </div>
 
-        <section class="about">
+            <ul class="contacts__list">
+              <li class="contacts__list__item">
+                <a
+                  class="contacts__link"
+                  href="mailto:mokretsovsa@gmail.com"
+                  data-contact="mokretsovsa@gmail.com">
+                  mokretsovsa@gmail.com <span class="icon email"></span>
+                </a>
+              </li>
+              <li class="contacts__list__item">
+                <a
+                  class="contacts__link"
+                  href="tel:+7-921-560-57-37"
+                  target="_blank"
+                  data-contact="+7-921-560-57-37">
+                  +7-921-560-57-37 <span class="icon phone"></span>
+                </a>
+              </li>
+              <li class="contacts__list__item">
+                <a
+                  class="contacts__link"
+                  href="https://join.skype.com/invite/EBa9zeSrAips"
+                  target="_blank"
+                  data-contact="live:.cid.a6e1971095d9067d">
+                  live:.cid.a6e1971095d9067d <span class="icon skype"></span>
+                </a>
+              </li>
+              <li class="contacts__list__item">
+                <a
+                  class="contacts__link"
+                  href="https://wa.me/79215605737"
+                  target="_blank"
+                  data-contact="+7-921-560-57-37">
+                  @79215605737 <span class="icon whatsapp"></span>
+                </a>
+              </li>
+              <li class="contacts__list__item">
+                <a
+                  class="contacts__link"
+                  href="https://sergiowaters.github.io/"
+                  target="_blank"
+                  data-contact="sergiowaters.github.io">
+                  sergiowaters.github.io <span class="icon github"></span>
+                </a>
+              </li>
+              <li class="contacts__list__item">
+                <a
+                  class="contacts__link"
+                  href="https://t.me/sergiowaters"
+                  target="_blank"
+                  data-contact="@SergioWaters">
+                  @SergioWaters <span class="icon telegram"></span>
+                </a>
+              </li>
+            </ul>
+          </section>
 
-          <div class="about__info__wrapper">
-            <img class="about__img" width="100" src="img/photo.jpg" alt="MokretsovSA">
-
-            <div class="about__info">
-
+          <div class="header__buttons_wrap">
+            <div class="header__buttons">
+              <nav class="navbar header__buttons__btn">
+                <input
+                  class="navbar__checkbox"
+                  id="nav_check"
+                  type="checkbox" />
+                <label class="navbar__label" for="nav_check">
+                  <img
+                    class="navbar__label__img"
+                    src="./img/sergio_black_on_transparent.png"
+                    width="40"
+                    height="40"
+                    alt="sw_logo" />
+                </label>
+                <ul class="navbar__list">
+                  <li class="navbar__list__item">
+                    <a class="projects__link navbar__link" href="#projects">
+                      Projects
+                    </a>
+                  </li>
+                  <li class="navbar__list__item">
+                    <a class="stack__link navbar__link" href="#stack">
+                      Stack #tags
+                    </a>
+                  </li>
+                  <li class="navbar__list__item">
+                    <a class="edu__link navbar__link" href="#education">
+                      Education
+                    </a>
+                  </li>
+                  <li class="navbar__list__item">
+                    <a
+                      class="certificates__link navbar__link"
+                      href="#certificates">
+                      Certificates
+                    </a>
+                  </li>
+                  <li class="navbar__list__item">
+                    <a class="workxp__link navbar__link" href="#expirience">
+                      Work expirience
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <button class="theme-switch-btn button header__buttons__btn">
+                <span class="icon sun"></span>
+                <!-- <span class="icon moon"></span> -->
+              </button>
+              <button
+                class="switch-lang-eng lang-switch button header__buttons__btn"
+                data-lang="eng"></button>
+              <button
+                class="switch-lang-rus lang-switch button header__buttons__btn"
+                data-lang="rus"></button>
             </div>
           </div>
+        </div>
+      </div>
+    </header>
 
-          <ul class="contacts__list">
-            <li class="contacts__list__item">
-              <a class="contacts__link" href="mailto:mokretsovsa@gmail.com" data-contact="mokretsovsa@gmail.com">
-                mokretsovsa@gmail.com <i class="fas fa-envelope"></i>
+    <main class="main">
+      <section class="projects" id="projects">
+        <div class="container">
+          <h3
+            class="projects__title title"
+            data-eng="My Projects"
+            data-rus="Мои проекты">
+            My Projects
+          </h3>
+          <div class="projects__inner">
+            <!-- here goes a content, generated by js -->
+          </div>
+        </div>
+      </section>
+
+      <section class="stack" id="stack">
+        <div class="container">
+          <h3 class="title" data-eng="Stack #tags" data-rus="Стек #теги">
+            Stack #tags
+          </h3>
+          <div class="more__inner">
+            <!-- Here goes js content -->
+          </div>
+        </div>
+      </section>
+
+      <section class="education" id="education">
+        <h3
+          class="education__title title"
+          data-eng="Education"
+          data-rus="Образование">
+          Education
+        </h3>
+        <div class="container">
+          <div class="education__inner">
+            <!-- Here goes js content -->
+          </div>
+        </div>
+      </section>
+
+      <section class="certificates" id="certificates">
+        <div class="container">
+          <h3
+            class="certificates__title title"
+            data-eng="My certificates"
+            data-rus="Мои сертификаты">
+            My certificates
+          </h3>
+
+          <div class="certificates__inner">
+            <!-- Here goes js content -->
+          </div>
+        </div>
+      </section>
+
+      <section class="xper" id="expirience">
+        <div class="container">
+          <h3
+            class="xper__title title"
+            data-eng="Work experience"
+            data-rus="Опыт работы">
+            Work experience
+          </h3>
+          <div class="xper__inner">
+            <!-- Here goes js content -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <ul class="footer__navbar__list">
+            <li class="footer__navbar__list__item">
+              <a class="footer__navbar__link" href="#projects"> Projects </a>
+            </li>
+            <li class="footer__navbar__list__item">
+              <a class="footer__navbar__link" href="#stack"> Stack #tags </a>
+            </li>
+            <li class="footer__navbar__list__item">
+              <a class="footer__navbar__link" href="#education"> Education </a>
+            </li>
+            <li class="footer__navbar__list__item">
+              <a class="footer__navbar__link" href="#certificates">
+                Certificates
               </a>
             </li>
-            <li class="contacts__list__item">
-              <a class="contacts__link" href="tel:+7-921-560-57-37" target="_blank" data-contact="+7-921-560-57-37">
-                +7-921-560-57-37 <i class="fas fa-phone-square"></i>
-              </a>
-            </li>
-            <li class="contacts__list__item">
-              <a class="contacts__link" href="https://join.skype.com/invite/EBa9zeSrAips" target="_blank"
-                data-contact="live:.cid.a6e1971095d9067d">
-                live:.cid.a6e1971095d9067d <i class="fab fa-skype"></i>
-              </a>
-            </li>
-            <li class="contacts__list__item">
-              <a class="contacts__link" href="https://wa.me/79215605737" target="_blank"
-                data-contact="+7-921-560-57-37">
-                @79215605737 <i class="fab fa-whatsapp-square"></i>
-              </a>
-            </li>
-            <li class="contacts__list__item">
-              <a class="contacts__link" href="https://sergiowaters.github.io/" target="_blank"
-                data-contact="sergiowaters.github.io">
-                sergiowaters.github.io <i class="fab fa-github"></i>
-              </a>
-            </li>
-            <li class="contacts__list__item">
-              <a class="contacts__link" href="https://t.me/sergiowaters" target="_blank" data-contact="@SergioWaters">
-                @SergioWaters <i class="fab fa-telegram"></i>
+            <li class="footer__navbar__list__item">
+              <a class="footer__navbar__link" href="#expirience">
+                Work expirience
               </a>
             </li>
           </ul>
 
-        </section>
-
-        <div class="header__buttons_wrap">
-          <div class="header__buttons">
-
-            <nav class="navbar header__buttons__btn">
-              <input class="navbar__checkbox" id="nav_check" type="checkbox">
-              <label class="navbar__label" for="nav_check">
-                <img class="navbar__label__img" src="./img/sergio_black_on_transparent.png" width="40" height="40"
-                  alt="sw_logo">
-              </label>
-              <ul class="navbar__list">
-                <li class="navbar__list__item">
-                  <a class="projects__link navbar__link" href="#portfolio">
-                    Projects
-                  </a>
-                </li>
-                <li class="navbar__list__item">
-                  <a class="stack__link navbar__link" href="#stack">
-                    Stack #tags
-                  </a>
-                </li>
-                <li class="navbar__list__item">
-                  <a class="edu__link navbar__link" href="#education">
-                    Education
-                  </a>
-                </li>
-                <li class="navbar__list__item">
-                  <a class="certificates__link navbar__link" href="#certificates">
-                    Certificates
-                  </a>
-                </li>
-                <li class="navbar__list__item">
-                  <a class="workxp__link navbar__link" href="#expirience">
-                    Work expirience
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <button class="theme-switch-btn button header__buttons__btn">
-              <i class="fas fa-sun"></i><i class="fas fa-moon"></i>
-            </button>
-            <button class="switch-lang-eng lang-switch button header__buttons__btn" data-lang="eng"></button>
-            <button class="switch-lang-rus lang-switch button header__buttons__btn" data-lang="rus"></button>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </header>
-
-
-
-  <main class="main">
-
-    <section class="projects" id="projects">
-      <div class="container">
-        <h3 class="projects__title title" data-eng="My Projects" data-rus="Мои проекты">My Projects</h3>
-        <div class="projects__inner">
-
-          <!-- here goes a content, generated by js -->
+          <ul class="contacts__list">
+            <li class="contacts__list__item">
+              <a
+                class="contacts__link"
+                href="mailto:mokretsovsa@gmail.com"
+                data-contact="mokretsovsa@gmail.com">
+                mokretsovsa@gmail.com <span class="icon email"></span>
+              </a>
+            </li>
+            <li class="contacts__list__item">
+              <a
+                class="contacts__link"
+                href="tel:+7-921-560-57-37"
+                target="_blank"
+                data-contact="+7-921-560-57-37">
+                +7-921-560-57-37 <span class="icon phone"></span>
+              </a>
+            </li>
+            <li class="contacts__list__item">
+              <a
+                class="contacts__link"
+                href="https://join.skype.com/invite/EBa9zeSrAips"
+                target="_blank"
+                data-contact="live:.cid.a6e1971095d9067d">
+                live:.cid.a6e1971095d9067d <span class="icon skype"></span>
+              </a>
+            </li>
+            <li class="contacts__list__item">
+              <a
+                class="contacts__link"
+                href="https://wa.me/79215605737"
+                target="_blank"
+                data-contact="+7-921-560-57-37">
+                @79215605737 <span class="icon whatsapp"></span>
+              </a>
+            </li>
+            <li class="contacts__list__item">
+              <a
+                class="contacts__link"
+                href="https://sergiowaters.github.io/"
+                target="_blank"
+                data-contact="sergiowaters.github.io">
+                sergiowaters.github.io <span class="icon github"></span>
+              </a>
+            </li>
+            <li class="contacts__list__item">
+              <a
+                class="contacts__link"
+                href="https://t.me/sergiowaters"
+                target="_blank"
+                data-contact="@SergioWaters">
+                @SergioWaters <span class="icon telegram"></span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
-
-    <section class="stack" id="stack">
-      <div class="container">
-        <h3 class="title" data-eng="Stack #tags" data-rus="Стек #теги">Stack #tags</h3>
-        <div class="more__inner ">
-
-          <!-- Here goes js content -->
-        </div>
-      </div>
-    </section>
-
-    <section class="education" id="education">
-      <h3 class="education__title title" data-eng="Education" data-rus="Образование">Education</h3>
-      <div class="container">
-        <div class="education__inner">
-
-          <!-- Here goes js content -->
-        </div>
-      </div>
-    </section>
-
-    <section class="certificates" id="certificates">
-      <div class="container">
-
-        <h3 class="certificates__title title" data-eng="My certificates" data-rus="Мои сертификаты">My certificates</h3>
-
-        <div class="certificates__inner">
-
-          <!-- Here goes js content -->
-        </div>
-      </div>
-    </section>
-
-    <section class="xper" id="expirience">
-      <div class="container">
-        <h3 class="xper__title title" data-eng="Work experience" data-rus="Опыт работы">Work experience</h3>
-        <div class="xper__inner">
-
-          <!-- Here goes js content -->
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-
-      <div class="footer__inner">
-
-        <ul class="footer__navbar__list">
-          <li class="footer__navbar__list__item">
-            <a class="footer__navbar__link" href="#portfolio">
-              Projects
-            </a>
-          </li>
-          <li class="footer__navbar__list__item">
-            <a class="footer__navbar__link" href="#stack">
-              Stack #tags
-            </a>
-          </li>
-          <li class="footer__navbar__list__item">
-            <a class="footer__navbar__link" href="#education">
-              Education
-            </a>
-          </li>
-          <li class="footer__navbar__list__item">
-            <a class="footer__navbar__link" href="#certificates">
-              Certificates
-            </a>
-          </li>
-          <li class="footer__navbar__list__item">
-            <a class="footer__navbar__link" href="#expirience">
-              Work expirience
-            </a>
-          </li>
-        </ul>
-
-        <ul class="contacts__list">
-          <li class="contacts__list__item">
-            <a class="contacts__link" href="mailto:mokretsovsa@gmail.com" data-contact="mokretsovsa@gmail.com">
-              mokretsovsa@gmail.com <i class="fas fa-envelope"></i>
-            </a>
-          </li>
-          <li class="contacts__list__item">
-            <a class="contacts__link" href="tel:+7-921-560-57-37" target="_blank" data-contact="+7-921-560-57-37">
-              +7-921-560-57-37 <i class="fas fa-phone-square"></i>
-            </a>
-          </li>
-          <li class="contacts__list__item">
-            <a class="contacts__link" href="https://join.skype.com/invite/EBa9zeSrAips" target="_blank"
-              data-contact="live:.cid.a6e1971095d9067d">
-              live:.cid.a6e1971095d9067d <i class="fab fa-skype"></i>
-            </a>
-          </li>
-          <li class="contacts__list__item">
-            <a class="contacts__link" href="https://wa.me/79215605737" target="_blank" data-contact="+7-921-560-57-37">
-              @79215605737 <i class="fab fa-whatsapp-square"></i>
-            </a>
-          </li>
-          <li class="contacts__list__item">
-            <a class="contacts__link" href="https://sergiowaters.github.io/" target="_blank"
-              data-contact="sergiowaters.github.io">
-              sergiowaters.github.io <i class="fab fa-github"></i>
-            </a>
-          </li>
-          <li class="contacts__list__item">
-            <a class="contacts__link" href="https://t.me/sergiowaters" target="_blank" data-contact="@SergioWaters">
-              @SergioWaters <i class="fab fa-telegram"></i>
-            </a>
-          </li>
-        </ul>
-
-      </div>
-    </div>
-  </footer>
-
-  <!-- <script src="./js/dark_theme.js"></script> -->
-  <!-- <script type="module" src="./js/array.js"></script> -->
-  <!-- <script type="module" src="./js/language_switcher.js"></script> -->
-  <script type="module" src="./js/index.js"></script>
-  <script src="https://kit.fontawesome.com/204712eb90.js" crossorigin="anonymous"></script>
-
-
-</body>
-
+    </footer>
+    <script type="module" src="./js/index.js"></script>
+  </body>
 </html>

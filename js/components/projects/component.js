@@ -1,27 +1,55 @@
-import { render } from '../../script.js'
-import { projects } from './array.js'
+import { render } from "../../script.js";
+import { projects } from "./array.js";
 
 export const projectsComp = (lang) => {
-  const arr = projects[lang]
-  render(
-    arr,
-    {
-      element: '.projects__inner',
-      markup: (item) => `
-        <article class="project">
-          <a class="project__link" href=${item.link} target="_blank"
-            rel="noopener noreferrer">
-            <img src="${item.imgUrl}" width="250" alt="Online fashion store image" class="project__img">
-          </a>
-          <div class="project__description">
-            <h4 class="project__description__title subtitle">${item.title}</h4>
-            <div class="project__description__list">                
-              <div class="project__description__list__item text">${item.description}</div>
-              <div class="project__description__list__item text">${item.techInfo}</div>
-              <div class="project__description__list__item text">${item.steck}</div>       
+  const markup = (p = projects) =>
+    p
+      .map(
+        (item) => `
+          <article class="project">
+            <h4 class="project__title subtitle">${item.title[lang]}</h4>
+            
+            <div class="project__slide-box">
+              ${item.imgUrl
+                .map(
+                  (element) =>
+                    `<div class="slide" style="background-image: url(${element});"></div>`
+                )
+                .join("")}
             </div>
-          </div>
-        </article>`,
-    }
-  );
-}
+  
+            <div class="project__description">
+              <div class="project__links">
+                <a class="link more__item subtext" href=${
+                  item.link
+                } target="_blank"
+                rel="noopener noreferrer">
+                  ${item.title[lang]}
+                </a>
+                <a class="link more__item subtext" href=${
+                  item.link
+                } target="_blank"
+                rel="noopener noreferrer">
+                  GIT
+                </a>
+              </div>
+              <div class="project__description__list">                
+                <div class="project__description__list__item text">${
+                  item.description[lang]
+                }</div>
+                <div class="project__description__list__item text">${
+                  item.techInfo[lang]
+                }</div>
+                <div class="project__description__list__item text stack">
+                <p>${item.stack}</p></div>       
+              </div>
+            </div>
+          </article>`
+      )
+      .join("");
+
+  render([], {
+    element: ".projects__inner",
+    markup: markup,
+  });
+};
