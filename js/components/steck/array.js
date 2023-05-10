@@ -1,40 +1,33 @@
-export const steckArr = [
-  "React.js",
-  "Redux",
-  "Vue.js",
-  "Vuex",
-  "Material.UI",
-  "Vuetify",
-  "WebPack",
-  "HTML",
-  "HTML5",
-  "CSS",
-  "CSS3",
-  "SCSS",
-  "SASS",
-  "BEM",
-  "BootStrap",
-  "JavaScript",
-  "ECMAScript",
-  "TypeScript",
-  "ES5",
-  "ES6",
-  "JQuery",
-  "Local Storage",
-  "GIT",
-  "GitHub",
-  "GitBash",
-  "AJAX",
-  "OOP",
-  "JSON",
-  "CommandLine",
-  "CrossBrowser",
-  "CrossPlatform",
-  "Responsive",
-  "Adaptive",
-  "VSCode",
-  "Figma",
-  "Photoshop",
-  "English Upper Intermediate",
-  "Valid HTML",
-];
+export const languages = {
+  rus: "Языки",
+  eng: "Languages",
+  arr: [
+    "JavaScript",
+    "TypeScript",
+    "HTML",
+    "CSS",
+    "English Upper Intermediate :)",
+  ],
+};
+export const frameworks = {
+  rus: "Фреймворки и библиотеки",
+  eng: "Frameworks and libraries",
+  arr: ["React/Redux", "Vue/Vuex", "JQuery"],
+};
+export const styling = {
+  rus: "Стилизация",
+  eng: "Styling",
+  arr: ["Material.UI", "Vuetify", "BootStrap"],
+};
+export const ide = {
+  rus: "Инструменты",
+  eng: "IDE and instruments",
+  arr: ["VSCode", "Figma", "Photoshop"],
+};
+export const additional = {
+  rus: "Дополнительно",
+  eng: "Additional",
+  arr: ["WebPack", "GIT/GitHub"],
+};
+
+export const skills = [languages, frameworks, styling, ide, additional];

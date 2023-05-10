@@ -6,6 +6,7 @@ const langList = {
   ru: "rus",
   en: "eng",
 };
+
 window.addEventListener("DOMContentLoaded", () => {
   renderAll(langList.ru);
   darkThemeSwitcher();

@@ -6,8 +6,9 @@ import {
   projectsComp,
   steckComp,
 } from "./components/index.js";
+import { runNotSlider } from "./notslider.js";
 
-export const render = (arr, { element, markup: markup }) => {
+export const render = (arr, { element, markup }) => {
   //get element to put in
   let findEl = document.querySelector(element);
 
@@ -42,4 +43,5 @@ export const renderAll = (lang) => {
   projectsComp(lang);
   steckComp(lang);
   certificatesComp(lang);
+  runNotSlider();
 };

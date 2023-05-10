@@ -4,13 +4,19 @@ export const projects = [
       rus: "Сайт детского сада Sherwood",
       eng: "Sherwood kids club site",
     },
-    description: { eng: `*description*`, rus: `*description*` },
+    description: { eng: ` `, rus: ` ` },
     stack: "HTML5, CSS3, SVG, BEM, SASS, Static, Slick-slider.",
     techInfo: {
       rus: "Адаптивный, залит на pages.github.io. Русский язык.",
       eng: "Hosted by GitHub Pages. English language. ",
     },
-    imgUrl: ["./img/sherwood.png"],
+    imgUrl: [
+      "./img/sherwood-1.png",
+      "./img/sherwood-2.png",
+      "./img/sherwood-3.png",
+      "./img/sherwood-4.png",
+      "./img/sherwood-5.png",
+    ],
     link: "https://sherwoodkidsclub.ru",
   },
   {
@@ -26,7 +32,14 @@ export const projects = [
       eng: "Hosted by Netlify. Russian language. ",
     },
     stack: "Vue.js, VueX, VueRouter, JavaScript, Vue 3, LocalStorage",
-    imgUrl: ["./img/todo_vue.png"],
+    imgUrl: [
+      "./img/todo_vue-2.png",
+      "./img/todo_vue-3.png",
+      "./img/todo_vue-4.png",
+      "./img/todo_vue-5.png",
+      "./img/todo_vue-1.png",
+      "./img/todo_vue-6.png",
+    ],
     link: "https://sergiowaters-todolist.netlify.app/",
   },
   {
@@ -39,7 +52,13 @@ export const projects = [
       eng: "Vue.js SPA project. Separated by Components, Views and Modules. It uses VueRouter for routing between views. Uses Chart.js for doughnut chart. Uses Vuetify for styles. Calculator component covered by unit-tests.",
     },
     stack: "Vue.js, VueX, VueRouter, JavaScript, Vuetify, Chart.js",
-    imgUrl: ["./img/expences_vue.png"],
+    imgUrl: [
+      "./img/expences_vue-1.png",
+      "./img/expences_vue-2.png",
+      "./img/expences_vue-3.png",
+      "./img/expences_vue-4.png",
+      "./img/expences_vue-5.png",
+    ],
     link: "https://sergiowaters.github.io/expences_vue/",
     techInfo: {
       rus: "Залит на pages.github.io. Английский язык. ",
@@ -56,7 +75,13 @@ export const projects = [
       rus: "Макет будущего сайта. ",
     },
     stack: "HTML5, CSS3, BEM, SASS, Static, JavaScript",
-    imgUrl: ["./img/letscolor.png"],
+    imgUrl: [
+      "./img/letscolor-1.jpg",
+      "./img/letscolor-2.png",
+      "./img/letscolor-3.png",
+      "./img/letscolor-4.png",
+      "./img/letscolor-5.png",
+    ],
     link: "https://sergiowaters.github.io/letscolor/index.html",
     techInfo: {
       rus: 'Адаптивный макет 1440p to 375p, залит на pages.github.io. Английский язык. "Рыбный" текст 50%',
@@ -70,7 +95,13 @@ export const projects = [
       eng: "My personal page. One page + dynamic content. It has dark and normal themes. Two languages to choose from - Russian and English",
     },
     stack: "HTML5, CSS3, SVG, BEM, SASS, JavaScript",
-    imgUrl: ["./img/resume.jpg"],
+    imgUrl: [
+      "./img/resume-1.png",
+      "./img/resume-2.png",
+      "./img/resume-3.png",
+      "./img/resume-4.png",
+      "./img/resume-5.png",
+    ],
     link: "https://sergiowaters.github.io/index.html",
     techInfo: {
       rus: 'Адаптивная страница 375p+, залит на pages.github.io. Русский и Английский языки. Без "рыбного" текста.',
@@ -79,12 +110,12 @@ export const projects = [
   },
   {
     title: { rus: "Лендинг Space shop", eng: "Space shop landing" },
-    description: { rus: "*description*", eng: "*description*" },
+    description: { rus: " ", eng: " " },
     techInfo: {
       rus: "Залит на pages.github.io. Русский язык.",
       eng: "Hosted by GitHub Pages. Russian language. ",
     },
-    imgUrl: ["./img/spaceshop.png"],
+    imgUrl: ["./img/spaceshop-1.png", "./img/spaceshop-2.png"],
     link: "https://sergiowaters.github.io/spaceshop/",
     stack: "HTML5, CSS3, SVG, BEM, SASS, Static, Slick-slider.",
   },
@@ -94,20 +125,26 @@ export const projects = [
       rus: "Рекламный лендинг Nootris",
       eng: "Advertising landing page Nootris",
     },
-    description: { rus: "*description*", eng: "*description*" },
+    description: { rus: " ", eng: " " },
     techInfo: {
       rus: "Залит на pages.github.io. Русский язык.",
       eng: "Hosted by GitHub Pages. Russian language. ",
     },
-    imgUrl: ["./img/willskill.png"],
+    imgUrl: ["./img/nootris-1.png", "./img/nootris-2.png"],
     link: "https://sergiowaters.github.io/willskill/",
     stack: "HTML5, CSS3, SVG, BEM, SASS, Static.",
   },
 
   {
     title: { rus: "Ювелирный магазин", eng: "Jewelry store" },
-    description: { rus: "*description*", eng: "*description*" },
-    imgUrl: ["./img/goldystore.png"],
+    description: { rus: " ", eng: " " },
+    imgUrl: [
+      "./img/goldystore-1.png",
+      "./img/goldystore-2.png",
+      "./img/goldystore-3.png",
+      "./img/goldystore-4.png",
+      "./img/goldystore-5.png",
+    ],
     techInfo: {
       rus: "Залит на pages.github.io. Русский язык.",
       eng: "Hosted by GitHub Pages. Russian language.",
@@ -121,7 +158,13 @@ export const projects = [
       rus: 'HTML+CSS Макет безымянного магазина. <br> В макете пять статичных страниц: <br> 1. Главная, со списком карточек товаров, <br> 2. Каталог с аналогичным списком, breadcrumbs и блоком сортировки товаров, <br> 3. Карточка выбранного товара с более полным описанием, <br> 4. Корзина с формой для доставки и блоком оплаты, <br> 5. Страничка с формой регистрации. <br> Ссылки на все страницы есть в дроп-меню, вызываемом кнопкой "бургер".',
       eng: '"Luxerious" fashion online store. There are five pages in this mockup: <p>Main page, has a featured items and list of products.</p> <p>Catalog page, with the same list, breadcrumbs and filter box.</p> <p>Product page with more detailed information.</p> <p>Cart / bascket page has a shipping form and prices.</p> <p>Registration form page.</p> <p>All the links to all the pages are in "burger"-menu.</p>',
     },
-    imgUrl: ["./img/online_store.png"],
+    imgUrl: [
+      "./img/online_store-1.png",
+      "./img/online_store-2.png",
+      "./img/online_store-3.png",
+      "./img/online_store-4.png",
+      "./img/online_store-5.png",
+    ],
     techInfo: {
       rus: 'Адаптивный макет 1440p to 375p, залит на pages.github.io. Английский язык. "Рыбный" текст 50%',
       eng: "English language. 50% fish-text. Adaptive mockup from 1440p to 375p. Uploaded to pages.github.io.",
@@ -139,7 +182,13 @@ export const projects = [
       rus: `Сайт про коммерческое использование космоса для туризма. <br> В недалеком будующем, полеты в космос стали настолько дешевыми, что билет в невесомость можно купить не выходя из дома.`,
       eng: "Joke landing page about nearby times, when the space tourism could become usual thing. Space is now like Disney Land. Buy a ticket and go to Mars.",
     },
-    imgUrl: ["./img/cosmotourism.png"],
+    imgUrl: [
+      "./img/cosmotourism-1.png",
+      "./img/cosmotourism-2.png",
+      "./img/cosmotourism-3.png",
+      "./img/cosmotourism-4.png",
+      "./img/cosmotourism-5.png",
+    ],
     techInfo: {
       rus: 'Адаптивный сайт 1220p to 320p + адаптивные шрифты, залит на pages.github.io. Английский язык. Без "рыбного" текста.',
       eng: "Adaptive page from 1220p to 320p + adaptive fonts, Uploaded to pages.github.io. English language. No fish text.",
@@ -156,7 +205,7 @@ export const projects = [
       rus: "Макет с приятным нестандартным дизайном. Страница ориентирована на мобильные устройства.",
       eng: "Nice and clean mockup. Not usual design. Mobile-first oriented page.",
     },
-    imgUrl: ["./img/mob_first.png"],
+    imgUrl: ["./img/mobfirst-1.png", "./img/mobfirst-2.png"],
     techInfo: {
       rus: 'Адаптивная страница 375p+, залит на pages.github.io. Русский язык. Без "рыбного" текста.',
       eng: "Adaptive page 375p+. Russian language. No fish-text. Uploaded to pages.github.io. ",
@@ -173,7 +222,12 @@ export const projects = [
       rus: 'Сайт безымянной компании. Две страницы: главная и контакты. Залит на pages.github.io. Латиница. "Рыбный" текст 100%.',
       eng: "There are two pages: <p>Main page with description</p> <p>Contacts page has feedback form and yandex.maps api.</p> ",
     },
-    imgUrl: ["./img/company_site.png"],
+    imgUrl: [
+      "./img/company_site-1.png",
+      "./img/company_site-2.png",
+      "./img/company_site-3.png",
+      "./img/company_site-4.png",
+    ],
     techInfo: {
       rus: 'Залит на pages.github.io. Латиница. "Рыбный" текст 100%.',
       eng: "Lorem:} language. Fish-text 100%. Uploaded to pages.github.io.",

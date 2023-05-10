@@ -34,7 +34,7 @@
 
   &__links {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 30px;
 
     & .link {
@@ -44,33 +44,43 @@
 
   &__slide-box {
     display: flex;
-    flex-direction: column;
     width: 100%;
-    height: 500px;
+    height: 750px;
     border-radius: 10px;
     gap: 10px;
 
+    @media (width < 1600px) {
+      height: 50vw;
+    }
+
+    @media (width < 600px) {
+      flex-direction: column;
+      height: 70vw;
+    }
+
     & .slide {
-      height: 500px;
-      width: 100%;
-      border-radius: 20px;
-      cursor: pointer;
-      background-color: #fdfdfd;
       flex: 1;
+      cursor: pointer;
+      border-radius: 20px;
+      background-color: #fdfdfd;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       transition: 0.5s ease-in;
       box-shadow: 0px 0px 25px #2222222a;
+      opacity: 0.8;
 
       &:hover {
+        opacity: 1;
         box-shadow: 0px 0px 25px #22222280;
       }
 
       &.active {
-        flex: 10;
+        // background-size: contain;
+        opacity: 1;
+        flex: 20;
+        cursor: unset;
         transition: 0.5s ease-out;
-        background-size: contain;
         padding: 10px;
       }
     }
@@ -84,7 +94,7 @@
     }
 
     & .stack {
-      text-align: center;
+      text-align: end;
     }
 
     &__list {

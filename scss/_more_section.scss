@@ -3,13 +3,25 @@
 
   &__inner {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    gap: 30px;
     margin: 40px 0;
 
     @media print {
       margin: 10px;
+    }
+
+    & .skill {
+      &_title {
+        margin-bottom: 20px;
+      }
+
+      &_list {
+        display: flex;
+        gap: 10px;
+      }
     }
   }
 
@@ -19,6 +31,5 @@
     border-radius: 10px;
     color: rgb(118, 117, 117);
     padding: 5px;
-    margin: 5px;
   }
 }
