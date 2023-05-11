@@ -601,7 +601,7 @@ main.dark_theme .certificates__img:hover {
 }
 @media (width < 1600px) {
   .project__slide-box {
-    height: 50vw;
+    height: 40vw;
   }
 }
 @media (width < 600px) {
@@ -637,9 +637,9 @@ main.dark_theme .certificates__img:hover {
 }
 .project__slide-box .slide.active {
   opacity: 1;
-  -webkit-box-flex: 20;
-      -ms-flex: 20;
-          flex: 20;
+  -webkit-box-flex: 12;
+      -ms-flex: 12;
+          flex: 12;
   cursor: unset;
   -webkit-transition: 0.5s ease-out;
   -o-transition: 0.5s ease-out;
