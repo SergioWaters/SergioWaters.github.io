@@ -1,55 +1,20 @@
-import { render } from "../../render.js";
 import { projects } from "./array.js";
+import { projectMarkup } from "./projectMarkup.js";
+import { runNotSlider } from "./notslider.js";
 
 export const projectsComp = (lang) => {
-  const markup = (p = projects) =>
-    p
-      .map(
-        (item) => `
-          <article class="project">
-            <h4 class="project__title subtitle">${item.title[lang]}</h4>
-            
-            <div class="project__slide-box">
-              ${item.imgUrl
-                .map(
-                  (element) =>
-                    `<div class="slide" style="background-image: url(${element});"></div>`
-                )
-                .join("")}
-            </div>
-  
-            <div class="project__description">
-              <div class="links">
-                <a class="link more__item subtext" href=${
-                  item.link
-                } target="_blank"
-                rel="noopener noreferrer">
-                  ${item.title[lang]}
-                </a>
-                <a class="link more__item subtext" href=${
-                  item.link
-                } target="_blank"
-                rel="noopener noreferrer">
-                  GIT
-                </a>
-              </div>
-              <div class="project__description__list">                
-                <div class="project__description__list__item text">${
-                  item.description[lang]
-                }</div>
-                <div class="project__description__list__item text">${
-                  item.techInfo[lang]
-                }</div>
-                <div class="project__description__list__item text stack">
-                <p>${item.stack}</p></div>       
-              </div>
-            </div>
-          </article>`
-      )
-      .join("");
+  const root = document.querySelector(".projects__inner");
+  const btnArr = document.querySelectorAll("button.project-switch");
+  const markup = (p) => p.map((i) => projectMarkup(i, lang)).join("");
 
-  render([], {
-    element: ".projects__inner",
-    markup: markup,
-  });
+  root.innerHTML = markup(projects["native"]);
+  runNotSlider();
+
+  btnArr.forEach((item) =>
+    item.addEventListener("click", (e) => {
+      e.preventDefault();
+      root.innerHTML = markup(projects[e.target.dataset.project]);
+      runNotSlider();
+    })
+  );
 };

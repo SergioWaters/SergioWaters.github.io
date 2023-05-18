@@ -1,24 +1,4 @@
-export const projects = [
-  {
-    title: {
-      rus: "Сайт детского сада Sherwood",
-      eng: "Sherwood kids club site",
-    },
-    description: { eng: ` `, rus: ` ` },
-    stack: "HTML5, CSS3, SVG, BEM, SASS, Static, Slick-slider.",
-    techInfo: {
-      rus: "Адаптивный, залит на pages.github.io. Русский язык.",
-      eng: "Hosted by GitHub Pages. English language. ",
-    },
-    imgUrl: [
-      "./img/sherwood-1.png",
-      "./img/sherwood-2.png",
-      "./img/sherwood-3.png",
-      "./img/sherwood-4.png",
-      "./img/sherwood-5.png",
-    ],
-    link: "https://sherwoodkidsclub.ru",
-  },
+const vueProjects = [
   {
     title: { rus: "Список дел", eng: "To do list" },
     description: {
@@ -65,6 +45,49 @@ export const projects = [
       eng: "Hosted by GitHub Pages. English language. ",
     },
   },
+];
+
+const noframeworkProjects = [
+  {
+    title: {
+      rus: "Сайт детского сада Sherwood",
+      eng: "Sherwood kids club site",
+    },
+    description: { eng: ` `, rus: ` ` },
+    stack: "HTML5, CSS3, SVG, BEM, SASS, Static, Slick-slider.",
+    techInfo: {
+      rus: "Адаптивный, залит на pages.github.io. Русский язык.",
+      eng: "Hosted by GitHub Pages. English language. ",
+    },
+    imgUrl: [
+      "./img/sherwood-1.png",
+      "./img/sherwood-2.png",
+      "./img/sherwood-3.png",
+      "./img/sherwood-4.png",
+      "./img/sherwood-5.png",
+    ],
+    link: "https://sherwoodkidsclub.ru",
+  },
+  {
+    title: { rus: "Персональная страница", eng: "Personal Page" },
+    description: {
+      rus: "Личная страница, резюме, портфолио",
+      eng: "My personal page. One page + dynamic content. It has dark and normal themes. Two languages to choose from - Russian and English",
+    },
+    stack: "HTML5, CSS3, SVG, BEM, SASS, JavaScript",
+    imgUrl: [
+      "./img/resume-1.png",
+      "./img/resume-2.png",
+      "./img/resume-3.png",
+      "./img/resume-4.png",
+      "./img/resume-5.png",
+    ],
+    link: "https://sergiowaters.github.io/index.html",
+    techInfo: {
+      rus: 'Адаптивная страница 375p+, залит на pages.github.io. Русский и Английский языки. Без "рыбного" текста.',
+      eng: "Adaptive page 375p+, Russian and English languages. Uploaded to pages.github.io.",
+    },
+  },
   {
     title: {
       rus: "Сайт Ателье Let's Color!",
@@ -89,53 +112,6 @@ export const projects = [
     },
   },
   {
-    title: { rus: "Персональная страница", eng: "Personal Page" },
-    description: {
-      rus: "Личная страница, резюме, портфолио",
-      eng: "My personal page. One page + dynamic content. It has dark and normal themes. Two languages to choose from - Russian and English",
-    },
-    stack: "HTML5, CSS3, SVG, BEM, SASS, JavaScript",
-    imgUrl: [
-      "./img/resume-1.png",
-      "./img/resume-2.png",
-      "./img/resume-3.png",
-      "./img/resume-4.png",
-      "./img/resume-5.png",
-    ],
-    link: "https://sergiowaters.github.io/index.html",
-    techInfo: {
-      rus: 'Адаптивная страница 375p+, залит на pages.github.io. Русский и Английский языки. Без "рыбного" текста.',
-      eng: "Adaptive page 375p+, Russian and English languages. Uploaded to pages.github.io.",
-    },
-  },
-  {
-    title: { rus: "Лендинг Space shop", eng: "Space shop landing" },
-    description: { rus: " ", eng: " " },
-    techInfo: {
-      rus: "Залит на pages.github.io. Русский язык.",
-      eng: "Hosted by GitHub Pages. Russian language. ",
-    },
-    imgUrl: ["./img/spaceshop-1.png", "./img/spaceshop-2.png"],
-    link: "https://sergiowaters.github.io/spaceshop/",
-    stack: "HTML5, CSS3, SVG, BEM, SASS, Static, Slick-slider.",
-  },
-
-  {
-    title: {
-      rus: "Рекламный лендинг Nootris",
-      eng: "Advertising landing page Nootris",
-    },
-    description: { rus: " ", eng: " " },
-    techInfo: {
-      rus: "Залит на pages.github.io. Русский язык.",
-      eng: "Hosted by GitHub Pages. Russian language. ",
-    },
-    imgUrl: ["./img/nootris-1.png", "./img/nootris-2.png"],
-    link: "https://sergiowaters.github.io/willskill/",
-    stack: "HTML5, CSS3, SVG, BEM, SASS, Static.",
-  },
-
-  {
     title: { rus: "Ювелирный магазин", eng: "Jewelry store" },
     description: { rus: " ", eng: " " },
     imgUrl: [
@@ -152,6 +128,7 @@ export const projects = [
     link: "https://sergiowaters.github.io/landing_diamonds/",
     stack: "HTML5, CSS3, SVG, BEM, SASS, Static, Slick-slider.",
   },
+
   {
     title: { rus: "Онлайн магазин модной одежды", eng: "Online fashion store" },
     description: {
@@ -214,6 +191,32 @@ export const projects = [
     stack: "HTML5, CSS3, BEM, SASS, Static, Slick-slider",
   },
   {
+    title: { rus: "Лендинг Space shop", eng: "Space shop landing" },
+    description: { rus: " ", eng: " " },
+    techInfo: {
+      rus: "Залит на pages.github.io. Русский язык.",
+      eng: "Hosted by GitHub Pages. Russian language. ",
+    },
+    imgUrl: ["./img/spaceshop-1.png", "./img/spaceshop-2.png"],
+    link: "https://sergiowaters.github.io/spaceshop/",
+    stack: "HTML5, CSS3, SVG, BEM, SASS, Static, Slick-slider.",
+  },
+
+  {
+    title: {
+      rus: "Рекламный лендинг Nootris",
+      eng: "Advertising landing page Nootris",
+    },
+    description: { rus: " ", eng: " " },
+    techInfo: {
+      rus: "Залит на pages.github.io. Русский язык.",
+      eng: "Hosted by GitHub Pages. Russian language. ",
+    },
+    imgUrl: ["./img/nootris-1.png", "./img/nootris-2.png"],
+    link: "https://sergiowaters.github.io/willskill/",
+    stack: "HTML5, CSS3, SVG, BEM, SASS, Static.",
+  },
+  {
     title: {
       rus: "Базовый нейтральный макет для сайта компании",
       eng: "Basic, neutral mockup for some company",
@@ -236,3 +239,8 @@ export const projects = [
     stack: "HTML5, CSS3, Yandex.maps, Static",
   },
 ];
+
+export const projects = {
+  vue: vueProjects,
+  native: noframeworkProjects,
+};

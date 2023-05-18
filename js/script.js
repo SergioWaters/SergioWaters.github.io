@@ -6,7 +6,7 @@ import {
   projectsComp,
   steckComp,
 } from "./components/index.js";
-import { runNotSlider } from "./notslider.js";
+import { runNotSlider } from "./components/projects/notslider.js";
 import { activateScroll } from "./scroll.js";
 
 export const switchTitle = (lang) => {

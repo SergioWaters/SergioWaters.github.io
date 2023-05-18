@@ -10,11 +10,30 @@
     }
   }
 
+  &__switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+
+    & button {
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        box-shadow: 5px 5px 5px #2222222a;
+        transition: 0.3s;
+      }
+    }
+  }
+
   &__inner {
     display: flex;
-    flex-direction: column;
-    scroll-snap-type: y mandatory;
-    height: 100vh;
+    // flex-direction: column;
+    scroll-snap-type: x mandatory;
+    width: 100%;
     overflow: auto;
   }
 }
@@ -26,8 +45,8 @@
   align-items: center;
   flex-direction: column;
   padding: 20px;
-  margin: 50px 0;
-  height: 90vh;
+  min-height: 90vh;
+  width: 100%;
 
   @media print {
     margin: 20px 0;
@@ -46,8 +65,32 @@
     border-radius: 10px;
     transform: translateZ(0);
 
-    @media (width < 1000px) {
-      // height: 40vw;
+    &:before {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(-16deg, #e81cff 25%, #40c9ff 100%);
+      transform: translate3d(0px, -16px, 0) scale(0.8);
+      filter: blur(73px);
+      opacity: var(1);
+      transition: opacity 0.3s;
+      border-radius: inherit;
+    }
+
+    &::after {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: inherit;
+      border-radius: inherit;
     }
 
     @media (width < 600px) {
@@ -63,14 +106,6 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      transition: 0.5s ease-in;
-      box-shadow: 0px 0px 25px #2222222a;
-      opacity: 0.8;
-
-      &:hover {
-        opacity: 1;
-        box-shadow: 0px 0px 25px #22222280;
-      }
 
       &.active {
         opacity: 1;
@@ -83,6 +118,7 @@
   }
 
   &__description {
+    width: 100%;
     flex: 1;
     padding: 15px;
 
