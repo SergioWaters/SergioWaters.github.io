@@ -11,7 +11,7 @@ a,
 // SCSS Миксин:
 // calculates proper font-size and line-height due to viewport
 // many thnx to @youtube Freelancer for life
-$maxWidth: 1600;
+$maxWidth: 1000;
 
 @mixin adaptiv-font($pcSize, $mobSize) {
   $addSize: $pcSize - $mobSize;

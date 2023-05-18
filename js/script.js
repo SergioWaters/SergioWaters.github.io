@@ -7,16 +7,7 @@ import {
   steckComp,
 } from "./components/index.js";
 import { runNotSlider } from "./notslider.js";
-
-export const render = (arr, { element, markup }) => {
-  //get element to put in
-  let findEl = document.querySelector(element);
-
-  //generate HTML markup for an array of items & replace HTML with it
-  arr.length
-    ? (findEl.innerHTML = arr.map((item) => markup(item)).join(""))
-    : (findEl.innerHTML = markup());
-};
+import { activateScroll } from "./scroll.js";
 
 export const switchTitle = (lang) => {
   const titleArr = document.querySelectorAll("h3.title");
@@ -44,4 +35,5 @@ export const renderAll = (lang) => {
   steckComp(lang);
   certificatesComp(lang);
   runNotSlider();
+  activateScroll();
 };

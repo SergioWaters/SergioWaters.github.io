@@ -1,4 +1,4 @@
-import { render } from "../../script.js";
+import { render } from "../../render.js";
 import { certificateArr } from "./array.js";
 
 export const certificatesComp = (lang) => {

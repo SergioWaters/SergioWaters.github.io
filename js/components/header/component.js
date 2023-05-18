@@ -1,4 +1,4 @@
-import { render } from "../../script.js";
+import { render } from "../../render.js";
 import { header } from "./array.js";
 
 export const headerComp = (lang) => {

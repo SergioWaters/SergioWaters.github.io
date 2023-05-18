@@ -1,13 +1,11 @@
-import { render } from '../../script.js'
-import { experienceArr } from './array.js'
+import { render } from "../../render.js";
+import { experienceArr } from "./array.js";
 
 export const expirienceComp = (lang) => {
-  const arr = experienceArr[lang]
-  render(
-    arr,
-    {
-      element: '.xper__inner',
-      markup: (item) => `
+  const arr = experienceArr[lang];
+  render(arr, {
+    element: ".xper__inner",
+    markup: (item) => `
       <ul class="xper__list">
         <li class="xper__list__item">
         <h4 class="xper__item__title subtitle">${item.position} | ${item.title}</h4>
@@ -16,6 +14,5 @@ export const expirienceComp = (lang) => {
         </li>
         <li class="xper__list__item text">${item.responsibilities}</li>  
       </ul>`,
-    }
-  );
-}
+  });
+};

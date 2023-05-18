@@ -1,4 +1,4 @@
-.more {
+.skills {
   width: 100%;
 
   &__inner {
@@ -14,8 +14,10 @@
     }
 
     & .skill {
+      margin: 0 30px;
+
       &_title {
-        margin-bottom: 20px;
+        margin: 0 0 10px 20px;
       }
 
       &_list {

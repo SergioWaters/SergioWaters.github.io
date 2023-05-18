@@ -1,4 +1,4 @@
-import { render } from "../../script.js";
+import { render } from "../../render.js";
 import { projects } from "./array.js";
 
 export const projectsComp = (lang) => {
@@ -19,7 +19,7 @@ export const projectsComp = (lang) => {
             </div>
   
             <div class="project__description">
-              <div class="project__links">
+              <div class="links">
                 <a class="link more__item subtext" href=${
                   item.link
                 } target="_blank"
