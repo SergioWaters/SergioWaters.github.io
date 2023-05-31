@@ -7,7 +7,7 @@ export const projectsComp = (lang) => {
   const btnArr = document.querySelectorAll("button.project-switch");
   const markup = (p) => p.map((i) => projectMarkup(i, lang)).join("");
 
-  root.innerHTML = markup(projects["native"]);
+  root.innerHTML = markup(projects[btnArr[0].dataset.project]);
   runNotSlider();
 
   btnArr.forEach((item) =>

@@ -21,6 +21,7 @@ const vueProjects = [
       "./img/todo_vue-6.png",
     ],
     link: "https://sergiowaters-todolist.netlify.app/",
+    gitLink: "https://github.com/SergioWaters/todolist",
   },
   {
     title: {
@@ -31,7 +32,7 @@ const vueProjects = [
       rus: "Vue.js v2 SPA проект.<br> Разбит на компоненты, страницы и модули. Переход между компонентами осуществляется с помощью VueRouter.<br> Используется Chart.js библиотека для отображения графика.<br> Стили по большей части из библиотеки Vuetify. Компонент калькулятора покрыт unit-тестами.",
       eng: "Vue.js SPA project. Separated by Components, Views and Modules. It uses VueRouter for routing between views. Uses Chart.js for doughnut chart. Uses Vuetify for styles. Calculator component covered by unit-tests.",
     },
-    stack: "Vue.js, VueX, VueRouter, JavaScript, Vuetify, Chart.js",
+    stack: "Vue.js v2, VueX, VueRouter, JavaScript, Vuetify, Chart.js",
     imgUrl: [
       "./img/expences_vue-1.png",
       "./img/expences_vue-2.png",
@@ -39,10 +40,36 @@ const vueProjects = [
       "./img/expences_vue-4.png",
       "./img/expences_vue-5.png",
     ],
-    link: "https://sergiowaters.github.io/expences_vue/",
+    link: "https://prod--amazing-douhua-aa8431.netlify.app/",
+    gitLink: "https://github.com/SergioWaters/vue_project",
     techInfo: {
-      rus: "Залит на pages.github.io. Английский язык. ",
-      eng: "Hosted by GitHub Pages. English language. ",
+      rus: "Залит на Netlify. Английский язык. ",
+      eng: "Hosted by Netlify. English language. ",
+    },
+  },
+  {
+    title: {
+      rus: "Макет корзины онлайн магазина",
+      eng: "Cart for online store mockup",
+    },
+    description: {
+      rus: "",
+      eng: "",
+    },
+    stack: "Nuxt.js@3.5, VueX, VueRouter, Swiper.js, JavaScript",
+    imgUrl: [
+      "./img/nuxtcart-1.png",
+      "./img/nuxtcart-2.png",
+      "./img/nuxtcart-3.png",
+      "./img/nuxtcart-4.png",
+      "./img/nuxtcart-5.png",
+      "./img/nuxtcart-6.png",
+    ],
+    link: "https://lively-praline-787525.netlify.app/",
+    gitLink: "https://github.com/SergioWaters/positron",
+    techInfo: {
+      rus: "Залит на netlify. Русский язык.",
+      eng: "Hosted by Netlify. Russian language.",
     },
   },
 ];
@@ -67,6 +94,7 @@ const noframeworkProjects = [
       "./img/sherwood-5.png",
     ],
     link: "https://sherwoodkidsclub.ru",
+    gitLink: "https://github.com/SergioWaters/sherwood",
   },
   {
     title: { rus: "Персональная страница", eng: "Personal Page" },
@@ -83,6 +111,7 @@ const noframeworkProjects = [
       "./img/resume-5.png",
     ],
     link: "https://sergiowaters.github.io/index.html",
+    gitLink: "https://github.com/SergioWaters/SergioWaters.github.io",
     techInfo: {
       rus: 'Адаптивная страница 375p+, залит на pages.github.io. Русский и Английский языки. Без "рыбного" текста.',
       eng: "Adaptive page 375p+, Russian and English languages. Uploaded to pages.github.io.",
@@ -106,6 +135,7 @@ const noframeworkProjects = [
       "./img/letscolor-5.png",
     ],
     link: "https://sergiowaters.github.io/letscolor/index.html",
+    gitLink: "https://github.com/SergioWaters/letscolor",
     techInfo: {
       rus: 'Адаптивный макет 1440p to 375p, залит на pages.github.io. Английский язык. "Рыбный" текст 50%',
       eng: 'Adaptive mockup 1440p to 375p, located on pages.github.io. English "fish" text 50%',
@@ -126,9 +156,9 @@ const noframeworkProjects = [
       eng: "Hosted by GitHub Pages. Russian language.",
     },
     link: "https://sergiowaters.github.io/landing_diamonds/",
+    gitLink: "https://github.com/SergioWaters/landing_diamonds",
     stack: "HTML5, CSS3, SVG, BEM, SASS, Static, Slick-slider.",
   },
-
   {
     title: { rus: "Онлайн магазин модной одежды", eng: "Online fashion store" },
     description: {
@@ -147,9 +177,9 @@ const noframeworkProjects = [
       eng: "English language. 50% fish-text. Adaptive mockup from 1440p to 375p. Uploaded to pages.github.io.",
     },
     link: "https://sergiowaters.github.io/site_clothes_store/",
+    gitLink: "https://github.com/SergioWaters/site_clothes_store/",
     stack: "HTML5, CSS3, BEM, SASS, Static, JavaScript",
   },
-
   {
     title: {
       rus: 'Лендинг-страница "Космический туризм"',
@@ -171,6 +201,7 @@ const noframeworkProjects = [
       eng: "Adaptive page from 1220p to 320p + adaptive fonts, Uploaded to pages.github.io. English language. No fish text.",
     },
     link: "https://sergiowaters.github.io/cosmotourism/index.html",
+    gitLink: "https://github.com/SergioWaters/cosmotourism/",
     stack: "HTML5, CSS3, SVG, BEM, SASS, Static, Slick-slider.",
   },
   {
@@ -188,6 +219,7 @@ const noframeworkProjects = [
       eng: "Adaptive page 375p+. Russian language. No fish-text. Uploaded to pages.github.io. ",
     },
     link: "https://sergiowaters.github.io/masters_page/index.html",
+    gitLink: "https://github.com/SergioWaters/masters_page/",
     stack: "HTML5, CSS3, BEM, SASS, Static, Slick-slider",
   },
   {
@@ -199,6 +231,7 @@ const noframeworkProjects = [
     },
     imgUrl: ["./img/spaceshop-1.png", "./img/spaceshop-2.png"],
     link: "https://sergiowaters.github.io/spaceshop/",
+    gitLink: "https://github.com/SergioWaters",
     stack: "HTML5, CSS3, SVG, BEM, SASS, Static, Slick-slider.",
   },
 
@@ -214,6 +247,7 @@ const noframeworkProjects = [
     },
     imgUrl: ["./img/nootris-1.png", "./img/nootris-2.png"],
     link: "https://sergiowaters.github.io/willskill/",
+    gitLink: "https://github.com/SergioWaters/willskill/",
     stack: "HTML5, CSS3, SVG, BEM, SASS, Static.",
   },
   {
@@ -236,6 +270,7 @@ const noframeworkProjects = [
       eng: "Lorem:} language. Fish-text 100%. Uploaded to pages.github.io.",
     },
     link: "https://sergiowaters.github.io/company_site_mockup/index.html",
+    gitLink: "https://github.com/SergioWaters/company_site_mockup/",
     stack: "HTML5, CSS3, Yandex.maps, Static",
   },
 ];

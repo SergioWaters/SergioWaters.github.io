@@ -180,6 +180,7 @@ main.dark_theme .certificates__img:hover {
   transition: 0.5s;
 }
 .contacts__list__item:hover .icon {
+  border: 3px solid #f8f8f8;
   background-color: #f8f8f8;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -580,6 +581,7 @@ main.dark_theme .certificates__img:hover {
   display: flex;
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
+  scroll-snap-stop: always;
   width: 100%;
   overflow: auto;
 }
@@ -698,9 +700,9 @@ main.dark_theme .certificates__img:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 30px;
 }
 .project__description .links .link {
@@ -710,7 +712,7 @@ main.dark_theme .certificates__img:hover {
   margin: 10px;
 }
 .project__description .stack {
-  text-align: end;
+  text-align: center;
 }
 .project__description__list {
   padding: 10px;

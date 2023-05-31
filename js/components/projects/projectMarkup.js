@@ -15,11 +15,13 @@ export const projectMarkup = (item, lang) => `
         <div class="links">
           <a class="link skills__item subtext" href=${item.link} target="_blank"
           rel="noopener noreferrer">
-            ${item.title[lang]}
+            ${item.title[lang]} &#10148;
           </a>
-          <a class="link skills__item subtext" href=${item.link} target="_blank"
+          <a class="link skills__item subtext" href=${
+            item.gitLink
+          } target="_blank"
           rel="noopener noreferrer">
-            GIT
+            GIT &#10148;
           </a>
         </div>
         <div class="project__description__list">                
@@ -27,14 +29,10 @@ export const projectMarkup = (item, lang) => `
               <p>${item.stack}</p>
             </div>       
             
-          <div class="project__description__list__item text">${
+          <div class="project__description__list__item text stack">${
             item.techInfo[lang]
           }
           </div>
         </div>
       </div>
     </article>`;
-
-// <div class="project__description__list__item text">${
-// item.description[lang]
-// }</div>

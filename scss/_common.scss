@@ -163,6 +163,7 @@ main.dark_theme {
       transition: 0.5s;
     }
     &:hover .icon {
+      border: 3px solid #f8f8f8;
       background-color: #f8f8f8;
       transition: 0.5s;
     }
