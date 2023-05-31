@@ -205,6 +205,18 @@ const noframeworkProjects = [
     stack: "HTML5, CSS3, SVG, BEM, SASS, Static, Slick-slider.",
   },
   {
+    title: { rus: "Лендинг Space shop", eng: "Space shop landing" },
+    description: { rus: " ", eng: " " },
+    techInfo: {
+      rus: "Залит на pages.github.io. Русский язык.",
+      eng: "Hosted by GitHub Pages. Russian language. ",
+    },
+    imgUrl: ["./img/spaceshop-1.png", "./img/spaceshop-2.png"],
+    link: "https://sergiowaters.github.io/spaceshop/",
+    gitLink: "https://github.com/SergioWaters",
+    stack: "HTML5, CSS3, SVG, BEM, SASS, Static, Slick-slider.",
+  },
+  {
     title: {
       rus: "Персональная страница мастера",
       eng: "Personal page of sewer",
@@ -222,19 +234,6 @@ const noframeworkProjects = [
     gitLink: "https://github.com/SergioWaters/masters_page/",
     stack: "HTML5, CSS3, BEM, SASS, Static, Slick-slider",
   },
-  {
-    title: { rus: "Лендинг Space shop", eng: "Space shop landing" },
-    description: { rus: " ", eng: " " },
-    techInfo: {
-      rus: "Залит на pages.github.io. Русский язык.",
-      eng: "Hosted by GitHub Pages. Russian language. ",
-    },
-    imgUrl: ["./img/spaceshop-1.png", "./img/spaceshop-2.png"],
-    link: "https://sergiowaters.github.io/spaceshop/",
-    gitLink: "https://github.com/SergioWaters",
-    stack: "HTML5, CSS3, SVG, BEM, SASS, Static, Slick-slider.",
-  },
-
   {
     title: {
       rus: "Рекламный лендинг Nootris",
