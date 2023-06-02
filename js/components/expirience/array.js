@@ -1,7 +1,6 @@
-import { XperienceCompany } from '../../classes.js'
+import { XperienceCompany } from "../../classes.js";
 
 export const experienceArrRussian = [
-
   new XperienceCompany(
     // company.title = title;
     "FERN",
@@ -21,7 +20,7 @@ export const experienceArrRussian = [
     Собрал барную карту с нуля.
     Занимался закупкой по бару, вел коммуникацию с поставщиками.`,
     // this.city = city;
-    `Санкт-Петербург`,
+    `Санкт-Петербург`
   ),
   new XperienceCompany(
     // company.title = title;
@@ -41,26 +40,9 @@ export const experienceArrRussian = [
     Ведение ежедневной документации.
     Работа с кассой в ночные смены. (R-Keeper)`,
     // this.city = city;
-    `Санкт-Петербург`,
+    `Санкт-Петербург`
   ),
-  new XperienceCompany(
-    // company.title = title;
-    "Barashki",
-    // company.position = position;
-    "Официант",
-    // company.startDate = startDate;
-    `Июнь 2018`,
-    // company.endDate = endDate;
-    `август 2018`,
-    // company.totalDate = totalDate;
-    null,
-    // company.responsibilities = responsibilities;
-    `Акцент на личных продажах.
-    Остальные стандартные обязанности.
-    R-Keeper.`,
-    // this.city = city;
-    `Санкт-Петербург`,
-  ),
+
   new XperienceCompany(
     // company.title = title;
     "KOROVABAR",
@@ -84,7 +66,7 @@ export const experienceArrRussian = [
     Организация рабочего процесса бара;
     Обучение персонала, проведение тренингов`,
     // this.city = city;
-    `Санкт-Петербург`,
+    `Санкт-Петербург`
   ),
   new XperienceCompany(
     // company.title = title;
@@ -102,7 +84,7 @@ export const experienceArrRussian = [
     Коучинг персонала на территории клиента и в офисе компании.
     Ведение переговоров и подготовка коммерческого предложения.`,
     // this.city = city;
-    `Санкт-Петербург`,
+    `Санкт-Петербург`
   ),
   new XperienceCompany(
     // company.title = title;
@@ -118,7 +100,7 @@ export const experienceArrRussian = [
     // company.responsibilities = responsibilities;
     `В должности администратора занимался организацией рабочего процесса в кофейне, обучением персонала, повышением продаж выгодных позиций меню, ведением ежедневной документации, работал с кассой (IIKO, MagicSoft).`,
     // this.city = city;
-    `Санкт-Петербург`,
+    `Санкт-Петербург`
   ),
   new XperienceCompany(
     // company.title = title;
@@ -134,9 +116,8 @@ export const experienceArrRussian = [
     // company.responsibilities = responsibilities;
     `На должности менеджера по обучению был прикреплен к 4 кофейням, проводил в каждой из них анализ работы команды, выявлял слабые места в рабочем процессе и знаниях сотрудников. Составлял план по устранению и помогал выполнять этот план.`,
     // this.city = city;
-    `Санкт-Петербург`,
+    `Санкт-Петербург`
   ),
-
   new XperienceCompany(
     // company.title = title;
     `Сеть кофеен "Кофе-Хауз"`,
@@ -151,12 +132,10 @@ export const experienceArrRussian = [
     // company.responsibilities = responsibilities;
     `На должности Бариста в сети занимался приготовлением всех напитков и блюд, участвовал в инвентаризациях, поддерживал чистоту в кофейне, проходил доп.обучения, участвовал и побеждал в конкурсах.`,
     // this.city = city;
-    `Санкт-Петербург`,
+    `Санкт-Петербург`
   ),
-
 ];
 export const experienceArrEnglish = [
-
   new XperienceCompany(
     // company.title = title;
     "FERN",
@@ -176,7 +155,7 @@ export const experienceArrEnglish = [
     Collected a bar list from scratch.
     I was engaged in purchasing at the bar, communicating with suppliers.`,
     // this.city = city;
-    `Saint-Petersburg`,
+    `Saint-Petersburg`
   ),
   new XperienceCompany(
     // company.title = title;
@@ -196,25 +175,7 @@ export const experienceArrEnglish = [
     Maintained daily documentation.
     Worked with the cashier on night shifts. (R-Keeper)`,
     // this.city = city;
-    `Saint-Petersburg`,
-  ),
-  new XperienceCompany(
-    // company.title = title;
-    "Barashki",
-    // company.position = position;
-    "Waiter",
-    // company.startDate = startDate;
-    `June 2018`,
-    // company.endDate = endDate;
-    `august 2018`,
-    // company.totalDate = totalDate;
-    null,
-    // company.responsibilities = responsibilities;
-    `Emphasis on personal sales.
-    All other standard duties.
-    R-Keeper.`,
-    // this.city = city;
-    `Saint-Petersburg`,
+    `Saint-Petersburg`
   ),
   new XperienceCompany(
     // company.title = title;
@@ -239,7 +200,7 @@ export const experienceArrEnglish = [
     Organization of the bar's workflow.
     Personnel training, trainings`,
     // this.city = city;
-    `Санкт-Петербург`,
+    `Санкт-Петербург`
   ),
   new XperienceCompany(
     // company.title = title;
@@ -257,7 +218,7 @@ export const experienceArrEnglish = [
     Personnel coaching on the client's premises and in the our company office.
     Negotiating and preparing a commercial proposal.`,
     // this.city = city;
-    `Saint-Petersburg`,
+    `Saint-Petersburg`
   ),
   new XperienceCompany(
     // company.title = title;
@@ -273,7 +234,7 @@ export const experienceArrEnglish = [
     // company.responsibilities = responsibilities;
     `As an administrator, was involved in organizing the workflow in a coffee shop, training staff, increasing sales of profitable menu items, maintaining daily documentation, and worked with the cashier (IIKO, MagicSoft).`,
     // this.city = city;
-    `Saint-Petersburg`,
+    `Saint-Petersburg`
   ),
   new XperienceCompany(
     // company.title = title;
@@ -289,7 +250,7 @@ export const experienceArrEnglish = [
     // company.responsibilities = responsibilities;
     `As a coach, was assigned to 4 coffee shops, conducted an analysis of the team's work in each of them, and identified weaknesses in the work process and employee knowledge. Drew up an elimination plan and helped to carry out this plan.`,
     // this.city = city;
-    `Saint-Petersburg`,
+    `Saint-Petersburg`
   ),
 
   new XperienceCompany(
@@ -306,12 +267,11 @@ export const experienceArrEnglish = [
     // company.responsibilities = responsibilities;
     `As a Barista, was engaged in the preparation of all drinks and dishes, participated in inventories, kept the coffee shop clean, underwent additional training, participated and won competitions.`,
     // this.city = city;
-    `Saint-Petersburg`,
+    `Saint-Petersburg`
   ),
-
 ];
 
 export const experienceArr = {
   eng: experienceArrEnglish,
-  rus: experienceArrRussian
+  rus: experienceArrRussian,
 };
