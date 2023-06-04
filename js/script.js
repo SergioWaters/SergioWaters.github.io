@@ -30,7 +30,7 @@ export const renderAll = (lang) => {
   switchTitle(lang);
   headerComp(lang);
   educationComp(lang);
-  expirienceComp(lang);
+  // expirienceComp(lang);
   projectsComp(lang);
   steckComp(lang);
   certificatesComp(lang);

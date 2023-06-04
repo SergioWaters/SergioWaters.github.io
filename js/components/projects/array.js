@@ -49,6 +49,29 @@ const vueProjects = [
   },
   {
     title: {
+      rus: "Погодный виджет с OpenWeather API.",
+      eng: "Weather widget with OpenWeather API.",
+    },
+    description: {
+      rus: "",
+      eng: "",
+    },
+    techInfo: {
+      rus: "Залит на Netlify. Английский язык. ",
+      eng: "Hosted by Netlify. English language. ",
+    },
+    stack: "Vue.js, VueX, JavaScript, Vue 3, LocalStorage",
+    imgUrl: [
+      "./img/weather_app-1.png",
+      "./img/weather_app-2.png",
+      "./img/weather_app-3.png",
+      "./img/weather_app-4.png",
+    ],
+    link: "https://main--playful-fenglisu-4fe5d9.netlify.app/",
+    gitLink: "https://github.com/SergioWaters/weather_widget",
+  },
+  {
+    title: {
       rus: "Макет корзины онлайн магазина",
       eng: "Cart for online store mockup",
     },
@@ -67,6 +90,47 @@ const vueProjects = [
     ],
     link: "https://lively-praline-787525.netlify.app/",
     gitLink: "https://github.com/SergioWaters/positron",
+    techInfo: {
+      rus: "Залит на netlify. Русский язык.",
+      eng: "Hosted by Netlify. Russian language.",
+    },
+  },
+];
+
+const reactProjects = [
+  {
+    title: {
+      rus: "Мессенджер",
+      eng: "Messenger",
+    },
+    description: { eng: ` `, rus: ` ` },
+    stack: "React, Redux, React-router, Firebase/firestore",
+    techInfo: {
+      rus: "SPA приложение",
+      eng: "SPA ",
+    },
+    imgUrl: [],
+    link: "",
+    gitLink: "https://github.com/SergioWaters/react_chat",
+  },
+  {
+    title: {
+      rus: "Макет корзины онлайн магазина",
+      eng: "Cart for online store mockup",
+    },
+    description: {
+      rus: "",
+      eng: "",
+    },
+    stack: "React, Redux, Router, TypeScript",
+    imgUrl: [
+      "./img/react_shop-1.png",
+      "./img/react_shop-2.png",
+      "./img/react_shop-3.png",
+      "./img/react_shop-4.png",
+    ],
+    link: "https://main--visionary-mooncake-ccaff6.netlify.app",
+    gitLink: "https://github.com/SergioWaters/react_shop",
     techInfo: {
       rus: "Залит на netlify. Русский язык.",
       eng: "Hosted by Netlify. Russian language.",
@@ -276,5 +340,6 @@ const noframeworkProjects = [
 
 export const projects = {
   vue: vueProjects,
+  react: reactProjects,
   native: noframeworkProjects,
 };
