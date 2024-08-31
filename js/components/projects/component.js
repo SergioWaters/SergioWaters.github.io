@@ -9,12 +9,20 @@ export const projectsComp = (lang) => {
 
   root.innerHTML = markup(projects[btnArr[0].dataset.project]);
   runNotSlider();
+  
+  const swiper = new Swiper('.swiper', {
+      autoplay: {
+        duration: 1000
+      },
+      slidesPerView: 1
+    });
 
   btnArr.forEach((item) =>
     item.addEventListener("click", (e) => {
       e.preventDefault();
       root.innerHTML = markup(projects[e.target.dataset.project]);
       runNotSlider();
+      swiper.update()
     })
   );
 };

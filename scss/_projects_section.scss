@@ -31,10 +31,10 @@
 
   &__inner {
     display: flex;
-    scroll-snap-type: x mandatory;
-    scroll-snap-stop: always;
+    // scroll-snap-type: x mandatory;
+    // scroll-snap-stop: always;
     width: 100%;
-    overflow: auto;
+    // overflow: auto;
   }
 }
 
@@ -106,12 +106,12 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-
+      transition: all 0.5s ease-in-out;
       &.active {
         opacity: 1;
         flex: 12;
         cursor: unset;
-        transition: 0.5s ease-out;
+        transition: all 0.5s ease-in-out;
         padding: 10px;
       }
     }

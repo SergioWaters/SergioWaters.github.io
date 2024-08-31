@@ -54,14 +54,24 @@ body {
   }
 }
 
-main.dark_theme {
-  background-color: #222;
-
+main {
+  transition: background-color .7s ease-out;
   .title,
   .subtitle,
   .text,
   .subtext {
-    color: #f8f8f899;
+    transition: color .7s ease-in;
+  }
+  &.dark_theme {
+    background-color: #222;
+    transition: background-color .7s ease-in;
+    .title,
+    .subtitle,
+    .text,
+    .subtext {
+      transition: color .7s ease-in;
+      color: #f8f8f899;
+    }
   }
 }
 
@@ -73,12 +83,9 @@ main.dark_theme {
       box-shadow: 0px 0px 25px #f8f8f8;
     }
   }
-}
-
-main.dark_theme {
   .certificates__img {
     box-shadow: 0px 0px 25px #f8f8f899;
-
+  
     &:hover {
       box-shadow: 0px 0px 25px #f8f8f8;
     }

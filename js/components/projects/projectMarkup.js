@@ -1,5 +1,5 @@
 export const projectMarkup = (item, lang) => `
-    <article class="project">
+    <article class="project swiper-slide">
       <h4 class="project__title subtitle">${item.title[lang]}</h4>
       
       <div class="project__slide-box">
@@ -13,10 +13,11 @@ export const projectMarkup = (item, lang) => `
 
       <div class="project__description">
         <div class="links">
-          <a class="link skills__item subtext" href=${item.link} target="_blank"
-          rel="noopener noreferrer">
-            ${item.title[lang]} &#10148;
-          </a>
+        ${item.link.includes('removed') ? '' : `<a class="link skills__item subtext" href=${item.link} target="_blank"
+        rel="noopener noreferrer">
+          ${item.title[lang]} &#10148;
+        </a>`}
+
           <a class="link skills__item subtext" href=${
             item.gitLink
           } target="_blank"
