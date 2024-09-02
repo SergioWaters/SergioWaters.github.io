@@ -11,8 +11,10 @@ export const runNotSlider = () => {
 
   function switchActive(e, slide) {
     e.stopPropagation();
-    removeAllActive(slidesArr);
-    addActive(slide);
+    if (!slide.classList.contains('active')) {
+      removeAllActive(slidesArr);
+      addActive(slide);
+    }
   }
 
   slidesArr.forEach((slide) => {

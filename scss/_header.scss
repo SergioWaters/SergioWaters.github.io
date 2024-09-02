@@ -51,7 +51,11 @@
     opacity: 0.4;
     transition: 0.5s;
 
-    &:hover {
+    &:not(&_active):hover {
+      opacity: 1;
+      transition: 0.5s;
+    }
+    &_active {
       opacity: 1;
       transition: 0.5s;
     }
@@ -62,14 +66,11 @@
     background-repeat: no-repeat;
     background-size: 70%;
     background-position: center;
-    background-image: url("../icons/sun_dark.png");
-  }
-
-  .navbar {
+    background-image: url("/icons/sun_dark.png");
   }
 
   .switch-lang-eng {
-    background-image: url(../img/flag.webp);
+    background-image: url(/img/flag.webp);
     background-position: top 0% left 30%;
     background-size: cover;
   }

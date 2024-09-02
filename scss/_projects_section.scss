@@ -1,7 +1,6 @@
 .projects {
   width: 100%;
   padding-top: 100px;
-
   &__title {
     padding: 10px 0 10px 0;
 
@@ -9,36 +8,31 @@
       margin-top: 10px;
     }
   }
-
   &__switch {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     padding: 10px;
-
     & button {
+      user-select: none;
       text-transform: uppercase;
       cursor: pointer;
       transition: box-shadow 0.3s ease-out;
-
-      &:hover {
-        box-shadow: 5px 5px 5px #2222222a;
+      &:not(.projects__switch_active):hover {
+        box-shadow: 0px 1px 14px 3px #2222222a;
         transition: box-shadow 0.3s ease-in;
       }
     }
     &_active {
-      box-shadow: 5px 5px 5px #5c01952a;
+      background-color: #5c01952a;
+      box-shadow: 0px 1px 14px 3px #5c01952a;
       transition: box-shadow 0.3s ease-in;
     }
   }
-
   &__inner {
     display: flex;
-    // scroll-snap-type: x mandatory;
-    // scroll-snap-stop: always;
     width: 100%;
-    // overflow: auto;
   }
 }
 
@@ -69,7 +63,7 @@
     border-radius: 10px;
     transform: translateZ(0);
 
-    &:before {
+    &::before {
       content: "";
       z-index: -1;
       position: absolute;
@@ -80,9 +74,13 @@
       background: linear-gradient(-16deg, #e81cff 25%, #40c9ff 100%);
       transform: translate3d(0px, -16px, 0) scale(0.8);
       filter: blur(73px);
-      opacity: var(1);
-      transition: opacity 0.3s;
+      opacity: 0;
+      transition: opacity 0.3s ease-out;
       border-radius: inherit;
+    }
+    &:hover::before {
+      opacity: 1;
+      transition: opacity 0.5s ease-in;
     }
 
     &::after {

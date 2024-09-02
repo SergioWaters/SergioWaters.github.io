@@ -18,12 +18,18 @@ export const switchTitle = (lang) => {
 
 export const languageSwitcher = () => {
   const btnArr = document.querySelectorAll("button.lang-switch");
-  btnArr.forEach((item) =>
+  
+  btnArr.forEach((item) => {
+    if (item.dataset.lang === 'rus') item.classList.add('header__buttons__btn_active')
     item.addEventListener("click", (e) => {
       e.preventDefault();
-      renderAll(e.target.dataset.lang);
+      if (!item.classList.contains('header__buttons__btn_active')) {
+        btnArr.forEach(b => b.classList.remove('header__buttons__btn_active'))
+        item.classList.add('header__buttons__btn_active')
+        renderAll(e.target.dataset.lang);
+      }
     })
-  );
+  });
 };
 
 export const renderAll = (lang) => {

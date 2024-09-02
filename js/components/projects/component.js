@@ -9,21 +9,27 @@ export const projectsComp = (lang) => {
 
   root.innerHTML = markup(projects[btnArr[0].dataset.project]);
   runNotSlider();
-  
-  const swiper = new Swiper('.swiper', {
+  let swiperInstance = null
+  if (Swiper) {
+    swiperInstance = new Swiper('.swiper', {
       autoplay: {
-        duration: 3000
+        duration: 3000,
+        pauseOnMouseEnter: true
       },
       slidesPerView: 1
     });
+  }
 
-  btnArr.forEach((item) =>
-    item.addEventListener("click", (e) => {
-      e.preventDefault();
-      e.target.classList.add('project-switch_active')
-      root.innerHTML = markup(projects[e.target.dataset.project]);
-      runNotSlider();
-      swiper.update()
+  btnArr.forEach((item, indx) => {
+    !indx && item.classList.add('projects__switch_active')
+    item.addEventListener("click", () => {
+      if (!item.classList.contains('projects__switch_active')) {
+        btnArr.forEach(b => b.classList.remove('projects__switch_active'))
+        item.classList.add('projects__switch_active')
+        root.innerHTML = markup(projects[item.dataset.project]);
+        runNotSlider();
+        swiperInstance.update()
+      }
     })
-  );
+  });
 };
