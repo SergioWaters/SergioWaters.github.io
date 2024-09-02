@@ -12,7 +12,7 @@ export const projectsComp = (lang) => {
   
   const swiper = new Swiper('.swiper', {
       autoplay: {
-        duration: 1000
+        duration: 3000
       },
       slidesPerView: 1
     });
