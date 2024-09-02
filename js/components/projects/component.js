@@ -20,6 +20,7 @@ export const projectsComp = (lang) => {
   btnArr.forEach((item) =>
     item.addEventListener("click", (e) => {
       e.preventDefault();
+      e.target.classList.add('project-switch_active')
       root.innerHTML = markup(projects[e.target.dataset.project]);
       runNotSlider();
       swiper.update()

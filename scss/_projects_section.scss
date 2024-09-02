@@ -20,12 +20,16 @@
     & button {
       text-transform: uppercase;
       cursor: pointer;
-      transition: 0.3s;
+      transition: box-shadow 0.3s ease-out;
 
       &:hover {
         box-shadow: 5px 5px 5px #2222222a;
-        transition: 0.3s;
+        transition: box-shadow 0.3s ease-in;
       }
+    }
+    &_active {
+      box-shadow: 5px 5px 5px #5c01952a;
+      transition: box-shadow 0.3s ease-in;
     }
   }
 
