@@ -37,7 +37,7 @@ export const renderAll = (lang) => {
   headerComp(lang);
   educationComp(lang);
   // expirienceComp(lang);
-  projectsComp(lang);
+  projectsComp(lang)
   steckComp(lang);
   certificatesComp(lang);
   runNotSlider();

@@ -1,6 +1,8 @@
 .projects {
-  width: 100%;
+  width: 100vw;
+  overflow: hidden;
   padding-top: 100px;
+  margin-top: 50px;
   &__title {
     padding: 10px 0 10px 0;
 

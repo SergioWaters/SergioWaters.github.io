@@ -2,13 +2,15 @@ import { projects } from "./array.js";
 import { projectMarkup } from "./projectMarkup.js";
 import { runNotSlider } from "./notslider.js";
 
+let swiperInstance = null
+let gsapTrigger = null
+
 export const projectsComp = (lang) => {
   // const slider = document.querySelector(".projects__inner");
   const rootHorizontal = document.querySelector(".projects-horizontal");
   const btnArr = document.querySelectorAll("button.project-switch");
   const markup = (p) => p.map((i) => projectMarkup(i, lang)).join("");
-  let swiperInstance = null
-  let gsapTrigger = null
+
 
   // slider && (slider.innerHTML = markup(projects[btnArr[0].dataset.project]));
   rootHorizontal && (rootHorizontal.innerHTML = markup(projects[btnArr[0].dataset.project]))
@@ -29,7 +31,6 @@ export const projectsComp = (lang) => {
         // }
         if (rootHorizontal) {
           rootHorizontal.innerHTML = markup(projects[item.dataset.project])
-          gsapTrigger.kill()
           runGSAP()
         }
         runNotSlider();
@@ -58,18 +59,24 @@ export const projectsComp = (lang) => {
   }
 
   function runGSAP () {
+    if (gsapTrigger) {
+      gsapTrigger.kill()
+    }
     if (rootHorizontal) {
-      const sectionsArr = gsap.utils.toArray('.projects-horizontal .project')
-      gsapTrigger = gsap.to(sectionsArr, {
-        xPercent: (sectionsArr.length - 1) * -100,
-        ease: 'none',
-        scrollTrigger: {
-          trigger: '.projects',
-          pin: true,
-          scrub: 1,
-          end: '+=3000'
-        }
-      })
+      const timerId = setTimeout(() => {
+        const sectionsArr = gsap.utils.toArray('.projects-horizontal .project')
+        gsapTrigger = gsap.to(sectionsArr, {
+          xPercent: (sectionsArr.length - 1) * -100,
+          ease: 'none',
+          scrollTrigger: {
+            trigger: '.projects',
+            pin: true,
+            scrub: 1,
+            end: '+=3000'
+          }
+        })
+        clearTimeout(timerId)
+      }, 0)
     }
   }
 };
